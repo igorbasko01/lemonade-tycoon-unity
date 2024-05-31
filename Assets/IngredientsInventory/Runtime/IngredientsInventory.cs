@@ -22,7 +22,7 @@ namespace baskorp.IngredientsInventory.Runtime
 
         public void UseIngredients(Ingredient ingredient)
         {
-            throw new System.NotImplementedException();
+            _ingredients.Remove(ingredient);
         }
     }
 }

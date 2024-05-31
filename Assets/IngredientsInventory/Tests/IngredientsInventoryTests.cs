@@ -46,8 +46,20 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_Success()
+        {
+            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            var ingredient = new Ingredient(lemon, 5f);
+            _ingredientsInventoryManager.AddIngredient(ingredient);
+            _ingredientsInventoryManager.UseIngredients(ingredient);
+            Assert.AreEqual(0, _ingredientsInventoryManager.Ingredients.Count);
+        }
+        
+        [Test]
+        [Ignore("Not implemented")]
+        public void UseIngredients_PartialQuantity_Success()
         {
 
         }

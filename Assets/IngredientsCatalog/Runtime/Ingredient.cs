@@ -8,6 +8,10 @@ namespace baskorp.IngredientsCatalog.Runtime
 
         public Ingredient(IngredientSO ingredientData, float quantity)
         {
+            if (quantity <= 0)
+            {
+                throw new System.ArgumentException("Quantity must be greater than 0");
+            }
             IngredientData = ingredientData;
             Quantity = quantity;
         }

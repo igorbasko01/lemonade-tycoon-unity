@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/IngredientsCatalog/Tests/IngredientsCatalogTests.cs" />
+    <Compile Include="Assets/IngredientsCatalog/Tests/IngredientTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/IngredientsCatalog/Tests/IngredientsCatalog.Tests.asmdef" />

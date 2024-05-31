@@ -17,7 +17,7 @@ namespace baskorp.IngredientsCatalog.Runtime
             {
                 return new PurchaseResult(PurchaseResultType.IngredientNotFound);
             }
-            if (quantity < 0)
+            if (quantity <= 0)
             {
                 return new PurchaseResult(PurchaseResultType.InvalidQuantity);
             }
