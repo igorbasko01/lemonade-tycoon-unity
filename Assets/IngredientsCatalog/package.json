@@ -1,9 +1,0 @@
-{
-    "name": "com.baskorp.ingredients-catalog",
-    "version": "1.0.0",
-    "displayName": "Ingredients Catalog",
-    "description": "A package for managing ingredients in a game.",
-    "unity": "2020.3",
-    "dependencies": {}
-  }
-  
