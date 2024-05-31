@@ -99,20 +99,6 @@ namespace baskorp.IngredientsInventory.Tests
 
         [Test]
         [Ignore("Not implemented")]
-        public void UseIngredients_NegativeQuantity()
-        {
-
-        }
-
-        [Test]
-        [Ignore("Not implemented")]
-        public void UseIngredients_ZeroQuantity()
-        {
-
-        }
-
-        [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_MultipleIngredients_Success()
         {
 
