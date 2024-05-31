@@ -22,7 +22,19 @@ namespace baskorp.IngredientsInventory.Runtime
 
         public void UseIngredients(Ingredient ingredient)
         {
-            _ingredients.Remove(ingredient);
+            var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient.IngredientData);
+            if (existingIngredient != null) 
+            {
+                var newQuantity = existingIngredient.Quantity - ingredient.Quantity;
+                if (newQuantity == 0)
+                {
+                    _ingredients.Remove(existingIngredient);
+                    return;
+                }
+                var newIngredient = new Ingredient(ingredient.IngredientData, newQuantity);
+                _ingredients.Remove(existingIngredient);
+                _ingredients.Add(newIngredient);
+            }
         }
     }
 }
