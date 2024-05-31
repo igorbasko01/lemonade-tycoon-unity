@@ -1,0 +1,86 @@
+# This .gitignore file is for Unity projects.
+
+# Ignore temporary files
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ibrary/
+[Oo]bj/
+[Ll]ogs/
+
+# Ignore auto-generated files
+[Mm]emoryCaptures/
+[Mm]inidump/
+
+# Uncomment this line if you wish to ignore the asset store tools plugin
+# [Aa]ssets/AssetStoreTools*
+
+# Ignore user-specific files
+[Aa]ssets/Plugins/Editor/JetBrains*/*
+[Aa]ssets/Plugins/Editor/JetBrains*.*.dll
+[Aa]ssets/Plugins/Editor/JetBrains*.*.pdb
+
+# Ignore project-specific settings
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/UnityConnectSettings.asset
+
+# Ignore crash reports
+sysinfo.txt
+
+# Ignore .vscode settings
+.vscode/
+
+# Ignore Rider IDE files
+.idea/
+.idea/**
+
+# Ignore temporary files created by JetBrains Rider
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+
+# Ignore JetBrains Rider plugin files
+*.sln.iml
+
+# Ignore user-specific files for VSCode
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/snippets/
+
+# Ignore all .csproj files except for Assembly-CSharp
+!*.csproj
+!Assembly-CSharp.csproj
+
+# Ignore all .sln files except for Assembly-CSharp
+!*.sln
+!Assembly-CSharp.sln
+
+# Ignore file system properties
+Desktop.ini
+Thumbs.db
+
+# Ignore files for C libraries
+*.so
+*.dylib
+*.dll
+
+# Ignore DS_Store (MacOS)
+.DS_Store
+.DS_Store?
+._*
+
+# Ignore Python virtual environment
+env/
+venv/
+ENV/
+VENV/
+__pycache__/
+*.pyc
+
+# Ignore built files for builds
+Builds/
+
+# Ignore auto-generated files for builds
+Assets/StreamingAssets/aa.meta
