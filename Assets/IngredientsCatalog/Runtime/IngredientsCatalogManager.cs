@@ -17,6 +17,10 @@ namespace baskorp.IngredientsCatalog.Runtime
             {
                 return new PurchaseResult(PurchaseResultType.IngredientNotFound);
             }
+            if (quantity < 0)
+            {
+                return new PurchaseResult(PurchaseResultType.InvalidQuantity);
+            }
             var totalCost = ingredient.basePrice * quantity;
             if (playerMoney < totalCost)
             {

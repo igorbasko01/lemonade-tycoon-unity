@@ -4,7 +4,8 @@ namespace baskorp.IngredientsCatalog.Runtime
     {
         Success,
         NotEnoughMoney,
-        IngredientNotFound
+        IngredientNotFound,
+        InvalidQuantity
     }
 
     public class PurchaseResult

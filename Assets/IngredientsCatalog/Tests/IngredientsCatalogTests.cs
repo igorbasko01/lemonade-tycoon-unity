@@ -66,5 +66,14 @@ namespace baskorp.IngredientsCatalog.Tests
             Assert.AreEqual(100f, _playerMoney);
             Assert.AreEqual(0f, purchaseResult.PurchasedIngredient.Quantity);
         }
+
+        [Test]
+        public void PurchaseIngredient_NegativeQuantity()
+        {
+            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemon, -1f, ref _playerMoney);
+            Assert.AreEqual(PurchaseResultType.InvalidQuantity, purchaseResult.ResultType);
+            Assert.AreEqual(100f, _playerMoney);
+            Assert.IsNull(purchaseResult.PurchasedIngredient);
+        }
     }
 }
