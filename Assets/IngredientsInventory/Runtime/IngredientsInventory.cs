@@ -20,7 +20,7 @@ namespace baskorp.IngredientsInventory.Runtime
             _ingredients.Add(ingredient);
         }
 
-        public void UseIngredients(Ingredient ingredient)
+        public UsageResultType UseIngredients(Ingredient ingredient)
         {
             var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient.IngredientData);
             if (existingIngredient != null) 
@@ -29,12 +29,14 @@ namespace baskorp.IngredientsInventory.Runtime
                 if (newQuantity == 0)
                 {
                     _ingredients.Remove(existingIngredient);
-                    return;
+                    return UsageResultType.Success;
                 }
                 var newIngredient = new Ingredient(ingredient.IngredientData, newQuantity);
                 _ingredients.Remove(existingIngredient);
                 _ingredients.Add(newIngredient);
+                return UsageResultType.Success;
             }
+            return UsageResultType.IngredientNotFound;
         }
     }
 }

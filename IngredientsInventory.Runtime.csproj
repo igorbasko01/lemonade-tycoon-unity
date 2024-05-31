@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/IngredientsInventory/Runtime/IngredientsInventory.cs" />
+    <Compile Include="Assets/IngredientsInventory/Runtime/IngredientUsageResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/IngredientsInventory/Runtime/IngredientsInventory.Runtime.asmdef" />

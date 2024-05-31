@@ -53,8 +53,9 @@ namespace baskorp.IngredientsInventory.Tests
             lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
-            _ingredientsInventoryManager.UseIngredients(ingredient);
+            var result = _ingredientsInventoryManager.UseIngredients(ingredient);
             Assert.AreEqual(0, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(UsageResultType.Success, result);
         }
         
         [Test]
@@ -65,16 +66,21 @@ namespace baskorp.IngredientsInventory.Tests
             lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
-            _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 3f));
+            var result = _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 3f));
             Assert.AreEqual(1, _ingredientsInventoryManager.Ingredients.Count);
             Assert.AreEqual(2f, _ingredientsInventoryManager.Ingredients[0].Quantity);
+            Assert.AreEqual(UsageResultType.Success, result);
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_IngredientNotFound()
         {
-
+            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            var result = _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 3f));
+            Assert.AreEqual(0, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(UsageResultType.IngredientNotFound, result);
         }
 
         [Test]
