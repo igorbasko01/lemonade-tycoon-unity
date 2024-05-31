@@ -84,10 +84,17 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_NotEnoughQuantity()
         {
-
+            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            var ingredient = new Ingredient(lemon, 5f);
+            _ingredientsInventoryManager.AddIngredient(ingredient);
+            var result = _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 6f));
+            Assert.AreEqual(1, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(5f, _ingredientsInventoryManager.Ingredients[0].Quantity);
+            Assert.AreEqual(UsageResultType.NotEnoughQuantity, result);
         }
 
         [Test]

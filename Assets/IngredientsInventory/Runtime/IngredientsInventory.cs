@@ -31,6 +31,10 @@ namespace baskorp.IngredientsInventory.Runtime
                     _ingredients.Remove(existingIngredient);
                     return UsageResultType.Success;
                 }
+                else if (newQuantity < 0)
+                {
+                    return UsageResultType.NotEnoughQuantity;
+                }
                 var newIngredient = new Ingredient(ingredient.IngredientData, newQuantity);
                 _ingredients.Remove(existingIngredient);
                 _ingredients.Add(newIngredient);

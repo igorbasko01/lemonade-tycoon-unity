@@ -4,6 +4,6 @@ namespace baskorp.IngredientsInventory.Runtime
     {
         Success,
         IngredientNotFound,
-        InvalidQuantity
+        NotEnoughQuantity
     }
 }
