@@ -32,10 +32,17 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void AddIngredient_IngredientAlreadyExists()
         {
-
+            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            var ingredient = new Ingredient(lemon, 5f);
+            var moreIngredients = new Ingredient(lemon, 3f);
+            _ingredientsInventoryManager.AddIngredient(ingredient);
+            _ingredientsInventoryManager.AddIngredient(moreIngredients);
+            Assert.AreEqual(1, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(8f, _ingredientsInventoryManager.Ingredients[0].Quantity);
         }
 
         [Test]
