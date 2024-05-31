@@ -1,0 +1,16 @@
+{
+    "name": "IngredientsInventory.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e32e60dcc78a24289bb274528d2093a6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
