@@ -62,6 +62,12 @@ namespace baskorp.IngredientsInventory.Runtime
             return UsageResultType.Success;
         }
 
+        public float GetIngredientQuantity(IngredientSO ingredient)
+        {
+            var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient);
+            return existingIngredient?.Quantity ?? 0;
+        }
+
         private UsageResultType HasIngredients(List<Ingredient> ingredients)
         {
             foreach (var ingredient in ingredients)

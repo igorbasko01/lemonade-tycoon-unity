@@ -135,29 +135,17 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
-        public void UseIngredients_MultipleIngredients_NegativeQuantity()
-        {
-
-        }
-
-        [Test]
-        [Ignore("Not implemented")]
-        public void UseIngredients_MultipleIngredients_ZeroQuantity()
-        {
-
-        }
-
-        [Test]
-        [Ignore("Not implemented")]
         public void GetIngredientQuantity_Success()
         {
-
+            var ingredient = new Ingredient(lemon, 5f);
+            _ingredientsInventoryManager.AddIngredient(ingredient);
+            var quantity = _ingredientsInventoryManager.GetIngredientQuantity(lemon);
+            Assert.AreEqual(5f, quantity);
         }
 
         [Test]
         [Ignore("Not implemented")]
-        public void GetIngredientQuantity_IngredientNotFound()
+        public void GetIngredientQuantity_IngredientNotFound_ReturnZeroQuantity()
         {
 
         }
