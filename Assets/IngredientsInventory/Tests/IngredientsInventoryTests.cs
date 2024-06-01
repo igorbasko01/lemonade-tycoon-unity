@@ -11,19 +11,24 @@ namespace baskorp.IngredientsInventory.Tests
     public class IngredientsInventoryTests
     {
         private IngredientsInventoryManager _ingredientsInventoryManager;
+        private IngredientSO lemon;
+        private IngredientSO sugar;
 
         [SetUp]
         public void SetUp()
         {
             _ingredientsInventoryManager = new IngredientsInventoryManager();
+            lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            sugar = ScriptableObject.CreateInstance<IngredientSO>();
+            sugar.ingredientName = "Sugar";
+            sugar.basePrice = 5f;
         }
 
         [Test]
         public void AddIngredient_Success()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
             Assert.AreEqual(1, _ingredientsInventoryManager.Ingredients.Count);
@@ -34,9 +39,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void AddIngredient_IngredientAlreadyExists()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             var moreIngredients = new Ingredient(lemon, 3f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
@@ -48,9 +50,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void UseIngredients_Success()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
             var result = _ingredientsInventoryManager.UseIngredients(ingredient);
@@ -61,9 +60,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void UseIngredients_PartialQuantity_Success()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
             var result = _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 3f));
@@ -75,9 +71,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void UseIngredients_IngredientNotFound()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
             var result = _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 3f));
             Assert.AreEqual(0, _ingredientsInventoryManager.Ingredients.Count);
             Assert.AreEqual(UsageResultType.IngredientNotFound, result);
@@ -86,9 +79,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void UseIngredients_NotEnoughQuantity()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
             var ingredient = new Ingredient(lemon, 5f);
             _ingredientsInventoryManager.AddIngredient(ingredient);
             var result = _ingredientsInventoryManager.UseIngredients(new Ingredient(lemon, 6f));
@@ -100,12 +90,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void UseIngredients_MultipleIngredients_Success()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
-            var sugar = ScriptableObject.CreateInstance<IngredientSO>();
-            sugar.ingredientName = "Sugar";
-            sugar.basePrice = 5f;
             var lemonIngredient = new Ingredient(lemon, 5f);
             var sugarIngredient = new Ingredient(sugar, 3f);
             _ingredientsInventoryManager.AddIngredient(lemonIngredient);
@@ -119,12 +103,6 @@ namespace baskorp.IngredientsInventory.Tests
         [Test]
         public void UseIngredients_MultipleIngredients_IngredientNotFound()
         {
-            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
-            lemon.ingredientName = "Lemon";
-            lemon.basePrice = 10f;
-            var sugar = ScriptableObject.CreateInstance<IngredientSO>();
-            sugar.ingredientName = "Sugar";
-            sugar.basePrice = 5f;
             var lemonIngredient = new Ingredient(lemon, 5f);
             var sugarIngredient = new Ingredient(sugar, 3f);
             _ingredientsInventoryManager.AddIngredient(lemonIngredient);
@@ -142,10 +120,18 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_MultipleIngredients_NotEnoughQuantity()
         {
-
+            var lemonIngredient = new Ingredient(lemon, 5f);
+            var sugarIngredient = new Ingredient(sugar, 3f);
+            _ingredientsInventoryManager.AddIngredient(lemonIngredient);
+            _ingredientsInventoryManager.AddIngredient(sugarIngredient);
+            var ingredients = new List<Ingredient> { lemonIngredient, new Ingredient(sugar, 4f) };
+            var result = _ingredientsInventoryManager.UseIngredients(ingredients);
+            Assert.AreEqual(2, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(5f, _ingredientsInventoryManager.Ingredients[0].Quantity);
+            Assert.AreEqual(3f, _ingredientsInventoryManager.Ingredients[1].Quantity);
+            Assert.AreEqual(UsageResultType.NotEnoughQuantity, result);
         }
 
         [Test]

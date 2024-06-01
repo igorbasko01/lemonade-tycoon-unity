@@ -45,11 +45,12 @@ namespace baskorp.IngredientsInventory.Runtime
 
         public UsageResultType UseIngredients(List<Ingredient> ingredients)
         {
-            if (!HasIngredients(ingredients))
+            var validationResult = HasIngredients(ingredients);
+            if (validationResult != UsageResultType.Success)
             {
-                return UsageResultType.IngredientNotFound;
+                return validationResult;
             }
-            
+
             foreach (var ingredient in ingredients)
             {
                 var result = UseIngredients(ingredient);
@@ -61,17 +62,21 @@ namespace baskorp.IngredientsInventory.Runtime
             return UsageResultType.Success;
         }
 
-        private bool HasIngredients(List<Ingredient> ingredients)
+        private UsageResultType HasIngredients(List<Ingredient> ingredients)
         {
             foreach (var ingredient in ingredients)
             {
                 var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient.IngredientData);
-                if (existingIngredient == null || existingIngredient.Quantity < ingredient.Quantity)
+                if (existingIngredient == null)
                 {
-                    return false;
+                    return UsageResultType.IngredientNotFound;
+                }
+                if (existingIngredient.Quantity < ingredient.Quantity)
+                {
+                    return UsageResultType.NotEnoughQuantity;
                 }
             }
-            return true;
+            return UsageResultType.Success;
         }
     }
 }
