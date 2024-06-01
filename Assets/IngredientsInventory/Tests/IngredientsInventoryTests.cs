@@ -98,10 +98,22 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_MultipleIngredients_Success()
         {
-
+            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            var sugar = ScriptableObject.CreateInstance<IngredientSO>();
+            sugar.ingredientName = "Sugar";
+            sugar.basePrice = 5f;
+            var lemonIngredient = new Ingredient(lemon, 5f);
+            var sugarIngredient = new Ingredient(sugar, 3f);
+            _ingredientsInventoryManager.AddIngredient(lemonIngredient);
+            _ingredientsInventoryManager.AddIngredient(sugarIngredient);
+            var ingredients = new List<Ingredient> { lemonIngredient, sugarIngredient };
+            var result = _ingredientsInventoryManager.UseIngredients(ingredients);
+            Assert.AreEqual(0, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(UsageResultType.Success, result);
         }
 
         [Test]

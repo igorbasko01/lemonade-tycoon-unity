@@ -42,5 +42,18 @@ namespace baskorp.IngredientsInventory.Runtime
             }
             return UsageResultType.IngredientNotFound;
         }
+
+        public UsageResultType UseIngredients(List<Ingredient> ingredients)
+        {
+            foreach (var ingredient in ingredients)
+            {
+                var result = UseIngredients(ingredient);
+                if (result != UsageResultType.Success)
+                {
+                    return result;
+                }
+            }
+            return UsageResultType.Success;
+        }
     }
 }
