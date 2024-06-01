@@ -144,10 +144,10 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void GetIngredientQuantity_IngredientNotFound_ReturnZeroQuantity()
         {
-
+            var quantity = _ingredientsInventoryManager.GetIngredientQuantity(lemon);
+            Assert.AreEqual(0f, quantity);
         }
     }
 }
