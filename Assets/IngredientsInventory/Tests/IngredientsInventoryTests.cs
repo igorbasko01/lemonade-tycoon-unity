@@ -117,10 +117,28 @@ namespace baskorp.IngredientsInventory.Tests
         }
 
         [Test]
-        [Ignore("Not implemented")]
         public void UseIngredients_MultipleIngredients_IngredientNotFound()
         {
-
+            var lemon = ScriptableObject.CreateInstance<IngredientSO>();
+            lemon.ingredientName = "Lemon";
+            lemon.basePrice = 10f;
+            var sugar = ScriptableObject.CreateInstance<IngredientSO>();
+            sugar.ingredientName = "Sugar";
+            sugar.basePrice = 5f;
+            var lemonIngredient = new Ingredient(lemon, 5f);
+            var sugarIngredient = new Ingredient(sugar, 3f);
+            _ingredientsInventoryManager.AddIngredient(lemonIngredient);
+            _ingredientsInventoryManager.AddIngredient(sugarIngredient);
+            var ice = ScriptableObject.CreateInstance<IngredientSO>();
+            ice.ingredientName = "Ice";
+            ice.basePrice = 3f;
+            var iceIngredient = new Ingredient(ice, 2f);
+            var ingredients = new List<Ingredient> { lemonIngredient, iceIngredient };
+            var result = _ingredientsInventoryManager.UseIngredients(ingredients);
+            Assert.AreEqual(2, _ingredientsInventoryManager.Ingredients.Count);
+            Assert.AreEqual(5f, _ingredientsInventoryManager.Ingredients[0].Quantity);
+            Assert.AreEqual(3f, _ingredientsInventoryManager.Ingredients[1].Quantity);
+            Assert.AreEqual(UsageResultType.IngredientNotFound, result);
         }
 
         [Test]
