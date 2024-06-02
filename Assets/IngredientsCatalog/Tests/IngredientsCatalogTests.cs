@@ -88,5 +88,34 @@ namespace baskorp.IngredientsCatalog.Tests
             Assert.AreEqual(35f, _playerMoney);
             Assert.AreEqual(3f, purchaseResult2.PurchasedIngredient.Quantity);
         }
+
+        [Test]
+        public void CalculateTotalCost_Success()
+        {
+            List<Ingredient> ingredients = new() { new Ingredient(lemon, 5f), new Ingredient(sugar, 3f) };
+            var totalCostResult = _ingredientsCatalogManager.CalculateTotalCost(ingredients);
+            Assert.AreEqual(65f, totalCostResult.TotalCost);
+            Assert.AreEqual(PurchaseResultType.Success, totalCostResult.ResultType);
+        }
+
+        [Test]
+        public void CalculateTotalCost_IngredientNotFound()
+        {
+            IngredientSO newIngredient = ScriptableObject.CreateInstance<IngredientSO>();
+            newIngredient.ingredientName = "New Ingredient";
+            newIngredient.basePrice = 15f;
+            List<Ingredient> ingredients = new() { new Ingredient(lemon, 5f), new Ingredient(sugar, 3f), new Ingredient(newIngredient, 2f) };
+            var totalCostResult = _ingredientsCatalogManager.CalculateTotalCost(ingredients);
+            Assert.AreEqual(0f, totalCostResult.TotalCost);
+            Assert.AreEqual(PurchaseResultType.IngredientNotFound, totalCostResult.ResultType);
+        }
+
+        [Test]
+        public void CalculateTotalCost_SingleIngredient_Success() {
+            List<Ingredient> ingredients = new() { new Ingredient(lemon, 5f) };
+            var totalCostResult = _ingredientsCatalogManager.CalculateTotalCost(ingredients);
+            Assert.AreEqual(50f, totalCostResult.TotalCost);
+            Assert.AreEqual(PurchaseResultType.Success, totalCostResult.ResultType);
+        }
     }
 }

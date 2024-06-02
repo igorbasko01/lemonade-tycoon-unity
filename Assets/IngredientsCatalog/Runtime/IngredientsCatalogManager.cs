@@ -29,5 +29,20 @@ namespace baskorp.IngredientsCatalog.Runtime
             playerMoney -= totalCost;
             return new PurchaseResult(PurchaseResultType.Success, new Ingredient(ingredient, quantity));
         }
+
+        public TotalCostResult CalculateTotalCost(List<Ingredient> ingredients)
+        {
+            float totalCost = 0;
+            foreach (var ingredient in ingredients)
+            {
+                var ingredientFound = AvailableIngredients.Find(i => i == ingredient.IngredientData);
+                if (ingredientFound == null)
+                {
+                    return new TotalCostResult(0, PurchaseResultType.IngredientNotFound);
+                }
+                totalCost += ingredientFound.basePrice * ingredient.Quantity;
+            }
+            return new TotalCostResult(totalCost, PurchaseResultType.Success);
+        }
     }
 }

@@ -19,4 +19,16 @@ namespace baskorp.IngredientsCatalog.Runtime
             PurchasedIngredient = purchasedIngredient;
         }
     }
+
+    public class TotalCostResult
+    {
+        public float TotalCost { get; private set; }
+        public PurchaseResultType ResultType { get; private set; }
+
+        public TotalCostResult(float totalCost, PurchaseResultType resultType)
+        {
+            TotalCost = totalCost;
+            ResultType = resultType;
+        }
+    }
 }
