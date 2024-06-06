@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>IngredientsCatalog.Runtime</AssemblyName>
+    <AssemblyName>Recipe.Runtime</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -62,13 +62,10 @@
     <Analyzer Include="/Users/igorbasko/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/IngredientsCatalog/Runtime/IngredientsCatalogManager.cs" />
-    <Compile Include="Assets/IngredientsCatalog/Runtime/IngredientSO.cs" />
-    <Compile Include="Assets/IngredientsCatalog/Runtime/Ingredient.cs" />
-    <Compile Include="Assets/IngredientsCatalog/Runtime/PurchaseResult.cs" />
+    <Compile Include="Assets/Recipe/Runtime/Recipe.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/IngredientsCatalog/Runtime/IngredientsCatalog.Runtime.asmdef" />
+    <None Include="Assets/Recipe/Runtime/Recipe.Runtime.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -961,6 +958,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="IngredientsCatalog.Runtime.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
