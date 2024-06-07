@@ -11,12 +11,6 @@ namespace baskorp.IngredientsCatalog.Runtime
         public float Price 
         {
             get { return price; }
-            set {
-                if (value <= 0) {
-                    throw new System.ArgumentException("Price should be greater than 0");
-                }
-                price = value;
-            }
         }
 
         private void OnValidate() {
@@ -26,6 +20,14 @@ namespace baskorp.IngredientsCatalog.Runtime
             if (price <= 0) {
                 throw new System.ArgumentException("Price should be greater than 0");
             }
+        }
+
+        public static SellableIngredient Create(IngredientMetadata metadata, float price) {
+            var ingredient = CreateInstance<SellableIngredient>();
+            ingredient.Metadata = metadata;
+            ingredient.price = price;
+            ingredient.OnValidate();
+            return ingredient;
         }
     }
 }

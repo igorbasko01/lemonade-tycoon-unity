@@ -1,16 +1,17 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace baskorp.IngredientsCatalog.Runtime
 {
     public class IngredientsCatalogManager
     {
-        public List<IngredientSO> AvailableIngredients { get; private set; }
+        public List<SellableIngredient> AvailableIngredients { get; private set; }
 
-        public IngredientsCatalogManager(List<IngredientSO> ingredientsDatabase)
+        public IngredientsCatalogManager(List<SellableIngredient> ingredientsDatabase)
         {
             AvailableIngredients = ingredientsDatabase;
         }
-        public PurchaseResult PurchaseIngredient(IngredientSO ingredient, float quantity, ref float playerMoney)
+        public PurchaseResult PurchaseIngredient(SellableIngredient ingredient, float quantity, ref float playerMoney)
         {
             var ingredientFound = AvailableIngredients.Find(i => i == ingredient);
             if (ingredientFound == null)
@@ -21,26 +22,27 @@ namespace baskorp.IngredientsCatalog.Runtime
             {
                 return new PurchaseResult(PurchaseResultType.InvalidQuantity);
             }
-            var totalCost = ingredient.basePrice * quantity;
+            var totalCost = ingredient.Price * quantity;
             if (playerMoney < totalCost)
             {
                 return new PurchaseResult(PurchaseResultType.NotEnoughMoney);
             }
             playerMoney -= totalCost;
-            return new PurchaseResult(PurchaseResultType.Success, new Ingredient(ingredient, quantity));
+            var soldIngredient = QuantifiableIngredient.Create(ingredient.Metadata, quantity);
+            return new PurchaseResult(PurchaseResultType.Success, soldIngredient);
         }
 
-        public TotalCostResult CalculateTotalCost(List<Ingredient> ingredients)
+        public TotalCostResult CalculateTotalCost(List<QuantifiableIngredient> ingredients)
         {
             float totalCost = 0;
             foreach (var ingredient in ingredients)
             {
-                var ingredientFound = AvailableIngredients.Find(i => i == ingredient.IngredientData);
+                var ingredientFound = AvailableIngredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
                 if (ingredientFound == null)
                 {
                     return new TotalCostResult(0, PurchaseResultType.IngredientNotFound);
                 }
-                totalCost += ingredientFound.basePrice * ingredient.Quantity;
+                totalCost += ingredientFound.Price * ingredient.Quantity;
             }
             return new TotalCostResult(totalCost, PurchaseResultType.Success);
         }

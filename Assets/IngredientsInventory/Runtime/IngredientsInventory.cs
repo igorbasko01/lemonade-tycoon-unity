@@ -5,14 +5,14 @@ namespace baskorp.IngredientsInventory.Runtime
 {
     public class IngredientsInventoryManager
     {
-        private List<Ingredient> _ingredients = new();
-        public List<Ingredient> Ingredients => _ingredients;
-        public void AddIngredient(Ingredient ingredient)
+        private List<QuantifiableIngredient> _ingredients = new();
+        public List<QuantifiableIngredient> Ingredients => _ingredients;
+        public void AddIngredient(QuantifiableIngredient ingredient)
         {
-            var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient.IngredientData);
+            var existingIngredient = _ingredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
             if (existingIngredient != null)
             {
-                var newIngredient = new Ingredient(ingredient.IngredientData, existingIngredient.Quantity + ingredient.Quantity);
+                var newIngredient = QuantifiableIngredient.Create(ingredient.Metadata, existingIngredient.Quantity + ingredient.Quantity);
                 _ingredients.Remove(existingIngredient);
                 _ingredients.Add(newIngredient);
                 return;
@@ -20,9 +20,9 @@ namespace baskorp.IngredientsInventory.Runtime
             _ingredients.Add(ingredient);
         }
 
-        public UsageResultType UseIngredients(Ingredient ingredient)
+        public UsageResultType UseIngredients(QuantifiableIngredient ingredient)
         {
-            var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient.IngredientData);
+            var existingIngredient = _ingredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
             if (existingIngredient != null) 
             {
                 var newQuantity = existingIngredient.Quantity - ingredient.Quantity;
@@ -35,7 +35,7 @@ namespace baskorp.IngredientsInventory.Runtime
                 {
                     return UsageResultType.NotEnoughQuantity;
                 }
-                var newIngredient = new Ingredient(ingredient.IngredientData, newQuantity);
+                var newIngredient = QuantifiableIngredient.Create(ingredient.Metadata, newQuantity);
                 _ingredients.Remove(existingIngredient);
                 _ingredients.Add(newIngredient);
                 return UsageResultType.Success;
@@ -43,7 +43,7 @@ namespace baskorp.IngredientsInventory.Runtime
             return UsageResultType.IngredientNotFound;
         }
 
-        public UsageResultType UseIngredients(List<Ingredient> ingredients)
+        public UsageResultType UseIngredients(List<QuantifiableIngredient> ingredients)
         {
             var validationResult = HasIngredients(ingredients);
             if (validationResult != UsageResultType.Success)
@@ -62,17 +62,17 @@ namespace baskorp.IngredientsInventory.Runtime
             return UsageResultType.Success;
         }
 
-        public float GetIngredientQuantity(IngredientSO ingredient)
+        public float GetIngredientQuantity(IngredientMetadata ingredient)
         {
-            var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient);
+            var existingIngredient = _ingredients.Find(i => i.Metadata == ingredient);
             return existingIngredient?.Quantity ?? 0;
         }
 
-        private UsageResultType HasIngredients(List<Ingredient> ingredients)
+        private UsageResultType HasIngredients(List<QuantifiableIngredient> ingredients)
         {
             foreach (var ingredient in ingredients)
             {
-                var existingIngredient = _ingredients.Find(i => i.IngredientData == ingredient.IngredientData);
+                var existingIngredient = _ingredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
                 if (existingIngredient == null)
                 {
                     return UsageResultType.IngredientNotFound;

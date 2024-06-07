@@ -7,32 +7,53 @@ namespace baskorp.IngredientsCatalog.Tests
     [TestFixture]
     public class IngredientsTests
     {
-        [Test]
-        public void Create_Ingredient_Success()
+        private IngredientMetadata lemonMetadata;
+        [SetUp]
+        public void Setup()
         {
-            var ingredient = ScriptableObject.CreateInstance<IngredientSO>();
-            ingredient.ingredientName = "Lemon";
-            ingredient.basePrice = 10f;
-            Assert.AreEqual("Lemon", ingredient.ingredientName);
-            Assert.AreEqual(10f, ingredient.basePrice);
+            lemonMetadata = IngredientMetadata.Create("Lemon");
+        }
+
+        [Test]
+        public void Create_IngredientMetadata_Success()
+        {
+            Assert.AreEqual("Lemon", lemonMetadata.Name);
         }
 
         [Test]
         public void Create_Ingredient_WithNegativeQuantity()
         {
-            var ingredient = ScriptableObject.CreateInstance<IngredientSO>();
-            ingredient.ingredientName = "Lemon";
-            ingredient.basePrice = 10f;
-            Assert.Throws<System.ArgumentException>(() => new Ingredient(ingredient, -5f));
+            Assert.Throws<System.ArgumentException>(() => QuantifiableIngredient.Create(lemonMetadata, -1f));
         }
 
         [Test]
         public void Create_Ingredient_WithZeroQuantity()
         {
-            var ingredient = ScriptableObject.CreateInstance<IngredientSO>();
-            ingredient.ingredientName = "Lemon";
-            ingredient.basePrice = 10f;
-            Assert.Throws<System.ArgumentException>(() => new Ingredient(ingredient, 0f));
+            Assert.Throws<System.ArgumentException>(() => QuantifiableIngredient.Create(lemonMetadata, 0f));
+        }
+
+        [Test]
+        public void Create_Ingredient_WithNegativePrice()
+        {
+            Assert.Throws<System.ArgumentException>(() => SellableIngredient.Create(lemonMetadata, -1f));
+        }
+
+        [Test]
+        public void Create_Ingredient_WithZeroPrice()
+        {
+            Assert.Throws<System.ArgumentException>(() => SellableIngredient.Create(lemonMetadata, 0f));
+        }
+
+        [Test]
+        public void Create_Ingredient_WithNullMetadata()
+        {
+            Assert.Throws<System.ArgumentException>(() => QuantifiableIngredient.Create(null, 1f));
+        }
+
+        [Test]
+        public void Create_Ingredient_WithNullMetadata_Sellable()
+        {
+            Assert.Throws<System.ArgumentException>(() => SellableIngredient.Create(null, 1f));
         }
     }
 }

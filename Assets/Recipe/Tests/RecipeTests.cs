@@ -12,7 +12,7 @@ namespace baskorp.Recipes.Tests
         [Test]
         public void RecipeInitializedWithANameAndAListOfIngredients()
         {
-            var recipe = new Recipe("Test Recipe", new List<Ingredient> { new Ingredient(ScriptableObject.CreateInstance<IngredientSO>(), 1) });
+            var recipe = new Recipe("Test Recipe", new List<QuantifiableIngredient> { QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f)});
             Assert.AreEqual("Test Recipe", recipe.Name);
             Assert.AreEqual(1, recipe.Ingredients.Count);
         }
@@ -20,7 +20,7 @@ namespace baskorp.Recipes.Tests
         [Test]
         public void RecipeInitializedWithANameAndAnEmptyListOfIngredients_ThrowsArgumentException()
         {
-            Assert.Throws<System.ArgumentException>(() => new Recipe("Test Recipe", new List<Ingredient>()));
+            Assert.Throws<System.ArgumentException>(() => new Recipe("Test Recipe", new List<QuantifiableIngredient>()));
         }
 
         [Test]

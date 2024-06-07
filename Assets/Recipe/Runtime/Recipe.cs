@@ -5,9 +5,9 @@ using baskorp.IngredientsCatalog.Runtime;
 namespace baskorp.Recipes.Runtime {
     public class Recipe {
         public string Name { get; }
-        public List<Ingredient> Ingredients { get; }
+        public List<QuantifiableIngredient> Ingredients { get; }
 
-        public Recipe(string name, List<Ingredient> ingredients) {
+        public Recipe(string name, List<QuantifiableIngredient> ingredients) {
             if (ingredients == null) {
                 throw new ArgumentException("A recipe must have at least one ingredient");
             }

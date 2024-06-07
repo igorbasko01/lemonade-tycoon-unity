@@ -9,15 +9,8 @@ namespace baskorp.IngredientsCatalog.Runtime
 
         [SerializeField]
         private float quantity;
-        public float Quantity 
-        {
-            get { return quantity; }
-            set {
-                if (value <= 0) {
-                    throw new System.ArgumentException("Quantity should be greater than 0");
-                }
-                quantity = value;
-            }
+        public float Quantity {
+            get => quantity;
         }
 
         private void OnValidate() {
@@ -27,6 +20,14 @@ namespace baskorp.IngredientsCatalog.Runtime
             if (quantity <= 0) {
                 throw new System.ArgumentException("Quantity should be greater than 0");
             }
+        }
+
+        public static QuantifiableIngredient Create(IngredientMetadata metadata, float quantity) {
+            var ingredient = CreateInstance<QuantifiableIngredient>();
+            ingredient.Metadata = metadata;
+            ingredient.quantity = quantity;
+            ingredient.OnValidate();
+            return ingredient;
         }
     }
 }
