@@ -25,6 +25,24 @@ namespace baskorp.Recipes.Runtime
             {
                 throw new ArgumentException("A recipe must have at least one ingredient");
             }
+            if (string.IsNullOrEmpty(recipeName))
+            {
+                throw new ArgumentException("A recipe must have a name");
+            }
+            ValidateNoDuplicateIngredients();
+        }
+
+        private void ValidateNoDuplicateIngredients()
+        {
+            var ingredientNames = new List<string>();
+            foreach (var ingredient in ingredients)
+            {
+                if (ingredientNames.Contains(ingredient.Metadata.Name))
+                {
+                    throw new ArgumentException("A recipe cannot have duplicate ingredients");
+                }
+                ingredientNames.Add(ingredient.Metadata.Name);
+            }
         }
 
         public static Recipe Create(string name, List<QuantifiableIngredient> ingredients)
