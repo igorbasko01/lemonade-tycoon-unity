@@ -55,5 +55,28 @@ namespace baskorp.IngredientsCatalog.Tests
         {
             Assert.Throws<System.ArgumentException>(() => SellableIngredient.Create(null, 1f));
         }
+
+        [Test]
+        public void IngredientMetada_Equals_Success()
+        {
+            var lemonMetadata2 = IngredientMetadata.Create("Lemon");
+            Assert.AreEqual(lemonMetadata, lemonMetadata2);
+        }
+
+        [Test]
+        public void IngredientMetada_Equals_Fail()
+        {
+            var sugarMetadata = IngredientMetadata.Create("Sugar");
+            Assert.AreNotEqual(lemonMetadata, sugarMetadata);
+        }
+
+        [Test]
+        public void QuantifiableIngredient_Equals_Success()
+        {
+            var newLemonMetadata = IngredientMetadata.Create("Lemon");
+            var lemonIngredient = QuantifiableIngredient.Create(newLemonMetadata, 5f);
+            var lemonIngredient2 = QuantifiableIngredient.Create(lemonMetadata, 5f);
+            Assert.AreEqual(lemonIngredient, lemonIngredient2);
+        }
     }
 }

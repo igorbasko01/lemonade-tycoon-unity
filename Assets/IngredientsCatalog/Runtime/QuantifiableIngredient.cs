@@ -29,5 +29,25 @@ namespace baskorp.IngredientsCatalog.Runtime
             ingredient.OnValidate();
             return ingredient;
         }
+
+        public override bool Equals(object other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+            var otherIngredient = (QuantifiableIngredient)other;
+            Debug.Log($"Metadata equals: {Metadata == otherIngredient.Metadata}, Quantity equals: {Quantity == otherIngredient.Quantity}");
+            return Metadata.Equals(otherIngredient.Metadata) && Quantity == otherIngredient.Quantity;
+        }
+
+        public override int GetHashCode()
+        {
+            return Metadata.GetHashCode() ^ Quantity.GetHashCode();
+        }
     }
 }

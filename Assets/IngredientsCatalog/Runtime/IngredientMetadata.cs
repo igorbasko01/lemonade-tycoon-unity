@@ -17,5 +17,24 @@ namespace baskorp.IngredientsCatalog.Runtime
             ingredient.Icon = icon;
             return ingredient;
         }
+
+        public override bool Equals(object other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+            var otherIngredient = (IngredientMetadata)other;
+            return Name == otherIngredient.Name && State == otherIngredient.State;
+        }
+
+        public override int GetHashCode()
+        {
+            return Name.GetHashCode() ^ State.GetHashCode();
+        }
     }
 }

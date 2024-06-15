@@ -53,5 +53,13 @@ namespace baskorp.Recipes.Runtime
             recipe.OnValidate();
             return recipe;
         }
+
+        public RecipeResult Make(List<QuantifiableIngredient> ingredients)
+        {
+            return new RecipeResult(
+                RecipeResultType.Success, 
+                QuantifiableIngredient.Create(IngredientMetadata.Create(recipeName), 1)
+                );
+        }
     }
 }
