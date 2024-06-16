@@ -107,24 +107,53 @@ namespace baskorp.Recipes.Tests
         }
 
         [Test]
-        [Ignore("Not implemented yet")]
-        public void RecipeMake_MissingQuantity_ReturnsNotEnoughQuantity()
+        public void RecipeMake_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity()
         {
-
+            var recipe = Recipe.Create("Test Recipe", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+                });
+            var ingredients = new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 1f)
+            };
+            var result = recipe.Make(ingredients);
+            Assert.AreEqual(RecipeResultType.InvalidQuantity, result.ResultType);
+            Assert.IsNull(result.ProducedIngredient);
+            Assert.That(new List<QuantifiableIngredient> { QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 1f) }, Is.EquivalentTo(result.MissingIngredients));
         }
 
         [Test]
-        [Ignore("Not implemented yet")]
         public void RecipeMake_EmptyIngredientsList_ReturnsMissingIngredientsList()
         {
-
+            var recipe = Recipe.Create("Test Recipe", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+                });
+            var ingredients = new List<QuantifiableIngredient>();
+            var result = recipe.Make(ingredients);
+            Assert.AreEqual(RecipeResultType.InvalidQuantity, result.ResultType);
+            Assert.IsNull(result.ProducedIngredient);
+            Assert.That(new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+            }, Is.EquivalentTo(result.MissingIngredients));
         }
 
         [Test]
-        [Ignore("Not implemented yet")]
         public void RecipeMake_NullIngredientsList_ReturnsMissingIngredientList()
         {
-
+            var recipe = Recipe.Create("Test Recipe", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+                });
+            var result = recipe.Make(null);
+            Assert.AreEqual(RecipeResultType.InvalidQuantity, result.ResultType);
+            Assert.IsNull(result.ProducedIngredient);
+            Assert.That(new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+            }, Is.EquivalentTo(result.MissingIngredients));
         }
     }
 }

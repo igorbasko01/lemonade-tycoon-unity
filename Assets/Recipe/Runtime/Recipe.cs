@@ -72,12 +72,13 @@ namespace baskorp.Recipes.Runtime
                 );
         }
 
-        private List<QuantifiableIngredient> CalculateMissingIngredients(List<QuantifiableIngredient> ingredients)
+        public List<QuantifiableIngredient> CalculateMissingIngredients(List<QuantifiableIngredient> ingredients)
         {
+            var safeIngredients = ingredients ?? new List<QuantifiableIngredient>();
             var missingIngredients = new List<QuantifiableIngredient>();
             foreach (var ingredient in this.ingredients)
             {
-                var existingIngredient = ingredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
+                var existingIngredient = safeIngredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
                 if (existingIngredient == null)
                 {
                     missingIngredients.Add(ingredient);

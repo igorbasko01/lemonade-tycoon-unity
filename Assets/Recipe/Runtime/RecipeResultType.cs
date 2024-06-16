@@ -20,7 +20,7 @@ namespace baskorp.Recipes.Runtime
         {
             ResultType = resultType;
             ProducedIngredient = producedIngredient;
-            MissingIngredients = missingIngredients;
+            MissingIngredients = missingIngredients ?? new List<QuantifiableIngredient>();
         }
 
         public override bool Equals(object obj)
