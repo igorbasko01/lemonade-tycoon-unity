@@ -90,7 +90,6 @@ namespace baskorp.Recipes.Tests
         }
 
         [Test]
-        [Ignore("Not implemented yet")]
         public void RecipeMake_MissingIngredient_ReturnsMissingIngredientsList()
         {
             var recipe = Recipe.Create("Test Recipe", new List<QuantifiableIngredient> {
@@ -102,9 +101,9 @@ namespace baskorp.Recipes.Tests
                 QuantifiableIngredient.Create(IngredientMetadata.Create("Ice"), 1f)
             };
             var result = recipe.Make(ingredients);
-            Assert.AreEqual(RecipeResultType.IngredientNotFound, result.ResultType);
+            Assert.AreEqual(RecipeResultType.InvalidQuantity, result.ResultType);
             Assert.IsNull(result.ProducedIngredient);
-            Assert.AreEqual(QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f), result.MissingIngredients);
+            Assert.That(new List<QuantifiableIngredient> { QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f) }, Is.EquivalentTo(result.MissingIngredients));
         }
 
         [Test]

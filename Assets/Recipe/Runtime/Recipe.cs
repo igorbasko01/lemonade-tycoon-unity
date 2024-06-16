@@ -56,10 +56,38 @@ namespace baskorp.Recipes.Runtime
 
         public RecipeResult Make(List<QuantifiableIngredient> ingredients)
         {
+            var missingIngredients = CalculateMissingIngredients(ingredients);
+            if (missingIngredients.Count > 0)
+            {
+                return new RecipeResult(
+                    RecipeResultType.InvalidQuantity,
+                    null,
+                    missingIngredients
+                    );
+            }
             return new RecipeResult(
                 RecipeResultType.Success, 
-                QuantifiableIngredient.Create(IngredientMetadata.Create(recipeName), 1)
+                QuantifiableIngredient.Create(IngredientMetadata.Create(recipeName), 1),
+                new List<QuantifiableIngredient>()
                 );
+        }
+
+        private List<QuantifiableIngredient> CalculateMissingIngredients(List<QuantifiableIngredient> ingredients)
+        {
+            var missingIngredients = new List<QuantifiableIngredient>();
+            foreach (var ingredient in this.ingredients)
+            {
+                var existingIngredient = ingredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
+                if (existingIngredient == null)
+                {
+                    missingIngredients.Add(ingredient);
+                }
+                else if (existingIngredient.Quantity < ingredient.Quantity)
+                {
+                    missingIngredients.Add(QuantifiableIngredient.Create(ingredient.Metadata, ingredient.Quantity - existingIngredient.Quantity));
+                }
+            }
+            return missingIngredients;
         }
     }
 }

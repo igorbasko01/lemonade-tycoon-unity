@@ -41,7 +41,6 @@ namespace baskorp.IngredientsCatalog.Runtime
                 return false;
             }
             var otherIngredient = (QuantifiableIngredient)other;
-            Debug.Log($"Metadata equals: {Metadata == otherIngredient.Metadata}, Quantity equals: {Quantity == otherIngredient.Quantity}");
             return Metadata.Equals(otherIngredient.Metadata) && Quantity == otherIngredient.Quantity;
         }
 

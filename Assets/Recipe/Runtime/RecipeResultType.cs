@@ -7,7 +7,6 @@ namespace baskorp.Recipes.Runtime
     public enum RecipeResultType
     {
         Success,
-        IngredientNotFound,
         InvalidQuantity
     }
 
@@ -21,7 +20,7 @@ namespace baskorp.Recipes.Runtime
         {
             ResultType = resultType;
             ProducedIngredient = producedIngredient;
-            MissingIngredients = missingIngredients ?? new List<QuantifiableIngredient>();
+            MissingIngredients = missingIngredients;
         }
 
         public override bool Equals(object obj)
