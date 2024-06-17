@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.Tests", "Recipe.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngredientsInventory.Tests", "IngredientsInventory.Tests.csproj", "{4D9884D6-1976-0323-8725-692A375D498F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar.Tests", "Calendar.Tests.csproj", "{B655DCA8-C5C4-32F2-097A-375BCF3A2D78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{4D9884D6-1976-0323-8725-692A375D498F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D9884D6-1976-0323-8725-692A375D498F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D9884D6-1976-0323-8725-692A375D498F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B655DCA8-C5C4-32F2-097A-375BCF3A2D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B655DCA8-C5C4-32F2-097A-375BCF3A2D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B655DCA8-C5C4-32F2-097A-375BCF3A2D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B655DCA8-C5C4-32F2-097A-375BCF3A2D78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
