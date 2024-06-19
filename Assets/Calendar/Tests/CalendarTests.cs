@@ -13,6 +13,7 @@ namespace baskorp.Calendars.Tests
             Assert.AreEqual(1, calendar.CurrentDate.Day);
             Assert.AreEqual(1, calendar.CurrentDate.Month);
             Assert.AreEqual(1, calendar.CurrentDate.Year);
+            Assert.AreEqual(WeekDay.Monday, calendar.CurrentDate.WeekDay);
         }
 
         [Test]
@@ -82,6 +83,27 @@ namespace baskorp.Calendars.Tests
         public void Create_Calendar_CustomDate_YearLowerThan1_Exception()
         {
             Assert.Throws<System.ArgumentException>(() => new Calendar(1, 3, -1));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WeekDay_Wednesday()
+        {
+            var calendar = new Calendar(3, 1, 1);
+            Assert.AreEqual(WeekDay.Wednesday, calendar.CurrentDate.WeekDay);
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WeekDay_Sunday()
+        {
+            var calendar = new Calendar(7, 1, 1);
+            Assert.AreEqual(WeekDay.Sunday, calendar.CurrentDate.WeekDay);
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WeekDay_MondayWeekLater()
+        {
+            var calendar = new Calendar(8, 1, 1);
+            Assert.AreEqual(WeekDay.Monday, calendar.CurrentDate.WeekDay);
         }
     }
 }

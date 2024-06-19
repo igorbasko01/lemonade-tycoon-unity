@@ -1,10 +1,42 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace baskorp.Calendars.Runtime
 {
+    public enum WeekDay
+    {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+    
     public class Date
     {
         public int Day { get; private set; }
         public int Month { get; private set; }
         public int Year { get; private set; }
+        public WeekDay WeekDay => (WeekDay) ((_daysInYear * (Year - 1) + _daysInMonth[Month] * (Month - 1) + (Day - 1)) % 7);
+        private static readonly Dictionary<int, int> _daysInMonth = new()
+        {
+            {1, 31},
+            {2, 28},
+            {3, 31},
+            {4, 30},
+            {5, 31},
+            {6, 30},
+            {7, 31},
+            {8, 31},
+            {9, 30},
+            {10, 31},
+            {11, 30},
+            {12, 31}
+        };
+        private static readonly int _daysInYear = _daysInMonth.Values.Sum();
+        
 
         public Date(int day, int month, int year)
         {
