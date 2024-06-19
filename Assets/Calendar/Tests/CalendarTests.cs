@@ -23,5 +23,65 @@ namespace baskorp.Calendars.Tests
             Assert.AreEqual(3, calendar.CurrentDate.Month);
             Assert.AreEqual(1000, calendar.CurrentDate.Year);
         }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongDay_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(0, 3, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongMonth_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(1, 13, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongDayInFebruary_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(30, 2, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongDayInApril_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(31, 4, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongDayInJune_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(31, 6, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongDayInSeptember_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(31, 9, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_WrongDayInNovember_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(31, 11, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_DayLowerThan1_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(-1, 3, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_MonthLowerThan1_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(1, -1, 1000));
+        }
+
+        [Test]
+        public void Create_Calendar_CustomDate_YearLowerThan1_Exception()
+        {
+            Assert.Throws<System.ArgumentException>(() => new Calendar(1, 3, -1));
+        }
     }
 }
