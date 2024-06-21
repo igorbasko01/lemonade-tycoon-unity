@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using baskorp.Calendars.Runtime;
+using NUnit.Framework.Internal;
 
 namespace baskorp.Calendars.Tests
 {
@@ -104,6 +105,46 @@ namespace baskorp.Calendars.Tests
         {
             var calendar = new Calendar(8, 1, 1);
             Assert.AreEqual(WeekDay.Monday, calendar.CurrentDate.WeekDay);
+        }
+
+        [Test]
+        public void Calendar_ProgressOneDay_Success() {
+            var calendar = new Calendar();
+            calendar.ProgressOneDay();
+            Assert.AreEqual(2, calendar.CurrentDate.Day);
+            Assert.AreEqual(1, calendar.CurrentDate.Month);
+            Assert.AreEqual(1, calendar.CurrentDate.Year);
+            Assert.AreEqual(WeekDay.Tuesday, calendar.CurrentDate.WeekDay);
+        }
+
+        [Test]
+        public void Calendar_ProgressOneDay_EndOfMonth_Success() {
+            var calendar = new Calendar(31, 1, 1);
+            calendar.ProgressOneDay();
+            Assert.AreEqual(1, calendar.CurrentDate.Day);
+            Assert.AreEqual(2, calendar.CurrentDate.Month);
+            Assert.AreEqual(1, calendar.CurrentDate.Year);
+            Assert.AreEqual(WeekDay.Thursday, calendar.CurrentDate.WeekDay);
+        }
+
+        [Test]
+        public void Calendar_ProgressOneDay_EndOfYear_Success() {
+            var calendar = new Calendar(31, 12, 1);
+            calendar.ProgressOneDay();
+            Assert.AreEqual(1, calendar.CurrentDate.Day);
+            Assert.AreEqual(1, calendar.CurrentDate.Month);
+            Assert.AreEqual(2, calendar.CurrentDate.Year);
+            Assert.AreEqual(WeekDay.Tuesday, calendar.CurrentDate.WeekDay);
+        }
+
+        [Test]
+        public void Calendar_ProgressOneDay_EndOfFebuary_Success() {
+            var calendar = new Calendar(28, 2, 1);
+            calendar.ProgressOneDay();
+            Assert.AreEqual(1, calendar.CurrentDate.Day);
+            Assert.AreEqual(3, calendar.CurrentDate.Month);
+            Assert.AreEqual(1, calendar.CurrentDate.Year);
+            Assert.AreEqual(WeekDay.Thursday, calendar.CurrentDate.WeekDay);
         }
     }
 }

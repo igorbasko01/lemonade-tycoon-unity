@@ -19,8 +19,8 @@ namespace baskorp.Calendars.Runtime
         public int Day { get; private set; }
         public int Month { get; private set; }
         public int Year { get; private set; }
-        public WeekDay WeekDay => (WeekDay) ((_daysInYear * (Year - 1) + _daysInMonth[Month] * (Month - 1) + (Day - 1)) % 7);
-        private static readonly Dictionary<int, int> _daysInMonth = new()
+        public WeekDay WeekDay => (WeekDay) ((_daysInYear * (Year - 1) + SumOfDaysUpToMonth(Month) + (Day - 1)) % 7);
+        public static readonly Dictionary<int, int> DaysInMonth = new()
         {
             {1, 31},
             {2, 28},
@@ -35,7 +35,11 @@ namespace baskorp.Calendars.Runtime
             {11, 30},
             {12, 31}
         };
-        private static readonly int _daysInYear = _daysInMonth.Values.Sum();
+        private static readonly int _daysInYear = DaysInMonth.Values.Sum();
+        private static int SumOfDaysUpToMonth(int month)
+        {
+            return DaysInMonth.Values.Take(month - 1).Sum();
+        }
         
 
         public Date(int day, int month, int year)
@@ -65,6 +69,22 @@ namespace baskorp.Calendars.Runtime
                 throw new System.ArgumentException("Invalid date");
             }
             _date = new Date(day, month, year);
+        }
+
+        public void ProgressOneDay()
+        {
+            if (_date.Day == 31 && _date.Month == 12)
+            {
+                _date = new Date(1, 1, _date.Year + 1);
+            }
+            else if (_date.Day == Date.DaysInMonth[_date.Month])
+            {
+                _date = new Date(1, _date.Month + 1, _date.Year);
+            }
+            else
+            {
+                _date = new Date(_date.Day + 1, _date.Month, _date.Year);
+            }
         }
 
         private bool IsValidDate(int day, int month, int year)
