@@ -146,5 +146,27 @@ namespace baskorp.Calendars.Tests
             Assert.AreEqual(1, calendar.CurrentDate.Year);
             Assert.AreEqual(WeekDay.Thursday, calendar.CurrentDate.WeekDay);
         }
+
+        [Test]
+        public void Calendar_SaturdayAndSunday_AreWeekends_Success() {
+            var calendarSaturday = new Calendar(6, 1, 1);
+            var calendarSunday = new Calendar(7, 1, 1);
+            Assert.AreEqual(DayType.Weekend, calendarSaturday.CurrentDate.DayType);
+            Assert.AreEqual(DayType.Weekend, calendarSunday.CurrentDate.DayType);
+        }
+
+        [Test]
+        public void Calendar_NonWeekendDays_AreWeekdays_Success() {
+            var calendarMonday = new Calendar(1, 1, 1);
+            var calendarTuesday = new Calendar(2, 1, 1);
+            var calendarWednesday = new Calendar(3, 1, 1);
+            var calendarThursday = new Calendar(4, 1, 1);
+            var calendarFriday = new Calendar(5, 1, 1);
+            Assert.AreEqual(DayType.Weekday, calendarMonday.CurrentDate.DayType);
+            Assert.AreEqual(DayType.Weekday, calendarTuesday.CurrentDate.DayType);
+            Assert.AreEqual(DayType.Weekday, calendarWednesday.CurrentDate.DayType);
+            Assert.AreEqual(DayType.Weekday, calendarThursday.CurrentDate.DayType);
+            Assert.AreEqual(DayType.Weekday, calendarFriday.CurrentDate.DayType);
+        }
     }
 }

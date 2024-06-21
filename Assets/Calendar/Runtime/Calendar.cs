@@ -13,12 +13,19 @@ namespace baskorp.Calendars.Runtime
         Saturday,
         Sunday
     }
+
+    public enum DayType
+    {
+        Weekday,
+        Weekend
+    }
     
     public class Date
     {
         public int Day { get; private set; }
         public int Month { get; private set; }
         public int Year { get; private set; }
+        public DayType DayType => WeekDay == WeekDay.Saturday || WeekDay == WeekDay.Sunday ? DayType.Weekend : DayType.Weekday;
         public WeekDay WeekDay => (WeekDay) ((_daysInYear * (Year - 1) + SumOfDaysUpToMonth(Month) + (Day - 1)) % 7);
         public static readonly Dictionary<int, int> DaysInMonth = new()
         {
