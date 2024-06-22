@@ -168,5 +168,25 @@ namespace baskorp.Calendars.Tests
             Assert.AreEqual(DayType.Weekday, calendarThursday.CurrentDate.DayType);
             Assert.AreEqual(DayType.Weekday, calendarFriday.CurrentDate.DayType);
         }
+
+        [Test]
+        public void Date_ContainsSeasons_Success() {
+            var firstDayOfSpring = new Date(1, 3, 1);
+            var lastDayOfSpring = new Date(31, 5, 1);
+            var firstDayOfSummer = new Date(1, 6, 1);
+            var lastDayOfSummer = new Date(31, 8, 1);
+            var firstDayOfAutumn = new Date(1, 9, 1);
+            var lastDayOfAutumn = new Date(30, 11, 1);
+            var firstDayOfWinter = new Date(1, 12, 1);
+            var lastDayOfWinter = new Date(28, 2, 1);
+            Assert.AreEqual(Season.Spring, firstDayOfSpring.Season);
+            Assert.AreEqual(Season.Spring, lastDayOfSpring.Season);
+            Assert.AreEqual(Season.Summer, firstDayOfSummer.Season);
+            Assert.AreEqual(Season.Summer, lastDayOfSummer.Season);
+            Assert.AreEqual(Season.Autumn, firstDayOfAutumn.Season);
+            Assert.AreEqual(Season.Autumn, lastDayOfAutumn.Season);
+            Assert.AreEqual(Season.Winter, firstDayOfWinter.Season);
+            Assert.AreEqual(Season.Winter, lastDayOfWinter.Season);
+        }
     }
 }

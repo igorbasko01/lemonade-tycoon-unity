@@ -19,6 +19,14 @@ namespace baskorp.Calendars.Runtime
         Weekday,
         Weekend
     }
+
+    public enum Season
+    {
+        Spring,
+        Summer,
+        Autumn,
+        Winter
+    }
     
     public class Date
     {
@@ -27,6 +35,22 @@ namespace baskorp.Calendars.Runtime
         public int Year { get; private set; }
         public DayType DayType => WeekDay == WeekDay.Saturday || WeekDay == WeekDay.Sunday ? DayType.Weekend : DayType.Weekday;
         public WeekDay WeekDay => (WeekDay) ((_daysInYear * (Year - 1) + SumOfDaysUpToMonth(Month) + (Day - 1)) % 7);
+        public Season Season => Month switch
+        {
+            12 => Season.Winter,
+            1 => Season.Winter,
+            2 => Season.Winter,
+            3 => Season.Spring,
+            4 => Season.Spring,
+            5 => Season.Spring,
+            6 => Season.Summer,
+            7 => Season.Summer,
+            8 => Season.Summer,
+            9 => Season.Autumn,
+            10 => Season.Autumn,
+            11 => Season.Autumn,
+            _ => Season.Winter
+        };
         public static readonly Dictionary<int, int> DaysInMonth = new()
         {
             {1, 31},
