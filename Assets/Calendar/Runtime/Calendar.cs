@@ -79,6 +79,22 @@ namespace baskorp.Calendars.Runtime
             Month = month;
             Year = year;
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            var other = (Date) obj;
+            return Day == other.Day && Month == other.Month && Year == other.Year;
+        }
+
+        public override int GetHashCode()
+        {
+            return Day.GetHashCode() ^ Month.GetHashCode() ^ Year.GetHashCode();
+        }
     }
 
     /**
