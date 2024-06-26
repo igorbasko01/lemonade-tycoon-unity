@@ -10,5 +10,24 @@ namespace baskorp.Wallets.Runtime {
             }
             Balance = initialBalance;
         }
+
+        public void Deposit(float amount) 
+        {
+            if (amount < 0) {
+                throw new System.ArgumentException("Amount cannot be negative");
+            }
+            Balance += amount;
+        }
+
+        public void Withdraw(float amount) 
+        {
+            if (amount < 0) {
+                throw new System.ArgumentException("Amount cannot be negative");
+            }
+            if (Balance < amount) {
+                throw new System.ArgumentException("Not enough balance");
+            }
+            Balance -= amount;
+        }
     }
 }
