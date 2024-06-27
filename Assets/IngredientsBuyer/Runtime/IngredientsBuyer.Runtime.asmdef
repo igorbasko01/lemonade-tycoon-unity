@@ -1,0 +1,18 @@
+{
+    "name": "IngredientsBuyer.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "IngredientsInventory.Runtime",
+        "Wallet.Runtime",
+        "IngredientsCatalog.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

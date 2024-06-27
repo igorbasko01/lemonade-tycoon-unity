@@ -11,24 +11,24 @@ namespace baskorp.IngredientsCatalog.Runtime
         {
             AvailableIngredients = ingredientsDatabase;
         }
-        public PurchaseResult PurchaseIngredient(SellableIngredient ingredient, float quantity, ref float playerMoney)
+        
+        public PurchaseResult PurchaseIngredient(QuantifiableIngredient ingredient, float playerMoney)
         {
-            var ingredientFound = AvailableIngredients.Find(i => i == ingredient);
+            var ingredientFound = AvailableIngredients.Find(i => i.Metadata.Equals(ingredient.Metadata));
             if (ingredientFound == null)
             {
                 return new PurchaseResult(PurchaseResultType.IngredientNotFound);
             }
-            if (quantity <= 0)
+            if (ingredient.Quantity <= 0)
             {
                 return new PurchaseResult(PurchaseResultType.InvalidQuantity);
             }
-            var totalCost = ingredient.Price * quantity;
+            var totalCost = ingredientFound.Price * ingredient.Quantity;
             if (playerMoney < totalCost)
             {
                 return new PurchaseResult(PurchaseResultType.NotEnoughMoney);
             }
-            playerMoney -= totalCost;
-            var soldIngredient = QuantifiableIngredient.Create(ingredient.Metadata, quantity);
+            var soldIngredient = QuantifiableIngredient.Create(ingredient.Metadata, ingredient.Quantity);
             return new PurchaseResult(PurchaseResultType.Success, soldIngredient);
         }
 
@@ -37,7 +37,7 @@ namespace baskorp.IngredientsCatalog.Runtime
             float totalCost = 0;
             foreach (var ingredient in ingredients)
             {
-                var ingredientFound = AvailableIngredients.Find(i => i.Metadata.Name == ingredient.Metadata.Name);
+                var ingredientFound = AvailableIngredients.Find(i => i.Metadata.Equals(ingredient.Metadata));
                 if (ingredientFound == null)
                 {
                     return new TotalCostResult(0, PurchaseResultType.IngredientNotFound);

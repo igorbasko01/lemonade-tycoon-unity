@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
 using baskorp.IngredientsCatalog.Runtime;
 
 namespace baskorp.IngredientsCatalog.Tests
@@ -31,18 +29,18 @@ namespace baskorp.IngredientsCatalog.Tests
         [Test]
         public void PurchaseIngredient_Success()
         {
-            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemonSellable, 10f, ref _playerMoney);
+            var lemonQuantifiable = QuantifiableIngredient.Create(lemon, 10f);
+            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemonQuantifiable, _playerMoney);
             Assert.AreEqual(PurchaseResultType.Success, purchaseResult.ResultType);
-            Assert.AreEqual(0f, _playerMoney);
             Assert.AreEqual(10f, purchaseResult.PurchasedIngredient.Quantity);
         }
 
         [Test]
         public void PurchaseIngredient_NotEnoughMoney()
         {
-            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemonSellable, 11f, ref _playerMoney);
+            var lemonQuantifiable = QuantifiableIngredient.Create(lemon, 11f);
+            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemonQuantifiable, _playerMoney);
             Assert.AreEqual(PurchaseResultType.NotEnoughMoney, purchaseResult.ResultType);
-            Assert.AreEqual(100f, _playerMoney);
             Assert.IsNull(purchaseResult.PurchasedIngredient);
         }
 
@@ -50,41 +48,22 @@ namespace baskorp.IngredientsCatalog.Tests
         public void PurchaseIngredient_IngredientNotFound()
         {
             var newIngredientMetadata = IngredientMetadata.Create("New Ingredient");
-            var newSellableIngredient = SellableIngredient.Create(newIngredientMetadata, 15f);
-            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(newSellableIngredient, 3f, ref _playerMoney);
+            var newIngredientQuantifiable = QuantifiableIngredient.Create(newIngredientMetadata, 15f);
+            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(newIngredientQuantifiable, _playerMoney);
             Assert.AreEqual(PurchaseResultType.IngredientNotFound, purchaseResult.ResultType);
-            Assert.AreEqual(100f, _playerMoney);
-            Assert.IsNull(purchaseResult.PurchasedIngredient);
-        }
-
-        [Test]
-        public void PurchaseIngredient_QuantityZero()
-        {
-            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemonSellable, 0f, ref _playerMoney);
-            Assert.AreEqual(PurchaseResultType.InvalidQuantity, purchaseResult.ResultType);
-            Assert.AreEqual(100f, _playerMoney);
-            Assert.IsNull(purchaseResult.PurchasedIngredient);
-        }
-
-        [Test]
-        public void PurchaseIngredient_NegativeQuantity()
-        {
-            PurchaseResult purchaseResult = _ingredientsCatalogManager.PurchaseIngredient(lemonSellable, -1f, ref _playerMoney);
-            Assert.AreEqual(PurchaseResultType.InvalidQuantity, purchaseResult.ResultType);
-            Assert.AreEqual(100f, _playerMoney);
             Assert.IsNull(purchaseResult.PurchasedIngredient);
         }
 
         [Test]
         public void PurchaseIngredient_MultiplePurchases()
         {
-            PurchaseResult purchaseResult1 = _ingredientsCatalogManager.PurchaseIngredient(lemonSellable, 5f, ref _playerMoney);
+            var lemonQuantifiable = QuantifiableIngredient.Create(lemon, 5f);
+            PurchaseResult purchaseResult1 = _ingredientsCatalogManager.PurchaseIngredient(lemonQuantifiable, _playerMoney);
             Assert.AreEqual(PurchaseResultType.Success, purchaseResult1.ResultType);
-            Assert.AreEqual(50f, _playerMoney);
             Assert.AreEqual(5f, purchaseResult1.PurchasedIngredient.Quantity);
-            PurchaseResult purchaseResult2 = _ingredientsCatalogManager.PurchaseIngredient(sugarSellable, 3f, ref _playerMoney);
+            var sugarQuantifiable = QuantifiableIngredient.Create(sugar, 3f);
+            PurchaseResult purchaseResult2 = _ingredientsCatalogManager.PurchaseIngredient(sugarQuantifiable, _playerMoney);
             Assert.AreEqual(PurchaseResultType.Success, purchaseResult2.ResultType);
-            Assert.AreEqual(35f, _playerMoney);
             Assert.AreEqual(3f, purchaseResult2.PurchasedIngredient.Quantity);
         }
 
