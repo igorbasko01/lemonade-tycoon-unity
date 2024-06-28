@@ -64,5 +64,61 @@ namespace baskorp.IngredientsBuyers.Tests
             Assert.AreEqual(0, inventory.Ingredients.Count);
             Assert.AreEqual(100f, wallet.Balance);
         }
+
+        [Test]
+        public void IngredientsBuyer_Buy_MultipleIngredients() {
+            var buyer = new IngredientsBuyer();
+            var inventory = new IngredientsInventoryManager();
+            var catalog = new IngredientsCatalogManager(_catalogIngredients);
+            var wallet = new Wallet(100);
+            var ingredientsToBuy = new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 3f)
+            };
+
+            var result = buyer.Buy(ingredientsToBuy, inventory, catalog, wallet);
+            Assert.AreEqual(PurchaseResultType.Success, result.ResultType);
+            Assert.AreEqual(2, inventory.Ingredients.Count);
+            Assert.AreEqual(5f, inventory.Ingredients[0].Quantity);
+            Assert.AreEqual("Lemon", inventory.Ingredients[0].Metadata.Name);
+            Assert.AreEqual(3f, inventory.Ingredients[1].Quantity);
+            Assert.AreEqual("Sugar", inventory.Ingredients[1].Metadata.Name);
+            Assert.AreEqual(35f, wallet.Balance);
+        }
+
+        [Test]
+        public void IngredientsBuyer_Buy_MultipleIngredients_NotEnoughMoney() {
+            var buyer = new IngredientsBuyer();
+            var inventory = new IngredientsInventoryManager();
+            var catalog = new IngredientsCatalogManager(_catalogIngredients);
+            var wallet = new Wallet(1);
+            var ingredientsToBuy = new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 3f)
+            };
+
+            var result = buyer.Buy(ingredientsToBuy, inventory, catalog, wallet);
+            Assert.AreEqual(PurchaseResultType.NotEnoughMoney, result.ResultType);
+            Assert.AreEqual(0, inventory.Ingredients.Count);
+            Assert.AreEqual(1f, wallet.Balance);
+        }
+
+        [Test]
+        public void IngredientsBuyer_Buy_MultipleIngredients_IngredientNotFound() {
+            var buyer = new IngredientsBuyer();
+            var inventory = new IngredientsInventoryManager();
+            var catalog = new IngredientsCatalogManager(_catalogIngredients);
+            var wallet = new Wallet(100);
+            var ingredientsToBuy = new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 3f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("New Ingredient"), 2f)
+            };
+
+            var result = buyer.Buy(ingredientsToBuy, inventory, catalog, wallet);
+            Assert.AreEqual(PurchaseResultType.IngredientNotFound, result.ResultType);
+            Assert.AreEqual(0, inventory.Ingredients.Count);
+            Assert.AreEqual(100f, wallet.Balance);
+        }
     }
 }

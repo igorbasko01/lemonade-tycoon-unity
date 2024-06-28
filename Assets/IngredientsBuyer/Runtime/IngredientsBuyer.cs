@@ -25,5 +25,30 @@ namespace baskorp.IngredientsBuyers.Runtime
             inventory.AddIngredient(purchaseResult.PurchasedIngredient);
             return new PurchaseResult(PurchaseResultType.Success);
         }
+
+        public PurchaseResult Buy(List<QuantifiableIngredient> ingredients, IngredientsInventoryManager inventory, IngredientsCatalogManager catalog, Wallet wallet)
+        {
+            var totalCostResult = catalog.CalculateTotalCost(ingredients);
+            if (totalCostResult.ResultType != PurchaseResultType.Success)
+            {
+                return new PurchaseResult(totalCostResult.ResultType);
+            }
+
+            foreach (var ingredient in ingredients)
+            {
+                var purchaseResult = catalog.PurchaseIngredient(ingredient, wallet.Balance);
+                if (purchaseResult.ResultType != PurchaseResultType.Success)
+                {
+                    return new PurchaseResult(purchaseResult.ResultType, ingredient);
+                }
+            }
+
+            wallet.Withdraw(totalCostResult.TotalCost);
+            foreach (var ingredient in ingredients)
+            {
+                inventory.AddIngredient(ingredient);
+            }
+            return new PurchaseResult(PurchaseResultType.Success);
+        }
     }
 }
