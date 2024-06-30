@@ -2,7 +2,8 @@
     "name": "Recipe.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:e32e60dcc78a24289bb274528d2093a6"
+        "GUID:e32e60dcc78a24289bb274528d2093a6",
+        "Calendar.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Recipe/Tests/RecipeTests.cs" />
+    <Compile Include="Assets/Recipe/Tests/RecipeEvaluatorStrategyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Recipe/Tests/Recipe.Tests.asmdef" />
@@ -948,6 +949,7 @@
   <ItemGroup>
     <ProjectReference Include="IngredientsCatalog.Runtime.csproj" />
     <ProjectReference Include="Recipe.Runtime.csproj" />
+    <ProjectReference Include="Calendar.Runtime.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

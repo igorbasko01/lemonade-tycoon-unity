@@ -5,7 +5,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "IngredientsCatalog.Runtime",
-        "Recipe.Runtime"
+        "Recipe.Runtime",
+        "Calendar.Runtime"
     ],
     "includePlatforms": [
         "Editor"
