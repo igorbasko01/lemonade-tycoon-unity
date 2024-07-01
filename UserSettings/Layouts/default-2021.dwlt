@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1440
     height: 776
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Test Runner
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 47
+  controlID: 32
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -68,15 +68,15 @@ MonoBehaviour:
     y: 0
     width: 498
     height: 726
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 15}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -122,14 +122,14 @@ MonoBehaviour:
     y: 431
     width: 942
     height: 295
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 48
+  controlID: 20
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 17
+  controlID: 21
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 929
+    ID: 718
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -375,7 +375,7 @@ MonoBehaviour:
       name: Lemonade Tycoon
       fullName: Lemonade Tycoon
       resultStatus: 1
-      duration: 0.0931812
+      duration: 0.3914589
       messages: 
       output: 
       stacktrace: 
@@ -387,11 +387,647 @@ MonoBehaviour:
       parentId: 
       parentUniqueId: 
     - id: 1003
+      uniqueId: '[Calendar.Tests.dll][suite]'
+      name: Calendar.Tests.dll
+      fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Calendar.Tests.dll
+      resultStatus: 1
+      duration: 0.1353425
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Lemonade Tycoon][suite]'
+    - id: 1004
+      uniqueId: Calendar.Tests.dll/[baskorp][suite]
+      name: baskorp
+      fullName: baskorp
+      resultStatus: 1
+      duration: 0.1348638
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[Calendar.Tests.dll][suite]'
+    - id: 1005
+      uniqueId: Calendar.Tests.dll/baskorp/[Calendars][suite]
+      name: Calendars
+      fullName: baskorp.Calendars
+      resultStatus: 1
+      duration: 0.1310999
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: Calendar.Tests.dll/[baskorp][suite]
+    - id: 1006
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/[Calendar.Tests][baskorp.Calendars.Tests][suite]
+      name: Tests
+      fullName: baskorp.Calendars.Tests
+      resultStatus: 1
+      duration: 0.1273019
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: Calendar.Tests.dll/baskorp/[Calendars][suite]
+    - id: 1001
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+      name: CalendarTests
+      fullName: baskorp.Calendars.Tests.CalendarTests
+      resultStatus: 1
+      duration: 0.1230263
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/[Calendar.Tests][baskorp.Calendars.Tests][suite]
+    - id: 1022
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Calendar_NonWeekendDays_AreWeekdays_Success]
+      name: Calendar_NonWeekendDays_AreWeekdays_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_NonWeekendDays_AreWeekdays_Success
+      resultStatus: 1
+      duration: 0.0494026
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1020
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfFebuary_Success]
+      name: Calendar_ProgressOneDay_EndOfFebuary_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfFebuary_Success
+      resultStatus: 1
+      duration: 0.0006646
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1018
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfMonth_Success]
+      name: Calendar_ProgressOneDay_EndOfMonth_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfMonth_Success
+      resultStatus: 1
+      duration: 0.0000953
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1019
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfYear_Success]
+      name: Calendar_ProgressOneDay_EndOfYear_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfYear_Success
+      resultStatus: 1
+      duration: 0.0000869
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1017
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_Success]
+      name: Calendar_ProgressOneDay_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_Success
+      resultStatus: 1
+      duration: 0.000095
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1021
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Calendar_SaturdayAndSunday_AreWeekends_Success]
+      name: Calendar_SaturdayAndSunday_AreWeekends_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_SaturdayAndSunday_AreWeekends_Success
+      resultStatus: 1
+      duration: 0.0000627
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1011
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_DayLowerThan1_Exception]
+      name: Create_Calendar_CustomDate_DayLowerThan1_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_DayLowerThan1_Exception
+      resultStatus: 1
+      duration: 0.022038
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1012
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_MonthLowerThan1_Exception]
+      name: Create_Calendar_CustomDate_MonthLowerThan1_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_MonthLowerThan1_Exception
+      resultStatus: 1
+      duration: 0.0000744
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1003
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_Success]
+      name: Create_Calendar_CustomDate_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_Success
+      resultStatus: 1
+      duration: 0.0000744
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1015
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_MondayWeekLater]
+      name: Create_Calendar_CustomDate_WeekDay_MondayWeekLater
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_MondayWeekLater
+      resultStatus: 1
+      duration: 0.0000453
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1015
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_Sunday]
+      name: Create_Calendar_CustomDate_WeekDay_Sunday
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_Sunday
+      resultStatus: 1
+      duration: 0.0000446
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1014
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_Wednesday]
+      name: Create_Calendar_CustomDate_WeekDay_Wednesday
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_Wednesday
+      resultStatus: 1
+      duration: 0.0000418
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1004
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDay_Exception]
+      name: Create_Calendar_CustomDate_WrongDay_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDay_Exception
+      resultStatus: 1
+      duration: 0.000065
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1007
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInApril_Exception]
+      name: Create_Calendar_CustomDate_WrongDayInApril_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInApril_Exception
+      resultStatus: 1
+      duration: 0.0000696
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1006
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInFebruary_Exception]
+      name: Create_Calendar_CustomDate_WrongDayInFebruary_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInFebruary_Exception
+      resultStatus: 1
+      duration: 0.0000561
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1008
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInJune_Exception]
+      name: Create_Calendar_CustomDate_WrongDayInJune_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInJune_Exception
+      resultStatus: 1
+      duration: 0.0000604
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1010
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInNovember_Exception]
+      name: Create_Calendar_CustomDate_WrongDayInNovember_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInNovember_Exception
+      resultStatus: 1
+      duration: 0.0000569
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1009
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInSeptember_Exception]
+      name: Create_Calendar_CustomDate_WrongDayInSeptember_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInSeptember_Exception
+      resultStatus: 1
+      duration: 0.0000558
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1005
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongMonth_Exception]
+      name: Create_Calendar_CustomDate_WrongMonth_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongMonth_Exception
+      resultStatus: 1
+      duration: 0.0000566
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1013
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_YearLowerThan1_Exception]
+      name: Create_Calendar_CustomDate_YearLowerThan1_Exception
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_YearLowerThan1_Exception
+      resultStatus: 1
+      duration: 0.0000546
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1002
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Create_Calendar_Success]
+      name: Create_Calendar_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_Success
+      resultStatus: 1
+      duration: 0.000083
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1023
+      uniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/CalendarTests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests.Date_ContainsSeasons_Success]
+      name: Date_ContainsSeasons_Success
+      fullName: baskorp.Calendars.Tests.CalendarTests.Date_ContainsSeasons_Success
+      resultStatus: 1
+      duration: 0.0001703
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1030
+      uniqueId: '[IngredientsBuyer.Tests.dll][suite]'
+      name: IngredientsBuyer.Tests.dll
+      fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/IngredientsBuyer.Tests.dll
+      resultStatus: 1
+      duration: 0.0317887
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Lemonade Tycoon][suite]'
+    - id: 1031
+      uniqueId: IngredientsBuyer.Tests.dll/[baskorp][suite]
+      name: baskorp
+      fullName: baskorp
+      resultStatus: 1
+      duration: 0.0199638
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1030
+      parentUniqueId: '[IngredientsBuyer.Tests.dll][suite]'
+    - id: 1032
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/[IngredientsBuyers][suite]
+      name: IngredientsBuyers
+      fullName: baskorp.IngredientsBuyers
+      resultStatus: 1
+      duration: 0.0147414
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: IngredientsBuyer.Tests.dll/[baskorp][suite]
+    - id: 1033
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests][suite]
+      name: Tests
+      fullName: baskorp.IngredientsBuyers.Tests
+      resultStatus: 1
+      duration: 0.0110625
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1032
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/[IngredientsBuyers][suite]
+    - id: 1028
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+      name: IngredientsBuyerTests
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests
+      resultStatus: 1
+      duration: 0.0073878
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests][suite]
+    - id: 1029
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/IngredientsBuyerTests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy]
+      name: IngredientsBuyer_Buy
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy
+      resultStatus: 1
+      duration: 0.0014383
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+    - id: 1031
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/IngredientsBuyerTests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_IngredientNotFound]
+      name: IngredientsBuyer_Buy_IngredientNotFound
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_IngredientNotFound
+      resultStatus: 1
+      duration: 0.0001402
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+    - id: 1032
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/IngredientsBuyerTests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients]
+      name: IngredientsBuyer_Buy_MultipleIngredients
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients
+      resultStatus: 1
+      duration: 0.0004203
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+    - id: 1034
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/IngredientsBuyerTests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients_IngredientNotFound]
+      name: IngredientsBuyer_Buy_MultipleIngredients_IngredientNotFound
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients_IngredientNotFound
+      resultStatus: 1
+      duration: 0.0002103
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+    - id: 1033
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/IngredientsBuyerTests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients_NotEnoughMoney]
+      name: IngredientsBuyer_Buy_MultipleIngredients_NotEnoughMoney
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients_NotEnoughMoney
+      resultStatus: 1
+      duration: 0.000175
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+    - id: 1030
+      uniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/IngredientsBuyerTests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_NotEnoughMoney]
+      name: IngredientsBuyer_Buy_NotEnoughMoney
+      fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_NotEnoughMoney
+      resultStatus: 1
+      duration: 0.0001155
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: IngredientsBuyer.Tests.dll/baskorp/IngredientsBuyers/Tests/[IngredientsBuyer.Tests][baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests][suite]
+    - id: 1003
       uniqueId: '[IngredientsCatalog.Tests.dll][suite]'
       name: IngredientsCatalog.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/IngredientsCatalog.Tests.dll
       resultStatus: 1
-      duration: 0.0534515
+      duration: 0.0254951
       messages: 
       output: 
       stacktrace: 
@@ -407,7 +1043,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0526046
+      duration: 0.0233716
       messages: 
       output: 
       stacktrace: 
@@ -423,7 +1059,7 @@ MonoBehaviour:
       name: IngredientsCatalog
       fullName: baskorp.IngredientsCatalog
       resultStatus: 1
-      duration: 0.0487415
+      duration: 0.019675
       messages: 
       output: 
       stacktrace: 
@@ -439,7 +1075,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.IngredientsCatalog.Tests
       resultStatus: 1
-      duration: 0.0452809
+      duration: 0.0159634
       messages: 
       output: 
       stacktrace: 
@@ -455,7 +1091,7 @@ MonoBehaviour:
       name: IngredientsCatalogTests
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests
       resultStatus: 1
-      duration: 0.0248892
+      duration: 0.0058672
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +1107,7 @@ MonoBehaviour:
       name: CalculateTotalCost_IngredientNotFound
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.CalculateTotalCost_IngredientNotFound
       resultStatus: 1
-      duration: 0.0129943
+      duration: 0.0007139
       messages: 
       output: 
       stacktrace: 
@@ -488,7 +1124,7 @@ MonoBehaviour:
       name: CalculateTotalCost_SingleIngredient_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.CalculateTotalCost_SingleIngredient_Success
       resultStatus: 1
-      duration: 0.0001732
+      duration: 0.0001385
       messages: 
       output: 
       stacktrace: 
@@ -505,7 +1141,7 @@ MonoBehaviour:
       name: CalculateTotalCost_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.CalculateTotalCost_Success
       resultStatus: 1
-      duration: 0.0001618
+      duration: 0.0001614
       messages: 
       output: 
       stacktrace: 
@@ -522,7 +1158,7 @@ MonoBehaviour:
       name: PurchaseIngredient_IngredientNotFound
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_IngredientNotFound
       resultStatus: 1
-      duration: 0.0002932
+      duration: 0.0002089
       messages: 
       output: 
       stacktrace: 
@@ -539,24 +1175,7 @@ MonoBehaviour:
       name: PurchaseIngredient_MultiplePurchases
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_MultiplePurchases
       resultStatus: 1
-      duration: 0.0001337
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests][suite]
-    - id: 1006
-      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsCatalogTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_NegativeQuantity]
-      name: PurchaseIngredient_NegativeQuantity
-      fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_NegativeQuantity
-      resultStatus: 1
-      duration: 0.0000901
+      duration: 0.0001628
       messages: 
       output: 
       stacktrace: 
@@ -573,24 +1192,7 @@ MonoBehaviour:
       name: PurchaseIngredient_NotEnoughMoney
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_NotEnoughMoney
       resultStatus: 1
-      duration: 0.0000866
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests][suite]
-    - id: 1005
-      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsCatalogTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_QuantityZero]
-      name: PurchaseIngredient_QuantityZero
-      fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_QuantityZero
-      resultStatus: 1
-      duration: 0.0000918
+      duration: 0.0000991
       messages: 
       output: 
       stacktrace: 
@@ -607,7 +1209,7 @@ MonoBehaviour:
       name: PurchaseIngredient_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_Success
       resultStatus: 1
-      duration: 0.0000933
+      duration: 0.0001064
       messages: 
       output: 
       stacktrace: 
@@ -624,7 +1226,7 @@ MonoBehaviour:
       name: IngredientsTests
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests
       resultStatus: 1
-      duration: 0.0161099
+      duration: 0.0062913
       messages: 
       output: 
       stacktrace: 
@@ -635,12 +1237,12 @@ MonoBehaviour:
       categories: []
       parentId: 1013
       parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests][suite]
-    - id: 1009
-      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_Success]
-      name: Create_Ingredient_Success
-      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_Success
+    - id: 1015
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNegativePrice]
+      name: Create_Ingredient_WithNegativePrice
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNegativePrice
       resultStatus: 1
-      duration: 0.0001196
+      duration: 0.0001418
       messages: 
       output: 
       stacktrace: 
@@ -650,14 +1252,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
+      parentId: 1011
       parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
     - id: 1010
       uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNegativeQuantity]
       name: Create_Ingredient_WithNegativeQuantity
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNegativeQuantity
       resultStatus: 1
-      duration: 0.0032363
+      duration: 0.0000945
       messages: 
       output: 
       stacktrace: 
@@ -668,13 +1270,64 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1008
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1017
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNullMetadata]
+      name: Create_Ingredient_WithNullMetadata
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNullMetadata
+      resultStatus: 1
+      duration: 0.0002093
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1018
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNullMetadata_Sellable]
+      name: Create_Ingredient_WithNullMetadata_Sellable
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNullMetadata_Sellable
+      resultStatus: 1
+      duration: 0.0000971
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1016
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithZeroPrice]
+      name: Create_Ingredient_WithZeroPrice
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithZeroPrice
+      resultStatus: 1
+      duration: 0.0000791
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
       parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
     - id: 1011
       uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithZeroQuantity]
       name: Create_Ingredient_WithZeroQuantity
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithZeroQuantity
       resultStatus: 1
-      duration: 0.0001065
+      duration: 0.000079
       messages: 
       output: 
       stacktrace: 
@@ -686,12 +1339,80 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1008
       parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1012
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_IngredientMetadata_Success]
+      name: Create_IngredientMetadata_Success
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_IngredientMetadata_Success
+      resultStatus: 1
+      duration: 0.0000515
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1020
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.IngredientMetada_Equals_Fail]
+      name: IngredientMetada_Equals_Fail
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.IngredientMetada_Equals_Fail
+      resultStatus: 1
+      duration: 0.0009285
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1019
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.IngredientMetada_Equals_Success]
+      name: IngredientMetada_Equals_Success
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.IngredientMetada_Equals_Success
+      resultStatus: 1
+      duration: 0.0000701
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
+    - id: 1021
+      uniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/IngredientsTests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests.QuantifiableIngredient_Equals_Success]
+      name: QuantifiableIngredient_Equals_Success
+      fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.QuantifiableIngredient_Equals_Success
+      resultStatus: 1
+      duration: 0.0001164
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: IngredientsCatalog.Tests.dll/baskorp/IngredientsCatalog/Tests/[IngredientsCatalog.Tests][baskorp.IngredientsCatalog.Tests.IngredientsTests][suite]
     - id: 1013
       uniqueId: '[IngredientsInventory.Tests.dll][suite]'
       name: IngredientsInventory.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/IngredientsInventory.Tests.dll
       resultStatus: 1
-      duration: 0.0239693
+      duration: 0.0188868
       messages: 
       output: 
       stacktrace: 
@@ -707,7 +1428,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.017801
+      duration: 0.0174083
       messages: 
       output: 
       stacktrace: 
@@ -723,7 +1444,7 @@ MonoBehaviour:
       name: IngredientsInventory
       fullName: baskorp.IngredientsInventory
       resultStatus: 1
-      duration: 0.0141939
+      duration: 0.013979
       messages: 
       output: 
       stacktrace: 
@@ -739,7 +1460,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.IngredientsInventory.Tests
       resultStatus: 1
-      duration: 0.0104871
+      duration: 0.010267
       messages: 
       output: 
       stacktrace: 
@@ -755,7 +1476,7 @@ MonoBehaviour:
       name: IngredientsInventoryTests
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests
       resultStatus: 1
-      duration: 0.006814
+      duration: 0.0065922
       messages: 
       output: 
       stacktrace: 
@@ -771,7 +1492,7 @@ MonoBehaviour:
       name: AddIngredient_IngredientAlreadyExists
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.AddIngredient_IngredientAlreadyExists
       resultStatus: 1
-      duration: 0.0006685
+      duration: 0.0002585
       messages: 
       output: 
       stacktrace: 
@@ -788,7 +1509,7 @@ MonoBehaviour:
       name: AddIngredient_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.AddIngredient_Success
       resultStatus: 1
-      duration: 0.000116
+      duration: 0.0001313
       messages: 
       output: 
       stacktrace: 
@@ -805,7 +1526,7 @@ MonoBehaviour:
       name: GetIngredientQuantity_IngredientNotFound_ReturnZeroQuantity
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.GetIngredientQuantity_IngredientNotFound_ReturnZeroQuantity
       resultStatus: 1
-      duration: 0.0001126
+      duration: 0.0001459
       messages: 
       output: 
       stacktrace: 
@@ -822,7 +1543,7 @@ MonoBehaviour:
       name: GetIngredientQuantity_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.GetIngredientQuantity_Success
       resultStatus: 1
-      duration: 0.0000881
+      duration: 0.0000988
       messages: 
       output: 
       stacktrace: 
@@ -839,7 +1560,7 @@ MonoBehaviour:
       name: UseIngredients_IngredientNotFound
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_IngredientNotFound
       resultStatus: 1
-      duration: 0.0001755
+      duration: 0.0001921
       messages: 
       output: 
       stacktrace: 
@@ -856,7 +1577,7 @@ MonoBehaviour:
       name: UseIngredients_MultipleIngredients_IngredientNotFound
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_IngredientNotFound
       resultStatus: 1
-      duration: 0.0004069
+      duration: 0.0004501
       messages: 
       output: 
       stacktrace: 
@@ -873,7 +1594,7 @@ MonoBehaviour:
       name: UseIngredients_MultipleIngredients_NotEnoughQuantity
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_NotEnoughQuantity
       resultStatus: 1
-      duration: 0.0001907
+      duration: 0.0002055
       messages: 
       output: 
       stacktrace: 
@@ -890,7 +1611,7 @@ MonoBehaviour:
       name: UseIngredients_MultipleIngredients_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_Success
       resultStatus: 1
-      duration: 0.0001785
+      duration: 0.0001798
       messages: 
       output: 
       stacktrace: 
@@ -907,7 +1628,7 @@ MonoBehaviour:
       name: UseIngredients_NotEnoughQuantity
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_NotEnoughQuantity
       resultStatus: 1
-      duration: 0.0001122
+      duration: 0.0001302
       messages: 
       output: 
       stacktrace: 
@@ -924,7 +1645,7 @@ MonoBehaviour:
       name: UseIngredients_PartialQuantity_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_PartialQuantity_Success
       resultStatus: 1
-      duration: 0.0001065
+      duration: 0.0001262
       messages: 
       output: 
       stacktrace: 
@@ -941,7 +1662,7 @@ MonoBehaviour:
       name: UseIngredients_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_Success
       resultStatus: 1
-      duration: 0.0000871
+      duration: 0.0001217
       messages: 
       output: 
       stacktrace: 
@@ -953,30 +1674,1103 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1012
       parentUniqueId: IngredientsInventory.Tests.dll/baskorp/IngredientsInventory/Tests/[IngredientsInventory.Tests][baskorp.IngredientsInventory.Tests.IngredientsInventoryTests][suite]
-    m_ResultText: "UseIngredients_MultipleIngredients_ZeroQuantity (0.001s)\n---\nSystem.ArgumentException
-      : Quantity must be greater than 0\n---\nat baskorp.IngredientsCatalog.Runtime.Ingredient..ctor
-      (baskorp.IngredientsCatalog.Runtime.IngredientSO ingredientData, System.Single
-      quantity) [0x0000e] in /Users/igorbasko/UnityGames/Lemonade Tycoon/Assets/IngredientsCatalog/Runtime/Ingredient.cs:13
-      \n  at baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_ZeroQuantity
-      () [0x0003a] in /Users/igorbasko/UnityGames/Lemonade Tycoon/Assets/IngredientsInventory/Tests/IngredientsInventoryTests.cs:144
-      \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <492e64214f0c42f2b51bf2d39219ebe6>:0"
-    m_ResultStacktrace: "  at baskorp.IngredientsCatalog.Runtime.Ingredient..ctor
-      (baskorp.IngredientsCatalog.Runtime.IngredientSO ingredientData, System.Single
-      quantity) [0x0000e] in /Users/igorbasko/UnityGames/Lemonade Tycoon/Assets/IngredientsCatalog/Runtime/Ingredient.cs:13
-      \n  at baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_ZeroQuantity
-      () [0x0003a] in /Users/igorbasko/UnityGames/Lemonade Tycoon/Assets/IngredientsInventory/Tests/IngredientsInventoryTests.cs:144
-      \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <492e64214f0c42f2b51bf2d39219ebe6>:0 "
+    - id: 1037
+      uniqueId: '[Recipe.Tests.dll][suite]'
+      name: Recipe.Tests.dll
+      fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Recipe.Tests.dll
+      resultStatus: 1
+      duration: 0.0277457
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Lemonade Tycoon][suite]'
+    - id: 1038
+      uniqueId: Recipe.Tests.dll/[baskorp][suite]
+      name: baskorp
+      fullName: baskorp
+      resultStatus: 1
+      duration: 0.0234647
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1037
+      parentUniqueId: '[Recipe.Tests.dll][suite]'
+    - id: 1039
+      uniqueId: Recipe.Tests.dll/baskorp/[Recipes][suite]
+      name: Recipes
+      fullName: baskorp.Recipes
+      resultStatus: 1
+      duration: 0.0198421
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1038
+      parentUniqueId: Recipe.Tests.dll/[baskorp][suite]
+    - id: 1040
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/[Recipe.Tests][baskorp.Recipes.Tests][suite]
+      name: Tests
+      fullName: baskorp.Recipes.Tests
+      resultStatus: 1
+      duration: 0.0160806
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/[Recipes][suite]
+    - id: 1078
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests][suite]
+      name: RecipeEvaluatorStrategyTests
+      fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests
+      resultStatus: 1
+      duration: 0.0046441
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1100
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/[Recipe.Tests][baskorp.Recipes.Tests][suite]
+    - id: 1079
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeEvaluatorStrategyTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.DayTypeRecipeEvaluatorStrategy_Returns50pctOnWeekdays]
+      name: DayTypeRecipeEvaluatorStrategy_Returns50pctOnWeekdays
+      fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.DayTypeRecipeEvaluatorStrategy_Returns50pctOnWeekdays
+      resultStatus: 1
+      duration: 0.0008616
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests][suite]
+    - id: 1035
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+      name: RecipeTests
+      fullName: baskorp.Recipes.Tests.RecipeTests
+      resultStatus: 1
+      duration: 0.0076256
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/[Recipe.Tests][baskorp.Recipes.Tests][suite]
+    - id: 1036
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients]
+      name: RecipeInitializedWithANameAndAListOfIngredients
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients
+      resultStatus: 1
+      duration: 0.0001557
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1045
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreDifferent_Success]
+      name: RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreDifferent_Success
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreDifferent_Success
+      resultStatus: 1
+      duration: 0.0001597
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1043
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreTheSame_ThrowArgumentException]
+      name: RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreTheSame_ThrowArgumentException
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreTheSame_ThrowArgumentException
+      resultStatus: 1
+      duration: 0.0003399
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1044
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_SomeIngredientsAreSame_ThrowArgumentException]
+      name: RecipeInitializedWithANameAndAListOfIngredients_SomeIngredientsAreSame_ThrowArgumentException
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_SomeIngredientsAreSame_ThrowArgumentException
+      resultStatus: 1
+      duration: 0.0002093
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1037
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAnEmptyListOfIngredients_ThrowsArgumentException]
+      name: RecipeInitializedWithANameAndAnEmptyListOfIngredients_ThrowsArgumentException
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAnEmptyListOfIngredients_ThrowsArgumentException
+      resultStatus: 1
+      duration: 0.0000952
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1038
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndNullListOfIngredients_ThrowsArgumentException]
+      name: RecipeInitializedWithANameAndNullListOfIngredients_ThrowsArgumentException
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndNullListOfIngredients_ThrowsArgumentException
+      resultStatus: 1
+      duration: 0.0000802
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1046
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithAnEmptyName_ThrowsArgumentException]
+      name: RecipeInitializedWithAnEmptyName_ThrowsArgumentException
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithAnEmptyName_ThrowsArgumentException
+      resultStatus: 1
+      duration: 0.0001283
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1047
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANullName_ThrowsArgumentException]
+      name: RecipeInitializedWithANullName_ThrowsArgumentException
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANullName_ThrowsArgumentException
+      resultStatus: 1
+      duration: 0.0001255
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1054
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_EmptyIngredientsList_ReturnsMissingIngredientsList]
+      name: RecipeMake_EmptyIngredientsList_ReturnsMissingIngredientsList
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_EmptyIngredientsList_ReturnsMissingIngredientsList
+      resultStatus: 1
+      duration: 0.0011489
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1052
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_MissingIngredient_ReturnsMissingIngredientsList]
+      name: RecipeMake_MissingIngredient_ReturnsMissingIngredientsList
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_MissingIngredient_ReturnsMissingIngredientsList
+      resultStatus: 1
+      duration: 0.0003244
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1053
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity]
+      name: RecipeMake_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
+      resultStatus: 1
+      duration: 0.0002921
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1055
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_NullIngredientsList_ReturnsMissingIngredientList]
+      name: RecipeMake_NullIngredientsList_ReturnsMissingIngredientList
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_NullIngredientsList_ReturnsMissingIngredientList
+      resultStatus: 1
+      duration: 0.0002546
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1093
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_MissingIngredient_ReturnsMissingIngredientsList]
+      name: RecipeMake_QuantityHigherThanOne_MissingIngredient_ReturnsMissingIngredientsList
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_MissingIngredient_ReturnsMissingIngredientsList
+      resultStatus: 1
+      duration: 0.0002658
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1094
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity]
+      name: RecipeMake_QuantityHigherThanOne_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
+      resultStatus: 1
+      duration: 0.0002713
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1092
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_Success]
+      name: RecipeMake_QuantityHigherThanOne_Success
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_Success
+      resultStatus: 1
+      duration: 0.0004093
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1048
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeMake_WithIngredients_Success]
+      name: RecipeMake_WithIngredients_Success
+      fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_WithIngredients_Success
+      resultStatus: 1
+      duration: 0.0002578
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1092
+      uniqueId: '[Wallet.Tests.dll][suite]'
+      name: Wallet.Tests.dll
+      fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Wallet.Tests.dll
+      resultStatus: 1
+      duration: 0.0214828
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Lemonade Tycoon][suite]'
+    - id: 1093
+      uniqueId: Wallet.Tests.dll/[baskorp][suite]
+      name: baskorp
+      fullName: baskorp
+      resultStatus: 1
+      duration: 0.0176301
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1092
+      parentUniqueId: '[Wallet.Tests.dll][suite]'
+    - id: 1094
+      uniqueId: Wallet.Tests.dll/baskorp/[Wallets][suite]
+      name: Wallets
+      fullName: baskorp.Wallets
+      resultStatus: 1
+      duration: 0.0161898
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1093
+      parentUniqueId: Wallet.Tests.dll/[baskorp][suite]
+    - id: 1095
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/[Wallet.Tests][baskorp.Wallets.Tests][suite]
+      name: Tests
+      fullName: baskorp.Wallets.Tests
+      resultStatus: 1
+      duration: 0.0125295
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Wallet.Tests.dll/baskorp/[Wallets][suite]
+    - id: 1090
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+      name: WalletTests
+      fullName: baskorp.Wallets.Tests.WalletTests
+      resultStatus: 1
+      duration: 0.0082866
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1095
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/[Wallet.Tests][baskorp.Wallets.Tests][suite]
+    - id: 1091
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.Create_Wallet_Success]
+      name: Create_Wallet_Success
+      fullName: baskorp.Wallets.Tests.WalletTests.Create_Wallet_Success
+      resultStatus: 1
+      duration: 0.0002335
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1092
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.Create_Wallet_WithInitialBalance_Success]
+      name: Create_Wallet_WithInitialBalance_Success
+      fullName: baskorp.Wallets.Tests.WalletTests.Create_Wallet_WithInitialBalance_Success
+      resultStatus: 1
+      duration: 0.0000607
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1093
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.Create_Wallet_WithNegativeInitialBalance_Exception]
+      name: Create_Wallet_WithNegativeInitialBalance_Exception
+      fullName: baskorp.Wallets.Tests.WalletTests.Create_Wallet_WithNegativeInitialBalance_Exception
+      resultStatus: 1
+      duration: 0.000209
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1095
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.DepositToWallet_NegativeAmount_Exception]
+      name: DepositToWallet_NegativeAmount_Exception
+      fullName: baskorp.Wallets.Tests.WalletTests.DepositToWallet_NegativeAmount_Exception
+      resultStatus: 1
+      duration: 0.0001075
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1094
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.DpositToWallet_Success]
+      name: DpositToWallet_Success
+      fullName: baskorp.Wallets.Tests.WalletTests.DpositToWallet_Success
+      resultStatus: 1
+      duration: 0.0000509
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1098
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_InsufficientFunds_Exception]
+      name: WithdrawFromWallet_InsufficientFunds_Exception
+      fullName: baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_InsufficientFunds_Exception
+      resultStatus: 1
+      duration: 0.0000746
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1097
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_NegativeAmount_Exception]
+      name: WithdrawFromWallet_NegativeAmount_Exception
+      fullName: baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_NegativeAmount_Exception
+      resultStatus: 1
+      duration: 0.0000773
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1096
+      uniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/WalletTests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_Success]
+      name: WithdrawFromWallet_Success
+      fullName: baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_Success
+      resultStatus: 1
+      duration: 0.0000512
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Wallet.Tests.dll/baskorp/Wallets/Tests/[Wallet.Tests][baskorp.Wallets.Tests.WalletTests][suite]
+    - id: 1092
+      uniqueId: '[Weather.Tests.dll][suite]'
+      name: Weather.Tests.dll
+      fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Weather.Tests.dll
+      resultStatus: 1
+      duration: 0.1143416
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Lemonade Tycoon][suite]'
+    - id: 1093
+      uniqueId: Weather.Tests.dll/[baskorp][suite]
+      name: baskorp
+      fullName: baskorp
+      resultStatus: 1
+      duration: 0.1085289
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1092
+      parentUniqueId: '[Weather.Tests.dll][suite]'
+    - id: 1094
+      uniqueId: Weather.Tests.dll/baskorp/[Weather][suite]
+      name: Weather
+      fullName: baskorp.Weather
+      resultStatus: 1
+      duration: 0.1047866
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1093
+      parentUniqueId: Weather.Tests.dll/[baskorp][suite]
+    - id: 1095
+      uniqueId: Weather.Tests.dll/baskorp/Weather/[Weather.Tests][baskorp.Weather.Tests][suite]
+      name: Tests
+      fullName: baskorp.Weather.Tests
+      resultStatus: 1
+      duration: 0.1010651
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Weather.Tests.dll/baskorp/[Weather][suite]
+    - id: 1090
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+      name: WeatherForecasterTests
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests
+      resultStatus: 1
+      duration: 0.0974231
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1095
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/[Weather.Tests][baskorp.Weather.Tests][suite]
+    - id: 1097
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnClearDayProbability]
+      name: WeatherForecastAutumnClearDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnClearDayProbability
+      resultStatus: 1
+      duration: 0.0093656
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1109
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnColdDayProbability]
+      name: WeatherForecastAutumnColdDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnColdDayProbability
+      resultStatus: 1
+      duration: 0.0068687
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1105
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnHotDayProbability]
+      name: WeatherForecastAutumnHotDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnHotDayProbability
+      resultStatus: 1
+      duration: 0.0094969
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1113
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnMildDayProbability]
+      name: WeatherForecastAutumnMildDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnMildDayProbability
+      resultStatus: 1
+      duration: 0.0040576
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1101
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnRainyDayProbability]
+      name: WeatherForecastAutumnRainyDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnRainyDayProbability
+      resultStatus: 1
+      duration: 0.0039386
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1092
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentDateReturnsDifferentForecast]
+      name: WeatherForecastForDifferentDateReturnsDifferentForecast
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentDateReturnsDifferentForecast
+      resultStatus: 1
+      duration: 0.0001188
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1094
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentMonthReturnsDifferentForecast]
+      name: WeatherForecastForDifferentMonthReturnsDifferentForecast
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentMonthReturnsDifferentForecast
+      resultStatus: 1
+      duration: 0.0000593
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1093
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentYearReturnsDifferentForecast]
+      name: WeatherForecastForDifferentYearReturnsDifferentForecast
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentYearReturnsDifferentForecast
+      resultStatus: 1
+      duration: 0.0000532
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1091
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForSameDateReturnsSameForecast]
+      name: WeatherForecastForSameDateReturnsSameForecast
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForSameDateReturnsSameForecast
+      resultStatus: 1
+      duration: 0.0000564
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1096
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringClearDayProbability]
+      name: WeatherForecastSpringClearDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringClearDayProbability
+      resultStatus: 1
+      duration: 0.0039673
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1108
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringColdDayProbability]
+      name: WeatherForecastSpringColdDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringColdDayProbability
+      resultStatus: 1
+      duration: 0.0039347
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1104
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringHotDayProbability]
+      name: WeatherForecastSpringHotDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringHotDayProbability
+      resultStatus: 1
+      duration: 0.0039558
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1112
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringMildDayProbability]
+      name: WeatherForecastSpringMildDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringMildDayProbability
+      resultStatus: 1
+      duration: 0.0039918
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1100
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringRainyDayProbability]
+      name: WeatherForecastSpringRainyDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringRainyDayProbability
+      resultStatus: 1
+      duration: 0.0039461
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1095
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerClearDayProbability]
+      name: WeatherForecastSummerClearDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerClearDayProbability
+      resultStatus: 1
+      duration: 0.0037698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1107
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerColdDayProbability]
+      name: WeatherForecastSummerColdDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerColdDayProbability
+      resultStatus: 1
+      duration: 0.0037534
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1103
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerHotDayProbability]
+      name: WeatherForecastSummerHotDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerHotDayProbability
+      resultStatus: 1
+      duration: 0.0038687
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1111
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerMildDayProbability]
+      name: WeatherForecastSummerMildDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerMildDayProbability
+      resultStatus: 1
+      duration: 0.003738
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1099
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerRainyDayProbability]
+      name: WeatherForecastSummerRainyDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerRainyDayProbability
+      resultStatus: 1
+      duration: 0.0037797
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1096
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterClearDayProbability]
+      name: WeatherForecastWinterClearDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterClearDayProbability
+      resultStatus: 1
+      duration: 0.0038115
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1110
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterColdDayProbability]
+      name: WeatherForecastWinterColdDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterColdDayProbability
+      resultStatus: 1
+      duration: 0.003889
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1106
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterHotDayProbability]
+      name: WeatherForecastWinterHotDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterHotDayProbability
+      resultStatus: 1
+      duration: 0.0038605
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1114
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterMildDayProbability]
+      name: WeatherForecastWinterMildDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterMildDayProbability
+      resultStatus: 1
+      duration: 0.0038164
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    - id: 1102
+      uniqueId: Weather.Tests.dll/baskorp/Weather/Tests/WeatherForecasterTests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterRainyDayProbability]
+      name: WeatherForecastWinterRainyDayProbability
+      fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterRainyDayProbability
+      resultStatus: 1
+      duration: 0.0038104
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
+    m_ResultText: RecipeMake_QuantityHigherThanOne_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
+      (0.000s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ff8828cc
-      m_LastClickedID: -869758721
-      m_ExpandedIDs: ff820d8850c13aca190c4ade5ab68ae08fec9d019cdde604e2c94811e1e52c2bf6a83830bf7c425b79441d76ffffff7f
+      m_SelectedIDs: 5f9e78dc
+      m_LastClickedID: -596074913
+      m_ExpandedIDs: ff820d88119b9b8ef9697f9d1e93d29e9a35dba18a8495a43abc0bb9cd4011c850c13acab0251fd7965e9cd8190c4ade5ab68ae09a3dc4e2f09615e9ab3902ef0a3fd8fe8fec9d0171f43d039cdde6045ae5400aaa1f892165d40a24e1e52c2bf6a83830094d5d386b88293b30437f465300a94754a7414ec4cc1159bf7c425b46115b6a79441d76ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1095,22 +2889,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Recipe/Tests
+    - Assets/IngredientsBuyer/Tests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Recipe/Tests
+  - Assets/IngredientsBuyer/Tests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/igorbasko/UnityGames/Lemonade Tycoon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 70}
-    m_SelectedIDs: 549d0000
-    m_LastClickedID: 40276
-    m_ExpandedIDs: 00000000e43e0000c0980000229a00004a9d000000ca9a3b
+    scrollPos: {x: 0, y: 54}
+    m_SelectedIDs: 4c680000
+    m_LastClickedID: 26700
+    m_ExpandedIDs: 00000000485d00004e5d00002c6400004a68000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1126,7 +2920,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1138,7 +2932,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000485d00004a5d00004c5d00004e5d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1163,9 +2957,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 52680000
+    m_LastClickedInstanceID: 26706
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1182,7 +2976,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1229,7 +3023,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 26706
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1268,9 +3062,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2e9a0000
+      m_SelectedIDs: 52680000
       m_LastClickedID: 0
-      m_ExpandedIDs: 129bffffd49cffff669effffd89fffff5ea1ffffd2a2ffff5aa4ffffc2a5ffff32a7ffff82a8ffff6aaaffffc8abffff10adffff80aeffffdcafffff46b1ffff88b2fffff0b3ffffb2b4ffff02b6ffff0cb8ffff46b9ffff84baffff3ebbffff8ebcffff7abdffff38beffff6ebfffffe0c1ffff0ac3ffff34c4ffff58c5ffff86c6ffff66c7fffff8c7ffff06caffff52cbffff98d6ffffb6d7ffffced8ffffd0d9ffff58dbffff72dcffff6addffffd6deffffcedfffffc4e0ffffa6e1ffff92e2ffff3cfbffff
+      m_ExpandedIDs: a470feffe477feff507cfeffa480fefffa84feff1e89feff348dfeff4c91feff6695feff8499fefffe9cfeff00a1fefff8a4feff00a9fefff8acfeffe8b0feff16b5feff84b9feffbabdfeff7cc5feff70c9feff5ecafeff40cbfeff38ccfeff1ccdfefffecdfeff58cefeff3ccffeff26d0fefffcd3feffe4d7feffb6ddfeff76defeffb0dffefff8e0feff06e2feff18e3feff22e4feffa4e4feff26e5feff30e6feff3ae7feffbce7feff1ee8feff78e8feffd2e8feff2ce9feff86e9feff70eafeff52ebfeff48ecfeff2aedfeff14eefeff1eeffeff9ef0feff94f1feff02f2fefff4f2feffe6f3feff50f4feffbaf4feff40f8feffe4fbfeffd4fcfeff34fdfeff16fefefff8fefeff52fffeffacfffeffa000ffff2404ffff9404ffff7c05ffff5e06ffffb806ffffbe10ffff5614ffffbe17ffff6018ffff9019ffffea1cffff301effff8221ffffd824ffff2c28ffff7e2bffffcc2effff1c32ffff6835ffffb238ffff1e3cffff483fffff7a42ffffa445ffffd248fffffa4bffffa250ffffac53ffff0058ffff6c5bffff8e5effffa461ffffb664ffffbc67ffffa26affff6e6dffff3a70ffff1673ffffec75ffffb678ffff947bffff5c7effff7281ffff3c84ffffee86ffffa889ffff6a8cffff228fffffda91ffff7e94ffff2497ffffb899ffff4e9cfffff49effff94a1ffffbea4ffff5ca7ffff02aaffff86acffff20afffffc4b1ffff54b4ffff7ab7fffffeb9ffff82bcffffeebeffff54c1ffffc2c3fffffac5ffff44c8ffff82caffffb2ccffff32d3ffff98d5ffffc8d7fffffed9ffff18dcffff36dfffff16ebffffc6ecffff74eeffff30f0ffffd6f1ffff84f3ffff32f5ffffe0f6ffff26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

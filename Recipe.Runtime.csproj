@@ -64,8 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets/Recipe/Runtime/Recipe.cs" />
     <Compile Include="Assets/Recipe/Runtime/RecipeResultType.cs" />
-    <Compile Include="Assets/Recipe/Runtime/IRecipeEvaluatorStrategy.cs" />
     <Compile Include="Assets/Recipe/Runtime/DayTypeRecipeEvaluatorStrategy.cs" />
+    <Compile Include="Assets/Recipe/Runtime/IRecipeEvaluatorStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Recipe/Runtime/Recipe.Runtime.asmdef" />

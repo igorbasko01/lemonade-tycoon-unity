@@ -62,11 +62,11 @@
     <Analyzer Include="/Users/igorbasko/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/IngredientsCatalog/Runtime/IngredientsCatalogManager.cs" />
-    <Compile Include="Assets/IngredientsCatalog/Runtime/PurchaseResult.cs" />
     <Compile Include="Assets/IngredientsCatalog/Runtime/IngredientMetadata.cs" />
-    <Compile Include="Assets/IngredientsCatalog/Runtime/SellableIngredient.cs" />
+    <Compile Include="Assets/IngredientsCatalog/Runtime/IngredientsCatalogManager.cs" />
     <Compile Include="Assets/IngredientsCatalog/Runtime/QuantifiableIngredient.cs" />
+    <Compile Include="Assets/IngredientsCatalog/Runtime/SellableIngredient.cs" />
+    <Compile Include="Assets/IngredientsCatalog/Runtime/PurchaseResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/IngredientsCatalog/Runtime/IngredientsCatalog.Runtime.asmdef" />

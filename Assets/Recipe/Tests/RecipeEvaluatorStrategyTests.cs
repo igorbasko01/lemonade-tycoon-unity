@@ -17,5 +17,14 @@ namespace baskorp.Recipes.Tests
             var result = strategy.Evaluate(recipe, new Calendar(1, 3, 2021).CurrentDate);
             Assert.AreEqual(0.5f, result);
         }
+
+        [Test]
+        public void DayTypeRecipeEvaluatorStrategy_Returns100pctOnWeekends()
+        {
+            var strategy = new DayTypeRecipeEvaluatorStrategy();
+            var recipe = Recipe.Create("Lemonade", new List<QuantifiableIngredient>() { QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 1) });
+            var result = strategy.Evaluate(recipe, new Calendar(6, 3, 2021).CurrentDate);
+            Assert.AreEqual(1f, result);
+        }
     }
 }

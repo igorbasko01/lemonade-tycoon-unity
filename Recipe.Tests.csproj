@@ -62,8 +62,8 @@
     <Analyzer Include="/Users/igorbasko/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Recipe/Tests/RecipeTests.cs" />
     <Compile Include="Assets/Recipe/Tests/RecipeEvaluatorStrategyTests.cs" />
+    <Compile Include="Assets/Recipe/Tests/RecipeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Recipe/Tests/Recipe.Tests.asmdef" />
