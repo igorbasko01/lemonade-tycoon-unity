@@ -3,7 +3,8 @@
     "rootNamespace": "",
     "references": [
         "GUID:e32e60dcc78a24289bb274528d2093a6",
-        "Calendar.Runtime"
+        "Calendar.Runtime",
+        "Weather.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

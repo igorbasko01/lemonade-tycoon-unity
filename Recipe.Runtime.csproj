@@ -66,6 +66,7 @@
     <Compile Include="Assets/Recipe/Runtime/RecipeResultType.cs" />
     <Compile Include="Assets/Recipe/Runtime/DayTypeRecipeEvaluatorStrategy.cs" />
     <Compile Include="Assets/Recipe/Runtime/IRecipeEvaluatorStrategy.cs" />
+    <Compile Include="Assets/Recipe/Runtime/WeatherRecipeEvaluatorStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Recipe/Runtime/Recipe.Runtime.asmdef" />
@@ -453,6 +454,26 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuGetForUnity.PluginAPI">
+      <HintPath>Library/PackageCache/com.github-glitchenzo.nugetforunity@a0bb556608/Editor/PluginAPI/NuGetForUnity.PluginAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>Assets/Packages/Moq.4.20.70/lib/netstandard2.1/Moq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog">
+      <HintPath>Assets/Packages/System.Diagnostics.EventLog.4.7.0/lib/netstandard2.0/System.Diagnostics.EventLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>Assets/Packages/Castle.Core.5.1.1/lib/netstandard2.1/Castle.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>Assets/Packages/System.Security.Principal.Windows.4.7.0/lib/netstandard2.0/System.Security.Principal.Windows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -963,6 +984,7 @@
   <ItemGroup>
     <ProjectReference Include="IngredientsCatalog.Runtime.csproj" />
     <ProjectReference Include="Calendar.Runtime.csproj" />
+    <ProjectReference Include="Weather.Runtime.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

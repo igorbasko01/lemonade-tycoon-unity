@@ -421,6 +421,10 @@
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Moq">
+      <HintPath>Assets/Packages/Moq.4.20.70/lib/netstandard2.1/Moq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.26f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
       <Private>False</Private>
@@ -950,6 +954,7 @@
     <ProjectReference Include="IngredientsCatalog.Runtime.csproj" />
     <ProjectReference Include="Recipe.Runtime.csproj" />
     <ProjectReference Include="Calendar.Runtime.csproj" />
+    <ProjectReference Include="Weather.Runtime.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

@@ -4,7 +4,7 @@ using baskorp.Calendars.Runtime;
 using UnityEngine;
 
 namespace baskorp.Weather.Runtime {
-    public class WeatherForecaster {
+    public class WeatherForecaster : IWeatherForecaster {
         private Dictionary<Season, Dictionary<SkyType, double>> skyTypeProbabilities = new() {
             {Season.Spring, new Dictionary<SkyType, double> {{SkyType.Clear, 0.7}, {SkyType.Rainy, 0.3}}},
             {Season.Summer, new Dictionary<SkyType, double> {{SkyType.Clear, 0.9}, {SkyType.Rainy, 0.1}}},
@@ -20,6 +20,7 @@ namespace baskorp.Weather.Runtime {
         };
 
         public WeatherForecast GetForecast(Date date) {
+            // Random seed is the date hash code, so that the forecast is deterministic for a given date.
             var random = new System.Random(date.GetHashCode());
             var skyTypes = Enum.GetValues(typeof(SkyType));
             var skyTypeProbabilitiesForSeason = skyTypeProbabilities[date.Season];
