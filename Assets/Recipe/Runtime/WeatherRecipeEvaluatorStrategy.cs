@@ -7,7 +7,7 @@ namespace baskorp.Recipes.Runtime
     public class WeatherRecipeEvaluatorStrategy : IRecipeEvaluatorStrategy
     {
 
-        private IWeatherForecaster forecaster;
+        private readonly IWeatherForecaster forecaster;
         private readonly Dictionary<(SkyType, TemperatureType), float> evaluationMap; 
 
         public WeatherRecipeEvaluatorStrategy(IWeatherForecaster forecaster)

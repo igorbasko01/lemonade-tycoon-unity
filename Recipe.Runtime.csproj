@@ -67,6 +67,7 @@
     <Compile Include="Assets/Recipe/Runtime/DayTypeRecipeEvaluatorStrategy.cs" />
     <Compile Include="Assets/Recipe/Runtime/IRecipeEvaluatorStrategy.cs" />
     <Compile Include="Assets/Recipe/Runtime/WeatherRecipeEvaluatorStrategy.cs" />
+    <Compile Include="Assets/Recipe/Runtime/RecipeEvaluator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Recipe/Runtime/Recipe.Runtime.asmdef" />
