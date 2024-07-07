@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using baskorp.Calendars.Runtime;
 using baskorp.Weather.Runtime;
 
@@ -7,42 +8,26 @@ namespace baskorp.Recipes.Runtime
     {
 
         private IWeatherForecaster forecaster;
+        private readonly Dictionary<(SkyType, TemperatureType), float> evaluationMap; 
 
         public WeatherRecipeEvaluatorStrategy(IWeatherForecaster forecaster)
         {
             this.forecaster = forecaster;
+            evaluationMap = new Dictionary<(SkyType, TemperatureType), float>
+            {
+                {(SkyType.Clear, TemperatureType.Hot), 1f},
+                {(SkyType.Clear, TemperatureType.Mild), 0.8f},
+                {(SkyType.Clear, TemperatureType.Cold), 0.5f},
+                {(SkyType.Rainy, TemperatureType.Hot), 0.7f},
+                {(SkyType.Rainy, TemperatureType.Mild), 0.4f},
+                {(SkyType.Rainy, TemperatureType.Cold), 0.2f}
+            };
         }
         public float Evaluate(Recipe recipe, Date date)
         {
             var forecast = forecaster.GetForecast(date);
-            if (forecast.SkyType == SkyType.Clear && forecast.TemperatureType == TemperatureType.Hot)
-            {
-                return 1f;
-            }
-            else if (forecast.SkyType == SkyType.Clear && forecast.TemperatureType == TemperatureType.Mild)
-            {
-                return 0.8f;
-            }
-            else if (forecast.SkyType == SkyType.Clear && forecast.TemperatureType == TemperatureType.Cold)
-            {
-                return 0.5f;
-            }
-            else if (forecast.SkyType == SkyType.Rainy && forecast.TemperatureType == TemperatureType.Hot)
-            {
-                return 0.7f;
-            }
-            else if (forecast.SkyType == SkyType.Rainy && forecast.TemperatureType == TemperatureType.Mild) 
-            { 
-                return 0.4f;
-            }
-            else if (forecast.SkyType == SkyType.Rainy && forecast.TemperatureType == TemperatureType.Cold)
-            {
-                return 0.2f;
-            }
-            else
-            {
-                return 0f;
-            }
+            var key = (forecast.SkyType, forecast.TemperatureType);
+            return evaluationMap.TryGetValue(key, out float value) ? value : 0.0f;
         }
     }
 }
