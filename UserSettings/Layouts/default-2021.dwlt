@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 976
-    y: 202
-    width: 321
-    height: 573
-  m_ShowMode: 0
-  m_Title: NuGet For Unity
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,62 +19,12 @@ MonoBehaviour:
     width: 1440
     height: 776
   m_ShowMode: 4
-  m_Title: Test Runner
-  m_RootView: {fileID: 9}
+  m_Title: Project
+  m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: NugetWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 321
-    height: 573
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 321
-    height: 573
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
-  vertical: 0
-  controlID: 1094
---- !u!114 &5
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,8 +37,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 6}
+  - {fileID: 9}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -122,8 +48,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 89
---- !u!114 &6
+  controlID: 283
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +59,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -142,16 +68,16 @@ MonoBehaviour:
     y: 0
     width: 498
     height: 726
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 16}
-  - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &7
+  - {fileID: 15}
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,12 +98,12 @@ MonoBehaviour:
     height: 431
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 20}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,7 +113,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -196,15 +122,15 @@ MonoBehaviour:
     y: 431
     width: 942
     height: 295
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 23}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &9
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,9 +143,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
-  - {fileID: 11}
+  - {fileID: 7}
+  - {fileID: 2}
+  - {fileID: 8}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -232,7 +158,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &10
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &11
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,7 +201,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &12
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,8 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 13}
-  - {fileID: 8}
+  - {fileID: 10}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -299,8 +225,8 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 21
---- !u!114 &13
+  controlID: 284
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,8 +239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 14}
+  - {fileID: 4}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -324,8 +250,8 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 22
---- !u!114 &14
+  controlID: 184
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,2280 +272,13 @@ MonoBehaviour:
     height: 431
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 21}
-  - {fileID: 22}
+  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f5cd2e0ccf7a56478ad918ff9829c5c, type: 3}
-  m_Name: NuGetForUnity
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: NuGet For Unity
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 976
-    y: 202
-    width: 321
-    height: 552
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  defaultIcon: {fileID: 2800000, guid: 0efa0a38ec1ce484896502259d7ee8f7, type: 3}
-  hasRefreshed: 1
-  numberToSkip: 0
-  serializableAvailablePackages:
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 4.20.70
-      <IsManuallyInstalled>k__BackingField: 1
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/moq/4.20.70/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 4.20.70
-      - <FullVersion>k__BackingField: 4.20.69
-      - <FullVersion>k__BackingField: 4.18.4
-      - <FullVersion>k__BackingField: 4.18.3
-      - <FullVersion>k__BackingField: 4.18.2
-      - <FullVersion>k__BackingField: 4.18.1
-      - <FullVersion>k__BackingField: 4.18.0
-      - <FullVersion>k__BackingField: 4.17.2
-      - <FullVersion>k__BackingField: 4.17.1
-      - <FullVersion>k__BackingField: 4.16.1
-      - <FullVersion>k__BackingField: 4.16.0
-      - <FullVersion>k__BackingField: 4.15.2
-      - <FullVersion>k__BackingField: 4.15.1
-      - <FullVersion>k__BackingField: 4.14.7
-      - <FullVersion>k__BackingField: 4.14.6
-      - <FullVersion>k__BackingField: 4.14.5
-      - <FullVersion>k__BackingField: 4.14.4
-      - <FullVersion>k__BackingField: 4.14.3
-      - <FullVersion>k__BackingField: 4.14.2
-      - <FullVersion>k__BackingField: 4.14.1
-      - <FullVersion>k__BackingField: 4.14.0
-      - <FullVersion>k__BackingField: 4.13.1
-      - <FullVersion>k__BackingField: 4.13.0
-      - <FullVersion>k__BackingField: 4.12.0
-      - <FullVersion>k__BackingField: 4.11.0
-      - <FullVersion>k__BackingField: 4.10.1
-      - <FullVersion>k__BackingField: 4.10.0
-      - <FullVersion>k__BackingField: 4.9.0
-      - <FullVersion>k__BackingField: 4.8.3
-      - <FullVersion>k__BackingField: 4.8.2
-      - <FullVersion>k__BackingField: 4.8.1
-      - <FullVersion>k__BackingField: 4.8.0
-      - <FullVersion>k__BackingField: 4.7.145
-      - <FullVersion>k__BackingField: 4.7.142
-      - <FullVersion>k__BackingField: 4.7.137
-      - <FullVersion>k__BackingField: 4.7.127
-      - <FullVersion>k__BackingField: 4.7.99
-      - <FullVersion>k__BackingField: 4.7.63
-      - <FullVersion>k__BackingField: 4.7.58
-      - <FullVersion>k__BackingField: 4.7.49
-      - <FullVersion>k__BackingField: 4.7.46
-      - <FullVersion>k__BackingField: 4.7.25
-      - <FullVersion>k__BackingField: 4.7.12
-      - <FullVersion>k__BackingField: 4.7.11
-      - <FullVersion>k__BackingField: 4.7.10
-      - <FullVersion>k__BackingField: 4.7.9
-      - <FullVersion>k__BackingField: 4.7.8
-      - <FullVersion>k__BackingField: 4.7.7
-      - <FullVersion>k__BackingField: 4.7.1
-      - <FullVersion>k__BackingField: 4.7.0
-      - <FullVersion>k__BackingField: 4.5.30
-      - <FullVersion>k__BackingField: 4.5.29
-      - <FullVersion>k__BackingField: 4.5.28
-      - <FullVersion>k__BackingField: 4.5.23
-      - <FullVersion>k__BackingField: 4.5.22
-      - <FullVersion>k__BackingField: 4.5.21
-      - <FullVersion>k__BackingField: 4.5.20
-      - <FullVersion>k__BackingField: 4.5.19
-      - <FullVersion>k__BackingField: 4.5.18
-      - <FullVersion>k__BackingField: 4.5.16
-      - <FullVersion>k__BackingField: 4.5.13
-      - <FullVersion>k__BackingField: 4.5.10
-      - <FullVersion>k__BackingField: 4.5.9
-      - <FullVersion>k__BackingField: 4.5.8
-      - <FullVersion>k__BackingField: 4.5.7
-      - <FullVersion>k__BackingField: 4.5.3
-      - <FullVersion>k__BackingField: 4.5.0
-      - <FullVersion>k__BackingField: 4.2.1510.2205
-      - <FullVersion>k__BackingField: 4.2.1507.118
-      - <FullVersion>k__BackingField: 4.2.1506.2515
-      - <FullVersion>k__BackingField: 4.2.1506.2016
-      - <FullVersion>k__BackingField: 4.2.1502.911
-      - <FullVersion>k__BackingField: 4.2.1409.1722
-      - <FullVersion>k__BackingField: 4.2.1408.717
-      - <FullVersion>k__BackingField: 4.2.1408.619
-      - <FullVersion>k__BackingField: 4.2.1402.2112
-      - <FullVersion>k__BackingField: 4.2.1312.1622
-      - <FullVersion>k__BackingField: 4.2.1312.1621
-      - <FullVersion>k__BackingField: 4.2.1312.1615
-      - <FullVersion>k__BackingField: 4.2.1312.1416
-      - <FullVersion>k__BackingField: 4.2.1312.1323
-      - <FullVersion>k__BackingField: 4.2.1312.1319
-      - <FullVersion>k__BackingField: 4.1.1311.615
-      - <FullVersion>k__BackingField: 4.1.1309.1617
-      - <FullVersion>k__BackingField: 4.1.1309.919
-      - <FullVersion>k__BackingField: 4.1.1309.801
-      - <FullVersion>k__BackingField: 4.1.1309.800
-      - <FullVersion>k__BackingField: 4.1.1308.2321
-      - <FullVersion>k__BackingField: 4.1.1308.2316
-      - <FullVersion>k__BackingField: 4.1.1308.2120
-      - <FullVersion>k__BackingField: 4.0.10827
-      - <FullVersion>k__BackingField: 3.1.416.3
-      <Authors>k__BackingField:
-      - Daniel Cazzulino, kzu
-      <Description>k__BackingField: Moq is the most popular and friendly mocking
-        framework for .NET.
-      <TotalDownloads>k__BackingField: 633991505
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq/4.20.70/license
-      <ProjectUrl>k__BackingField: https://github.com/moq/moq
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 'Moq: an enjoyable mocking library'
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.AutoMock
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 3.5.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 3.5.0
-      - <FullVersion>k__BackingField: 3.4.0
-      - <FullVersion>k__BackingField: 3.3.0
-      - <FullVersion>k__BackingField: 3.2.0
-      - <FullVersion>k__BackingField: 3.1.0
-      - <FullVersion>k__BackingField: 3.0.0
-      - <FullVersion>k__BackingField: 2.3.0
-      - <FullVersion>k__BackingField: 2.2.0.124
-      - <FullVersion>k__BackingField: 2.1.0
-      - <FullVersion>k__BackingField: 2.0.1
-      - <FullVersion>k__BackingField: 2.0.0
-      - <FullVersion>k__BackingField: 1.2.0.120
-      - <FullVersion>k__BackingField: 1.2.0.111
-      - <FullVersion>k__BackingField: 1.1.0.96
-      - <FullVersion>k__BackingField: 1.0.60
-      - <FullVersion>k__BackingField: 0.4.0
-      - <FullVersion>k__BackingField: 0.3.2.1
-      - <FullVersion>k__BackingField: 0.3.2
-      - <FullVersion>k__BackingField: 0.3.1
-      - <FullVersion>k__BackingField: 0.3.0
-      - <FullVersion>k__BackingField: 0.2.2
-      - <FullVersion>k__BackingField: 0.2.1
-      - <FullVersion>k__BackingField: 0.2.0
-      - <FullVersion>k__BackingField: 0.1.0
-      <Authors>k__BackingField:
-      - Tim Kellogg, Adam Hewitt, Kevin Bost
-      <Description>k__BackingField: An auto-mocking container that generates mocks
-        using Moq
-      <TotalDownloads>k__BackingField: 14574298
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq.AutoMock/3.5.0/license
-      <ProjectUrl>k__BackingField: https://github.com/moq/Moq.AutoMocker
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Moq.AutoMock
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: AutoFixture.AutoMoq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 4.18.1
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/autofixture.automoq/4.18.1/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 4.18.1
-      - <FullVersion>k__BackingField: 4.18.0
-      - <FullVersion>k__BackingField: 4.17.0
-      - <FullVersion>k__BackingField: 4.16.0
-      - <FullVersion>k__BackingField: 4.15.0
-      - <FullVersion>k__BackingField: 4.14.0
-      - <FullVersion>k__BackingField: 4.13.0
-      - <FullVersion>k__BackingField: 4.12.0
-      - <FullVersion>k__BackingField: 4.11.0
-      - <FullVersion>k__BackingField: 4.10.0
-      - <FullVersion>k__BackingField: 4.9.0
-      - <FullVersion>k__BackingField: 4.8.0
-      - <FullVersion>k__BackingField: 4.7.0
-      - <FullVersion>k__BackingField: 4.6.0
-      - <FullVersion>k__BackingField: 4.5.1
-      - <FullVersion>k__BackingField: 4.5.0
-      - <FullVersion>k__BackingField: 4.4.0
-      - <FullVersion>k__BackingField: 4.3.0
-      - <FullVersion>k__BackingField: 4.2.1
-      - <FullVersion>k__BackingField: 4.2.0
-      - <FullVersion>k__BackingField: 4.1.0
-      - <FullVersion>k__BackingField: 4.0.1
-      - <FullVersion>k__BackingField: 4.0.0
-      - <FullVersion>k__BackingField: 3.51.0
-      - <FullVersion>k__BackingField: 3.50.7
-      - <FullVersion>k__BackingField: 3.50.6
-      - <FullVersion>k__BackingField: 3.50.5
-      - <FullVersion>k__BackingField: 3.50.4
-      - <FullVersion>k__BackingField: 3.50.3
-      - <FullVersion>k__BackingField: 3.50.2
-      - <FullVersion>k__BackingField: 3.50.1
-      - <FullVersion>k__BackingField: 3.50.0
-      - <FullVersion>k__BackingField: 3.49.1
-      - <FullVersion>k__BackingField: 3.49.0
-      - <FullVersion>k__BackingField: 3.48.0
-      - <FullVersion>k__BackingField: 3.47.8
-      - <FullVersion>k__BackingField: 3.47.7
-      - <FullVersion>k__BackingField: 3.47.6
-      - <FullVersion>k__BackingField: 3.47.5
-      - <FullVersion>k__BackingField: 3.47.4
-      - <FullVersion>k__BackingField: 3.47.3
-      - <FullVersion>k__BackingField: 3.47.2
-      - <FullVersion>k__BackingField: 3.47.1
-      - <FullVersion>k__BackingField: 3.47.0
-      - <FullVersion>k__BackingField: 3.46.0
-      - <FullVersion>k__BackingField: 3.45.3
-      - <FullVersion>k__BackingField: 3.45.2
-      - <FullVersion>k__BackingField: 3.45.1
-      - <FullVersion>k__BackingField: 3.45.0
-      - <FullVersion>k__BackingField: 3.44.1
-      - <FullVersion>k__BackingField: 3.44.0
-      - <FullVersion>k__BackingField: 3.43.4
-      - <FullVersion>k__BackingField: 3.43.3
-      - <FullVersion>k__BackingField: 3.43.2
-      - <FullVersion>k__BackingField: 3.43.1
-      - <FullVersion>k__BackingField: 3.43.0
-      - <FullVersion>k__BackingField: 3.42.0
-      - <FullVersion>k__BackingField: 3.41.1
-      - <FullVersion>k__BackingField: 3.41.0
-      - <FullVersion>k__BackingField: 3.40.0
-      - <FullVersion>k__BackingField: 3.39.0
-      - <FullVersion>k__BackingField: 3.38.1
-      - <FullVersion>k__BackingField: 3.38.0
-      - <FullVersion>k__BackingField: 3.37.3
-      - <FullVersion>k__BackingField: 3.37.2
-      - <FullVersion>k__BackingField: 3.37.1
-      - <FullVersion>k__BackingField: 3.37.0
-      - <FullVersion>k__BackingField: 3.36.12
-      - <FullVersion>k__BackingField: 3.36.11
-      - <FullVersion>k__BackingField: 3.36.9
-      - <FullVersion>k__BackingField: 3.36.8
-      - <FullVersion>k__BackingField: 3.36.6
-      - <FullVersion>k__BackingField: 3.36.1
-      - <FullVersion>k__BackingField: 3.36.0
-      - <FullVersion>k__BackingField: 3.35.1
-      - <FullVersion>k__BackingField: 3.34.2
-      - <FullVersion>k__BackingField: 3.34.1
-      - <FullVersion>k__BackingField: 3.34.0
-      - <FullVersion>k__BackingField: 3.33.0
-      - <FullVersion>k__BackingField: 3.32.2
-      - <FullVersion>k__BackingField: 3.32.0
-      - <FullVersion>k__BackingField: 3.31.1
-      - <FullVersion>k__BackingField: 3.31.0
-      - <FullVersion>k__BackingField: 3.30.8
-      - <FullVersion>k__BackingField: 3.30.7
-      - <FullVersion>k__BackingField: 3.30.6
-      - <FullVersion>k__BackingField: 3.30.4
-      - <FullVersion>k__BackingField: 3.30.3
-      - <FullVersion>k__BackingField: 3.30.2
-      - <FullVersion>k__BackingField: 3.30.1
-      - <FullVersion>k__BackingField: 3.30.0
-      - <FullVersion>k__BackingField: 3.29.0
-      - <FullVersion>k__BackingField: 3.27.0
-      - <FullVersion>k__BackingField: 3.25.0
-      - <FullVersion>k__BackingField: 3.24.6
-      - <FullVersion>k__BackingField: 3.24.5
-      - <FullVersion>k__BackingField: 3.24.4
-      - <FullVersion>k__BackingField: 3.24.3
-      - <FullVersion>k__BackingField: 3.24.2
-      - <FullVersion>k__BackingField: 3.24.1
-      - <FullVersion>k__BackingField: 3.24.0
-      - <FullVersion>k__BackingField: 3.23.2
-      - <FullVersion>k__BackingField: 3.23.1
-      - <FullVersion>k__BackingField: 3.23.0
-      - <FullVersion>k__BackingField: 3.22.0
-      - <FullVersion>k__BackingField: 3.21.1
-      - <FullVersion>k__BackingField: 3.21.0
-      - <FullVersion>k__BackingField: 3.20.4
-      - <FullVersion>k__BackingField: 3.20.2
-      - <FullVersion>k__BackingField: 3.20.1
-      - <FullVersion>k__BackingField: 3.20.0
-      - <FullVersion>k__BackingField: 3.19.2
-      - <FullVersion>k__BackingField: 3.19.1
-      - <FullVersion>k__BackingField: 3.19.0
-      - <FullVersion>k__BackingField: 3.18.10
-      - <FullVersion>k__BackingField: 3.18.9
-      - <FullVersion>k__BackingField: 3.18.8
-      - <FullVersion>k__BackingField: 3.18.7
-      - <FullVersion>k__BackingField: 3.18.6
-      - <FullVersion>k__BackingField: 3.18.5
-      - <FullVersion>k__BackingField: 3.18.4
-      - <FullVersion>k__BackingField: 3.18.3
-      - <FullVersion>k__BackingField: 3.18.2
-      - <FullVersion>k__BackingField: 3.18.1
-      - <FullVersion>k__BackingField: 3.18.0
-      - <FullVersion>k__BackingField: 3.17.0
-      - <FullVersion>k__BackingField: 3.16.10
-      - <FullVersion>k__BackingField: 3.16.9
-      - <FullVersion>k__BackingField: 3.16.8
-      - <FullVersion>k__BackingField: 3.16.7
-      - <FullVersion>k__BackingField: 3.16.6
-      - <FullVersion>k__BackingField: 3.16.5
-      - <FullVersion>k__BackingField: 3.16.4
-      - <FullVersion>k__BackingField: 3.16.3
-      - <FullVersion>k__BackingField: 3.16.2
-      - <FullVersion>k__BackingField: 3.16.1
-      - <FullVersion>k__BackingField: 3.16.0
-      - <FullVersion>k__BackingField: 3.15.1
-      - <FullVersion>k__BackingField: 3.15.0
-      - <FullVersion>k__BackingField: 3.14.0
-      - <FullVersion>k__BackingField: 3.13.0
-      - <FullVersion>k__BackingField: 3.12.1
-      - <FullVersion>k__BackingField: 3.12.0
-      - <FullVersion>k__BackingField: 3.11.0
-      - <FullVersion>k__BackingField: 3.10.1
-      - <FullVersion>k__BackingField: 3.10.0
-      - <FullVersion>k__BackingField: 3.9.1
-      - <FullVersion>k__BackingField: 3.9.0
-      - <FullVersion>k__BackingField: 3.8.1
-      - <FullVersion>k__BackingField: 3.8.0
-      - <FullVersion>k__BackingField: 3.7.0
-      - <FullVersion>k__BackingField: 3.6.8
-      - <FullVersion>k__BackingField: 3.6.7
-      - <FullVersion>k__BackingField: 3.6.6
-      - <FullVersion>k__BackingField: 3.6.5
-      - <FullVersion>k__BackingField: 3.6.3
-      - <FullVersion>k__BackingField: 3.6.2
-      - <FullVersion>k__BackingField: 3.6.1
-      - <FullVersion>k__BackingField: 3.6.0
-      - <FullVersion>k__BackingField: 3.5.1
-      - <FullVersion>k__BackingField: 3.5.0
-      - <FullVersion>k__BackingField: 3.4.1
-      - <FullVersion>k__BackingField: 3.4.0
-      - <FullVersion>k__BackingField: 3.3.0
-      - <FullVersion>k__BackingField: 3.2.1
-      - <FullVersion>k__BackingField: 3.2.0
-      - <FullVersion>k__BackingField: 3.1.0
-      - <FullVersion>k__BackingField: 3.0.9
-      - <FullVersion>k__BackingField: 3.0.8
-      - <FullVersion>k__BackingField: 3.0.7
-      - <FullVersion>k__BackingField: 3.0.6
-      - <FullVersion>k__BackingField: 3.0.5
-      - <FullVersion>k__BackingField: 3.0.3
-      - <FullVersion>k__BackingField: 3.0.2
-      - <FullVersion>k__BackingField: 3.0.1
-      - <FullVersion>k__BackingField: 2.16.2
-      - <FullVersion>k__BackingField: 2.16.1
-      - <FullVersion>k__BackingField: 2.16.0
-      - <FullVersion>k__BackingField: 2.15.6
-      - <FullVersion>k__BackingField: 2.15.5
-      - <FullVersion>k__BackingField: 2.15.4
-      - <FullVersion>k__BackingField: 2.15.3
-      - <FullVersion>k__BackingField: 2.15.2
-      - <FullVersion>k__BackingField: 2.15.1
-      - <FullVersion>k__BackingField: 2.15.0
-      - <FullVersion>k__BackingField: 2.14.1
-      - <FullVersion>k__BackingField: 2.14.0
-      - <FullVersion>k__BackingField: 2.13.5
-      - <FullVersion>k__BackingField: 2.13.4
-      - <FullVersion>k__BackingField: 2.13.3
-      - <FullVersion>k__BackingField: 2.12.0
-      - <FullVersion>k__BackingField: 2.11.4
-      - <FullVersion>k__BackingField: 2.11.3
-      - <FullVersion>k__BackingField: 2.11.2
-      - <FullVersion>k__BackingField: 2.11.1
-      - <FullVersion>k__BackingField: 2.11.0
-      - <FullVersion>k__BackingField: 2.10.0
-      - <FullVersion>k__BackingField: 2.9.2
-      - <FullVersion>k__BackingField: 2.9.1
-      - <FullVersion>k__BackingField: 2.9.0
-      - <FullVersion>k__BackingField: 2.8.0
-      - <FullVersion>k__BackingField: 2.7.2
-      - <FullVersion>k__BackingField: 2.7.1
-      - <FullVersion>k__BackingField: 2.7.0
-      - <FullVersion>k__BackingField: 2.6.0
-      - <FullVersion>k__BackingField: 2.5.2
-      - <FullVersion>k__BackingField: 2.5.1
-      - <FullVersion>k__BackingField: 2.5.0
-      - <FullVersion>k__BackingField: 2.4.1
-      - <FullVersion>k__BackingField: 2.4.0
-      - <FullVersion>k__BackingField: 2.3.2
-      - <FullVersion>k__BackingField: 2.3.1
-      - <FullVersion>k__BackingField: 2.2.45
-      - <FullVersion>k__BackingField: 2.2.44
-      - <FullVersion>k__BackingField: 2.1.0
-      - <FullVersion>k__BackingField: 2.0.0
-      <Authors>k__BackingField:
-      - Mark Seemann, AutoFixture
-      <Description>k__BackingField: This extension turns AutoFixture into an Auto-Mocking
-        Container. The mock instances are created by Moq. To use it, add the AutoMoqCustomization
-        to your Fixture instance. Read more at http://blog.ploeh.dk/2010/08/19/AutoFixtureAsAnAutomockingContainer.aspx
-      <TotalDownloads>k__BackingField: 48262605
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/AutoFixture.AutoMoq/4.18.1/license
-      <ProjectUrl>k__BackingField: https://github.com/AutoFixture/AutoFixture
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: AutoFixture with Auto Mocking using Moq
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.EntityFrameworkCore
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 8.0.1.2
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 8.0.1.2
-      - <FullVersion>k__BackingField: 8.0.1.1
-      - <FullVersion>k__BackingField: 8.0.0.1
-      - <FullVersion>k__BackingField: 7.0.0.2
-      - <FullVersion>k__BackingField: 6.0.1.4
-      - <FullVersion>k__BackingField: 6.0.1.3
-      - <FullVersion>k__BackingField: 6.0.1.2
-      - <FullVersion>k__BackingField: 6.0.0.6
-      - <FullVersion>k__BackingField: 5.0.0.2
-      - <FullVersion>k__BackingField: 5.0.0.1
-      - <FullVersion>k__BackingField: 3.1.2.13
-      - <FullVersion>k__BackingField: 3.1.2.6
-      - <FullVersion>k__BackingField: 3.1.2.1
-      - <FullVersion>k__BackingField: 3.0.0.10
-      - <FullVersion>k__BackingField: 3.0.0.4
-      - <FullVersion>k__BackingField: 2.2.1.1
-      - <FullVersion>k__BackingField: 2.2.1
-      - <FullVersion>k__BackingField: 2.0.1
-      - <FullVersion>k__BackingField: 1.0.0
-      <Authors>k__BackingField:
-      - "Micha\u0142 Jankowski"
-      <Description>k__BackingField: Library that provides methods that will help
-        you with mocking Entity Framework Core.
-      <TotalDownloads>k__BackingField: 6221265
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq.EntityFrameworkCore/8.0.1.2/license
-      <ProjectUrl>k__BackingField: https://github.com/MichalJankowskii/Moq.EntityFrameworkCore
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Moq.EntityFrameworkCore
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Autofac.Extras.Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 6.1.1
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/autofac.extras.moq/6.1.1/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 6.1.1
-      - <FullVersion>k__BackingField: 6.1.0
-      - <FullVersion>k__BackingField: 6.0.0
-      - <FullVersion>k__BackingField: 5.0.1
-      - <FullVersion>k__BackingField: 5.0.0
-      - <FullVersion>k__BackingField: 4.3.0
-      - <FullVersion>k__BackingField: 4.2.0
-      - <FullVersion>k__BackingField: 4.1.0
-      - <FullVersion>k__BackingField: 4.0.0
-      - <FullVersion>k__BackingField: 3.1.0
-      - <FullVersion>k__BackingField: 3.0.2
-      - <FullVersion>k__BackingField: 3.0.1
-      - <FullVersion>k__BackingField: 3.0.0
-      <Authors>k__BackingField:
-      - Autofac Contributors
-      <Description>k__BackingField: Autofac extension for automocking and creation
-        of mock objects in Moq.
-      <TotalDownloads>k__BackingField: 12033540
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Autofac.Extras.Moq/6.1.1/license
-      <ProjectUrl>k__BackingField: https://autofac.org/
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Autofac.Extras.Moq
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: MockQueryable.Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 7.0.1
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/mockqueryable.moq/7.0.1/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 7.0.1
-      - <FullVersion>k__BackingField: 7.0.0
-      - <FullVersion>k__BackingField: 6.0.1
-      - <FullVersion>k__BackingField: 6.0.0
-      - <FullVersion>k__BackingField: 5.0.2
-      - <FullVersion>k__BackingField: 5.0.1
-      - <FullVersion>k__BackingField: 5.0.0
-      - <FullVersion>k__BackingField: 3.1.3
-      - <FullVersion>k__BackingField: 3.1.2
-      - <FullVersion>k__BackingField: 3.1.1
-      - <FullVersion>k__BackingField: 3.0.2
-      - <FullVersion>k__BackingField: 3.0.1
-      - <FullVersion>k__BackingField: 3.0.0
-      - <FullVersion>k__BackingField: 1.1.0
-      - <FullVersion>k__BackingField: 1.0.4
-      - <FullVersion>k__BackingField: 1.0.3
-      - <FullVersion>k__BackingField: 1.0.2
-      - <FullVersion>k__BackingField: 1.0.1
-      - <FullVersion>k__BackingField: 1.0.0
-      <Authors>k__BackingField:
-      - Roman Titov
-      <Description>k__BackingField: "Extension for mocking Entity Framework Core
-        operations such ToListAsync, FirstOrDefaultAsync etc.\n\t\t\tWhen writing
-        tests for your application it is often desirable to avoid hitting the database.
-        The extension allows you to achieve this by creating a context \u2013 with
-        behavior defined by your tests \u2013 that makes use of in-memory data."
-      <TotalDownloads>k__BackingField: 13420081
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/MockQueryable.Moq/7.0.1/license
-      <ProjectUrl>k__BackingField: https://github.com/romantitov/MockQueryable
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: MockQueryable.Moq
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.Dapper
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 1.0.7
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 1.0.7
-      - <FullVersion>k__BackingField: 1.0.6
-      - <FullVersion>k__BackingField: 1.0.5
-      - <FullVersion>k__BackingField: 1.0.4
-      - <FullVersion>k__BackingField: 1.0.3
-      - <FullVersion>k__BackingField: 1.0.2
-      - <FullVersion>k__BackingField: 1.0.1
-      - <FullVersion>k__BackingField: 1.0.0.9
-      - <FullVersion>k__BackingField: 1.0.0.8
-      - <FullVersion>k__BackingField: 1.0.0.7
-      - <FullVersion>k__BackingField: 1.0.0.6
-      - <FullVersion>k__BackingField: 1.0.0.5
-      - <FullVersion>k__BackingField: 1.0.0.4
-      - <FullVersion>k__BackingField: 1.0.0.3
-      - <FullVersion>k__BackingField: 1.0.0.2
-      - <FullVersion>k__BackingField: 1.0.0.1
-      - <FullVersion>k__BackingField: 1.0.0
-      <Authors>k__BackingField:
-      - Stefano d'Antonio
-      <Description>k__BackingField: Moq extensions for Dapper methods.
-      <TotalDownloads>k__BackingField: 4503943
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq.Dapper/1.0.7/license
-      <ProjectUrl>k__BackingField: https://github.com/UnoSD/Moq.Dapper
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Moq.Dapper
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.Contrib.HttpClient
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 1.4.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 1.4.0
-      - <FullVersion>k__BackingField: 1.3.0
-      - <FullVersion>k__BackingField: 1.2.0
-      <Authors>k__BackingField:
-      - Max Kagamine
-      <Description>k__BackingField: A set of extension methods for mocking HttpClient
-        and IHttpClientFactory with Moq.
-      <TotalDownloads>k__BackingField: 3810433
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq.Contrib.HttpClient/1.4.0/license
-      <ProjectUrl>k__BackingField: https://github.com/maxkagamine/Moq.Contrib.HttpClient
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Moq.Contrib.HttpClient
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.Analyzers
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 0.1.1
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 0.1.1
-      - <FullVersion>k__BackingField: 0.1.0
-      - <FullVersion>k__BackingField: 0.0.9
-      - <FullVersion>k__BackingField: 0.0.8
-      - <FullVersion>k__BackingField: 0.0.7
-      - <FullVersion>k__BackingField: 0.0.6
-      - <FullVersion>k__BackingField: 0.0.4.43043
-      - <FullVersion>k__BackingField: 0.0.4.41458
-      - <FullVersion>k__BackingField: 0.0.3.40797
-      - <FullVersion>k__BackingField: 0.0.1.22865
-      <Authors>k__BackingField:
-      - Matt Kotsenas,Andrey "Litee" Lipatkin,Richard Murillo
-      <Description>k__BackingField: Roslyn analyzer that helps to write unit tests
-        using Moq mocking library by highlighting typical errors and suggesting quick
-        fixes. Port of Resharper extension to Roslyn. Find the full list of detected
-        issues at project GitHub page.
-      <TotalDownloads>k__BackingField: 1506013
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq.Analyzers/0.1.1/license
-      <ProjectUrl>k__BackingField: https://github.com/rjmurillo/moq.analyzers
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Moq.Analyzers
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: ILogger.Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 1.1.10
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 1.1.10
-      - <FullVersion>k__BackingField: 1.1.9
-      - <FullVersion>k__BackingField: 1.1.8
-      - <FullVersion>k__BackingField: 1.1.7
-      - <FullVersion>k__BackingField: 1.1.5
-      - <FullVersion>k__BackingField: 1.1.3
-      - <FullVersion>k__BackingField: 1.1.2
-      - <FullVersion>k__BackingField: 1.1.1
-      - <FullVersion>k__BackingField: 1.1.0
-      - <FullVersion>k__BackingField: 1.0.33
-      - <FullVersion>k__BackingField: 1.0.0
-      - <FullVersion>k__BackingField: 0.0.31
-      - <FullVersion>k__BackingField: 0.0.30
-      - <FullVersion>k__BackingField: 0.0.29
-      - <FullVersion>k__BackingField: 0.0.28
-      - <FullVersion>k__BackingField: 0.0.27
-      - <FullVersion>k__BackingField: 0.0.26
-      - <FullVersion>k__BackingField: 0.0.25
-      - <FullVersion>k__BackingField: 0.0.24
-      - <FullVersion>k__BackingField: 0.0.23
-      - <FullVersion>k__BackingField: 0.0.22
-      - <FullVersion>k__BackingField: 0.0.21
-      - <FullVersion>k__BackingField: 0.0.20
-      - <FullVersion>k__BackingField: 0.0.19
-      - <FullVersion>k__BackingField: 0.0.18
-      - <FullVersion>k__BackingField: 0.0.17
-      - <FullVersion>k__BackingField: 0.0.16
-      - <FullVersion>k__BackingField: 0.0.15
-      - <FullVersion>k__BackingField: 0.0.14
-      - <FullVersion>k__BackingField: 0.0.13
-      - <FullVersion>k__BackingField: 0.0.12
-      - <FullVersion>k__BackingField: 0.0.11
-      - <FullVersion>k__BackingField: 0.0.10
-      - <FullVersion>k__BackingField: 0.0.9
-      <Authors>k__BackingField:
-      - Adrian Iftode
-      <Description>k__BackingField: Enables the Moq's Verify API over the *ILogger*
-        extensions (LogInformation, LogError, etc).
-      <TotalDownloads>k__BackingField: 2224424
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/ILogger.Moq/1.1.10/license
-      <ProjectUrl>k__BackingField: https://github.com/adrianiftode/Moq.ILogger
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: ILogger.Moq
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Ninject.MockingKernel.Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 3.3.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/ninject.mockingkernel.moq/3.3.0/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 3.3.0
-      - <FullVersion>k__BackingField: 3.2.2
-      - <FullVersion>k__BackingField: 3.2.1
-      - <FullVersion>k__BackingField: 3.2.0
-      - <FullVersion>k__BackingField: 3.0.0.5
-      - <FullVersion>k__BackingField: 2.2.0.6
-      <Authors>k__BackingField:
-      - Ninject Project Contributors
-      <Description>k__BackingField: Automock implementation for Moq using Ninject
-        to create the objects under test.
-      <TotalDownloads>k__BackingField: 2017862
-      <LicenseUrl>k__BackingField: https://github.com/ninject/Ninject.MockingKernel/raw/master/LICENSE.txt
-      <ProjectUrl>k__BackingField: http://www.ninject.org/
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Ninject.MockingKernel.Moq
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.Sequences
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 2.2.1
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 2.2.1
-      - <FullVersion>k__BackingField: 2.2.0
-      - <FullVersion>k__BackingField: 2.1.0
-      - <FullVersion>k__BackingField: 2.0.0
-      - <FullVersion>k__BackingField: 1.0.1
-      <Authors>k__BackingField:
-      - Declan Whelan
-      <Description>k__BackingField: Supports checking that Moq setups are executed
-        in sequence.
-      <TotalDownloads>k__BackingField: 744531
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq.Sequences/2.2.1/license
-      <ProjectUrl>k__BackingField: https://github.com/dwhelan/Moq-Sequences
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Moq.Sequences
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq.Contrib
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 0.3.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/moq.contrib/0.3.0/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 0.3.0
-      <Authors>k__BackingField:
-      - kzu.net
-      <Description>k__BackingField: Contributed features and third-party integration
-        for Moq.
-      <TotalDownloads>k__BackingField: 658483
-      <LicenseUrl>k__BackingField: http://www.opensource.org/licenses/bsd-license.php
-      <ProjectUrl>k__BackingField: http://code.google.com/p/moq-contrib/
-      <Summary>k__BackingField: Contributed features and third-party integration
-        for Moq.
-      <Title>k__BackingField: Moq.Contrib
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: AutoMoq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 2.0.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 2.0.0
-      - <FullVersion>k__BackingField: 1.8.1
-      - <FullVersion>k__BackingField: 1.8.0
-      - <FullVersion>k__BackingField: 1.7.1
-      - <FullVersion>k__BackingField: 1.7.0
-      - <FullVersion>k__BackingField: 1.6.2
-      - <FullVersion>k__BackingField: 1.6.1
-      - <FullVersion>k__BackingField: 1.6.0
-      - <FullVersion>k__BackingField: 1.5.0
-      - <FullVersion>k__BackingField: 1.4.2
-      - <FullVersion>k__BackingField: 1.4.1
-      - <FullVersion>k__BackingField: 1.4.0
-      - <FullVersion>k__BackingField: 1.3.1.3
-      <Authors>k__BackingField:
-      - Darren Cauthon
-      <Description>k__BackingField: Auto-mocking container
-      <TotalDownloads>k__BackingField: 1792735
-      <LicenseUrl>k__BackingField: https://github.com/darrencauthon/AutoMoq/blob/master/license.txt
-      <ProjectUrl>k__BackingField: https://github.com/darrencauthon/AutoMoq
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: AutoMoq
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: EntityFrameworkTesting.Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 1.3.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: 
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 1.3.0
-      - <FullVersion>k__BackingField: 1.2.3
-      - <FullVersion>k__BackingField: 1.2.2
-      - <FullVersion>k__BackingField: 1.2.1
-      - <FullVersion>k__BackingField: 1.2.0
-      - <FullVersion>k__BackingField: 1.1.5
-      - <FullVersion>k__BackingField: 1.1.4
-      - <FullVersion>k__BackingField: 1.1.3
-      - <FullVersion>k__BackingField: 1.1.2
-      - <FullVersion>k__BackingField: 1.1.1
-      - <FullVersion>k__BackingField: 1.1.0
-      - <FullVersion>k__BackingField: 1.0.24
-      - <FullVersion>k__BackingField: 1.0.22
-      - <FullVersion>k__BackingField: 1.0.7
-      - <FullVersion>k__BackingField: 1.0.6
-      - <FullVersion>k__BackingField: 1.0.5
-      <Authors>k__BackingField:
-      - Rowan Miller, Scott Xu
-      <Description>k__BackingField: Testing helpers for using Moq with EntityFramework.
-      <TotalDownloads>k__BackingField: 1382902
-      <LicenseUrl>k__BackingField: https://github.com/scott-xu/EntityFramework.Testing/blob/master/LICENSE
-      <ProjectUrl>k__BackingField: https://github.com/scott-xu/EntityFramework.Testing
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: EntityFrameworkTesting.Moq
-      <DownloadUrl>k__BackingField: 
-  serializableToInstallPackages: []
-  serializableUpdatePackages:
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Castle.Core
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 5.1.1
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/castle.core/5.1.1/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 5.1.1
-      - <FullVersion>k__BackingField: 5.1.0
-      - <FullVersion>k__BackingField: 5.0.0
-      - <FullVersion>k__BackingField: 4.4.1
-      - <FullVersion>k__BackingField: 4.4.0
-      - <FullVersion>k__BackingField: 4.3.1
-      - <FullVersion>k__BackingField: 4.3.0
-      - <FullVersion>k__BackingField: 4.2.1
-      - <FullVersion>k__BackingField: 4.2.0
-      - <FullVersion>k__BackingField: 4.1.1
-      - <FullVersion>k__BackingField: 4.1.0
-      - <FullVersion>k__BackingField: 4.0.0
-      - <FullVersion>k__BackingField: 3.3.3
-      - <FullVersion>k__BackingField: 3.3.2
-      - <FullVersion>k__BackingField: 3.3.1
-      - <FullVersion>k__BackingField: 3.3.0
-      - <FullVersion>k__BackingField: 3.2.2
-      - <FullVersion>k__BackingField: 3.2.1
-      - <FullVersion>k__BackingField: 3.2.0
-      - <FullVersion>k__BackingField: 3.1.0
-      - <FullVersion>k__BackingField: 3.0.0.4001
-      - <FullVersion>k__BackingField: 3.0.0.3001
-      - <FullVersion>k__BackingField: 3.0.0.2001
-      - <FullVersion>k__BackingField: 2.5.2
-      - <FullVersion>k__BackingField: 2.5.1
-      - <FullVersion>k__BackingField: 1.2.0
-      - <FullVersion>k__BackingField: 1.1.0
-      <Authors>k__BackingField:
-      - Castle Project Contributors
-      <Description>k__BackingField: Castle Core, including DynamicProxy, Logging
-        Abstractions and DictionaryAdapter
-      <TotalDownloads>k__BackingField: 875115498
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Castle.Core/5.1.1/license
-      <ProjectUrl>k__BackingField: http://www.castleproject.org/
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: Castle.Core
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: Moq
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 4.20.70
-      <IsManuallyInstalled>k__BackingField: 1
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/moq/4.20.70/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 4.20.70
-      - <FullVersion>k__BackingField: 4.20.69
-      - <FullVersion>k__BackingField: 4.18.4
-      - <FullVersion>k__BackingField: 4.18.3
-      - <FullVersion>k__BackingField: 4.18.2
-      - <FullVersion>k__BackingField: 4.18.1
-      - <FullVersion>k__BackingField: 4.18.0
-      - <FullVersion>k__BackingField: 4.17.2
-      - <FullVersion>k__BackingField: 4.17.1
-      - <FullVersion>k__BackingField: 4.16.1
-      - <FullVersion>k__BackingField: 4.16.0
-      - <FullVersion>k__BackingField: 4.15.2
-      - <FullVersion>k__BackingField: 4.15.1
-      - <FullVersion>k__BackingField: 4.14.7
-      - <FullVersion>k__BackingField: 4.14.6
-      - <FullVersion>k__BackingField: 4.14.5
-      - <FullVersion>k__BackingField: 4.14.4
-      - <FullVersion>k__BackingField: 4.14.3
-      - <FullVersion>k__BackingField: 4.14.2
-      - <FullVersion>k__BackingField: 4.14.1
-      - <FullVersion>k__BackingField: 4.14.0
-      - <FullVersion>k__BackingField: 4.13.1
-      - <FullVersion>k__BackingField: 4.13.0
-      - <FullVersion>k__BackingField: 4.12.0
-      - <FullVersion>k__BackingField: 4.11.0
-      - <FullVersion>k__BackingField: 4.10.1
-      - <FullVersion>k__BackingField: 4.10.0
-      - <FullVersion>k__BackingField: 4.9.0
-      - <FullVersion>k__BackingField: 4.8.3
-      - <FullVersion>k__BackingField: 4.8.2
-      - <FullVersion>k__BackingField: 4.8.1
-      - <FullVersion>k__BackingField: 4.8.0
-      - <FullVersion>k__BackingField: 4.7.145
-      - <FullVersion>k__BackingField: 4.7.142
-      - <FullVersion>k__BackingField: 4.7.137
-      - <FullVersion>k__BackingField: 4.7.127
-      - <FullVersion>k__BackingField: 4.7.99
-      - <FullVersion>k__BackingField: 4.7.63
-      - <FullVersion>k__BackingField: 4.7.58
-      - <FullVersion>k__BackingField: 4.7.49
-      - <FullVersion>k__BackingField: 4.7.46
-      - <FullVersion>k__BackingField: 4.7.25
-      - <FullVersion>k__BackingField: 4.7.12
-      - <FullVersion>k__BackingField: 4.7.11
-      - <FullVersion>k__BackingField: 4.7.10
-      - <FullVersion>k__BackingField: 4.7.9
-      - <FullVersion>k__BackingField: 4.7.8
-      - <FullVersion>k__BackingField: 4.7.7
-      - <FullVersion>k__BackingField: 4.7.1
-      - <FullVersion>k__BackingField: 4.7.0
-      - <FullVersion>k__BackingField: 4.5.30
-      - <FullVersion>k__BackingField: 4.5.29
-      - <FullVersion>k__BackingField: 4.5.28
-      - <FullVersion>k__BackingField: 4.5.23
-      - <FullVersion>k__BackingField: 4.5.22
-      - <FullVersion>k__BackingField: 4.5.21
-      - <FullVersion>k__BackingField: 4.5.20
-      - <FullVersion>k__BackingField: 4.5.19
-      - <FullVersion>k__BackingField: 4.5.18
-      - <FullVersion>k__BackingField: 4.5.16
-      - <FullVersion>k__BackingField: 4.5.13
-      - <FullVersion>k__BackingField: 4.5.10
-      - <FullVersion>k__BackingField: 4.5.9
-      - <FullVersion>k__BackingField: 4.5.8
-      - <FullVersion>k__BackingField: 4.5.7
-      - <FullVersion>k__BackingField: 4.5.3
-      - <FullVersion>k__BackingField: 4.5.0
-      - <FullVersion>k__BackingField: 4.2.1510.2205
-      - <FullVersion>k__BackingField: 4.2.1507.118
-      - <FullVersion>k__BackingField: 4.2.1506.2515
-      - <FullVersion>k__BackingField: 4.2.1506.2016
-      - <FullVersion>k__BackingField: 4.2.1502.911
-      - <FullVersion>k__BackingField: 4.2.1409.1722
-      - <FullVersion>k__BackingField: 4.2.1408.717
-      - <FullVersion>k__BackingField: 4.2.1408.619
-      - <FullVersion>k__BackingField: 4.2.1402.2112
-      - <FullVersion>k__BackingField: 4.2.1312.1622
-      - <FullVersion>k__BackingField: 4.2.1312.1621
-      - <FullVersion>k__BackingField: 4.2.1312.1615
-      - <FullVersion>k__BackingField: 4.2.1312.1416
-      - <FullVersion>k__BackingField: 4.2.1312.1323
-      - <FullVersion>k__BackingField: 4.2.1312.1319
-      - <FullVersion>k__BackingField: 4.1.1311.615
-      - <FullVersion>k__BackingField: 4.1.1309.1617
-      - <FullVersion>k__BackingField: 4.1.1309.919
-      - <FullVersion>k__BackingField: 4.1.1309.801
-      - <FullVersion>k__BackingField: 4.1.1309.800
-      - <FullVersion>k__BackingField: 4.1.1308.2321
-      - <FullVersion>k__BackingField: 4.1.1308.2316
-      - <FullVersion>k__BackingField: 4.1.1308.2120
-      - <FullVersion>k__BackingField: 4.0.10827
-      - <FullVersion>k__BackingField: 3.1.416.3
-      <Authors>k__BackingField:
-      - Daniel Cazzulino, kzu
-      <Description>k__BackingField: Moq is the most popular and friendly mocking
-        framework for .NET.
-      <TotalDownloads>k__BackingField: 633991505
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Moq/4.20.70/license
-      <ProjectUrl>k__BackingField: https://github.com/moq/moq
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 'Moq: an enjoyable mocking library'
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: System.Diagnostics.EventLog
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 8.0.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/8.0.0/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 8.0.0
-      - <FullVersion>k__BackingField: 7.0.0
-      - <FullVersion>k__BackingField: 6.0.0
-      - <FullVersion>k__BackingField: 5.0.1
-      - <FullVersion>k__BackingField: 5.0.0
-      - <FullVersion>k__BackingField: 4.7.0
-      - <FullVersion>k__BackingField: 4.6.0
-      - <FullVersion>k__BackingField: 4.5.0
-      <Authors>k__BackingField:
-      - Microsoft
-      <Description>k__BackingField: 'Provides the System.Diagnostics.EventLog class,
-        which allows the applications to use the Windows event log service.
-
-
-        Commonly
-        Used Types:
-
-        System.Diagnostics.EventLog'
-      <TotalDownloads>k__BackingField: 666828383
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/System.Diagnostics.EventLog/8.0.0/license
-      <ProjectUrl>k__BackingField: https://dot.net/
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: System.Diagnostics.EventLog
-      <DownloadUrl>k__BackingField: 
-  - packageLocal:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSource:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageType: 2
-    packageV2:
-      <Id>k__BackingField: 
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 
-      <IsManuallyInstalled>k__BackingField: 0
-      icon: {fileID: 0}
-      <DownloadUrl>k__BackingField: 
-      <IconUrl>k__BackingField: 
-      <RepositoryBranch>k__BackingField: 
-      <Dependencies>k__BackingField: []
-      <Authors>k__BackingField: []
-      <Description>k__BackingField: 
-      <TotalDownloads>k__BackingField: 0
-      <LicenseUrl>k__BackingField: 
-      <ProjectUrl>k__BackingField: 
-      <ReleaseNotes>k__BackingField: 
-      <RepositoryCommit>k__BackingField: 
-      <RepositoryType>k__BackingField: 0
-      <RepositoryUrl>k__BackingField: 
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: 
-      packageSourceV2:
-        <Name>k__BackingField: 
-        <SavedPath>k__BackingField: 
-        <SavedProtocolVersion>k__BackingField: 
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 0
-      versions: []
-    packageV3:
-      <Id>k__BackingField: System.Security.Principal.Windows
-      <PackageVersion>k__BackingField:
-        <FullVersion>k__BackingField: 5.0.0
-      <IsManuallyInstalled>k__BackingField: 0
-      dependencies: []
-      dependenciesFetched: 0
-      icon: {fileID: 0}
-      iconUrl: https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/5.0.0/icon
-      packageSource:
-        <Name>k__BackingField: nuget.org
-        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
-        <SavedProtocolVersion>k__BackingField: 
-        <UpdateSearchBatchSize>k__BackingField: 20
-        <UserName>k__BackingField: 
-        <SavedPassword>k__BackingField: 
-        <IsEnabled>k__BackingField: 1
-      <Versions>k__BackingField:
-      - <FullVersion>k__BackingField: 5.0.0
-      - <FullVersion>k__BackingField: 4.7.0
-      - <FullVersion>k__BackingField: 4.6.0
-      - <FullVersion>k__BackingField: 4.5.1
-      - <FullVersion>k__BackingField: 4.5.0
-      - <FullVersion>k__BackingField: 4.4.1
-      - <FullVersion>k__BackingField: 4.4.0
-      - <FullVersion>k__BackingField: 4.3.0
-      - <FullVersion>k__BackingField: 4.0.0
-      <Authors>k__BackingField:
-      - Microsoft
-      <Description>k__BackingField: "Provides classes for retrieving the current
-        Windows user and for interacting with Windows users and groups.\n\nCommonly
-        Used Types:\nSystem.Security.Principal.WindowsIdentity\nSystem.Security.Principal.SecurityIdentifier\nSystem.Security.Principal.NTAccount\nSystem.Security.Principal.WindowsPrincipal\nSystem.Security.Principal.IdentityReference\nSystem.Security.Principal.IdentityNotMappedException\nSystem.Security.Principal.WindowsBuiltInRole\nSystem.Security.Principal.WellKnownSidType\n
-        \nWhen using NuGet 3.x this package requires at least version 3.4."
-      <TotalDownloads>k__BackingField: 2822574242
-      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/System.Security.Principal.Windows/5.0.0/license
-      <ProjectUrl>k__BackingField: https://github.com/dotnet/runtime
-      <Summary>k__BackingField: 
-      <Title>k__BackingField: System.Security.Principal.Windows
-      <DownloadUrl>k__BackingField: 
---- !u!114 &16
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2649,7 +308,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 115
+    ID: 225
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -2709,7 +368,7 @@ MonoBehaviour:
       availableCategories: []
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1000
       uniqueId: '[Lemonade Tycoon][suite]'
@@ -5417,7 +3076,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: ca75e128
       m_LastClickedID: 685864394
-      m_ExpandedIDs: ff820d88119b9b8ef9697f9d1e93d29e9a35dba18a8495a43abc0bb9cd4011c850c13acab0251fd7965e9cd8190c4ade5ab68ae09a3dc4e2f09615e9ab3902ef0a3fd8fe8fec9d0171f43d039cdde6045ae5400aaa1f892165d40a24e1e52c2bf6a83830094d5d386b88293b30437f465300a94754a7414ec4cc1159bf7c425b46115b6a79441d76ffffff7f
+      m_ExpandedIDs: ff820d88119b9b8ef9697f9d1e93d29e9a35dba18a8495a43abc0bb9cd4011c850c13acab0251fd7965e9cd8190c4ade5ab68ae09a3dc4e2f09615e9ab3902ef0a3fd8fe8fec9d0171f43d039cdde6045ae5400aaa1f892165d40a24e1e52c2bf6a83830094d5d386b88293b30437f4654a7414ec4cc1159bf7c425b46115b6a79441d76ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -5443,7 +3102,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &17
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5494,7 +3153,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
---- !u!114 &18
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5536,22 +3195,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Recipe/Tests
+    - Assets/Calendar/Runtime
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Recipe/Tests
+  - Assets/Calendar/Runtime
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/igorbasko/UnityGames/Lemonade Tycoon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 102}
-    m_SelectedIDs: 885d0000
-    m_LastClickedID: 23944
-    m_ExpandedIDs: 00000000665d0000685d00006a5d00006c5d0000925f0000b05f0000be5f0000c45f000000ca9a3b
+    scrollPos: {x: 0, y: 54}
+    m_SelectedIDs: 625e0000
+    m_LastClickedID: 24162
+    m_ExpandedIDs: 000000001c5e0000205e0000245e0000265e0000285e00002a5e00003a5e00003c5e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5567,7 +3226,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -5579,7 +3238,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000665d0000685d00006a5d00006c5d0000
+    m_ExpandedIDs: 000000001c5e00001e5e0000205e0000225e0000245e0000265e0000285e00002a5e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5635,7 +3294,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &19
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5677,7 +3336,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &20
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5709,9 +3368,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 3a530000
       m_LastClickedID: 0
-      m_ExpandedIDs: 7c55ffff305affff6e5fffff9664ffffcc69fffff66effff2074ffff3c79ffff5e7effff7c83ffff7088ffff768dfffff292fffff297ffffe89cffff5aa2ffff3ca7ffffc2acffffaeb1ffff8ab6ffff90bbffff62c0ffff16c5ffffd6c9ffff98ceffff44d3ffff12d8ffff28edffff48f4ffff9af9ffff26fbffff
+      m_ExpandedIDs: 16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -5735,7 +3394,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &21
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6096,7 +3755,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &22
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6131,7 +3790,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 710.5, y: 389}
+  m_TargetSize: {x: 1080, y: 1920}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -6146,10 +3805,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -177.625
-    m_HBaseRangeMax: 177.625
-    m_VBaseRangeMin: -97.25
-    m_VBaseRangeMax: 97.25
+    m_HBaseRangeMin: -270
+    m_HBaseRangeMax: 270
+    m_VBaseRangeMin: -480
+    m_VBaseRangeMax: 480
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -6169,7 +3828,7 @@ MonoBehaviour:
       y: 21
       width: 710.5
       height: 389
-    m_Scale: {x: 2, y: 2}
+    m_Scale: {x: 0.40520832, y: 0.40520832}
     m_Translation: {x: 355.25, y: 194.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -6177,19 +3836,19 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -177.625
-      y: -97.25
-      width: 355.25
-      height: 194.5
+      x: -876.70953
+      y: -480.00003
+      width: 1753.4191
+      height: 960.00006
     m_MinimalGUI: 1
-  m_defaultScale: 2
+  m_defaultScale: 0.40520832
   m_LastWindowPixelSize: {x: 1421, y: 820}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &23
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}

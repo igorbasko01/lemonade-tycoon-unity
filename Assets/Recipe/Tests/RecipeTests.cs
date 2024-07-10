@@ -205,5 +205,33 @@ namespace baskorp.Recipes.Tests
             Assert.IsNull(result.ProducedIngredient);
             Assert.That(new List<QuantifiableIngredient> { QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 1f) }, Is.EquivalentTo(result.MissingIngredients));
         }
+
+        [Test]
+        public void Recipe_CalculatePrice_Success() {
+            var recipe = Recipe.Create("Test Recipe", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+                });
+            var catalog = new IngredientsCatalogManager(new List<SellableIngredient> {
+                SellableIngredient.Create(IngredientMetadata.Create("Lemon"), 3f),
+                SellableIngredient.Create(IngredientMetadata.Create("Sugar"), 1f)
+            });
+            var result = recipe.CalculatePrice(catalog);
+            Assert.AreEqual(result.TotalCost, (5f*3f)+(2f*1f));
+        }
+
+        [Test]
+        public void Recipe_CalculatePrice_MissingIngredientInCatalog_Failure()
+        {
+            var recipe = Recipe.Create("Test Recipe", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 5f),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 2f)
+                });
+            var catalog = new IngredientsCatalogManager(new List<SellableIngredient> {
+                SellableIngredient.Create(IngredientMetadata.Create("Lemon"), 3f)
+            });
+            var result = recipe.CalculatePrice(catalog);
+            Assert.AreEqual(result.ResultType, PurchaseResultType.IngredientNotFound);
+        }
     }
 }

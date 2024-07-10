@@ -90,5 +90,10 @@ namespace baskorp.Recipes.Runtime
             }
             return missingIngredients;
         }
+
+        public TotalCostResult CalculatePrice(IngredientsCatalogManager catalog)
+        {
+            return catalog.CalculateTotalCost(ingredients);
+        }
     }
 }
