@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1440
     height: 776
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Test Runner
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 283
+  controlID: 29
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -68,15 +68,15 @@ MonoBehaviour:
     y: 0
     width: 498
     height: 726
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 15}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -122,14 +122,14 @@ MonoBehaviour:
     y: 431
     width: 942
     height: 295
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 284
+  controlID: 21
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 184
+  controlID: 22
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 225
+    ID: 278
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -375,7 +375,7 @@ MonoBehaviour:
       name: Lemonade Tycoon
       fullName: Lemonade Tycoon
       resultStatus: 1
-      duration: 0.2752322
+      duration: 0.3528327
       messages: 
       output: 
       stacktrace: 
@@ -391,7 +391,7 @@ MonoBehaviour:
       name: Calendar.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Calendar.Tests.dll
       resultStatus: 1
-      duration: 0.0196369
+      duration: 0.0300722
       messages: 
       output: 
       stacktrace: 
@@ -407,7 +407,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0170142
+      duration: 0.0296385
       messages: 
       output: 
       stacktrace: 
@@ -423,7 +423,7 @@ MonoBehaviour:
       name: Calendars
       fullName: baskorp.Calendars
       resultStatus: 1
-      duration: 0.0132916
+      duration: 0.0258968
       messages: 
       output: 
       stacktrace: 
@@ -439,7 +439,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.Calendars.Tests
       resultStatus: 1
-      duration: 0.0096102
+      duration: 0.0221291
       messages: 
       output: 
       stacktrace: 
@@ -455,7 +455,7 @@ MonoBehaviour:
       name: CalendarTests
       fullName: baskorp.Calendars.Tests.CalendarTests
       resultStatus: 1
-      duration: 0.0058262
+      duration: 0.0179205
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +471,7 @@ MonoBehaviour:
       name: Calendar_NonWeekendDays_AreWeekdays_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_NonWeekendDays_AreWeekdays_Success
       resultStatus: 1
-      duration: 0.0000777
+      duration: 0.007501
       messages: 
       output: 
       stacktrace: 
@@ -488,7 +488,7 @@ MonoBehaviour:
       name: Calendar_ProgressOneDay_EndOfFebuary_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfFebuary_Success
       resultStatus: 1
-      duration: 0.0000323
+      duration: 0.0007089
       messages: 
       output: 
       stacktrace: 
@@ -505,7 +505,7 @@ MonoBehaviour:
       name: Calendar_ProgressOneDay_EndOfMonth_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfMonth_Success
       resultStatus: 1
-      duration: 0.0000299
+      duration: 0.0000928
       messages: 
       output: 
       stacktrace: 
@@ -522,7 +522,7 @@ MonoBehaviour:
       name: Calendar_ProgressOneDay_EndOfYear_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_EndOfYear_Success
       resultStatus: 1
-      duration: 0.0000291
+      duration: 0.0000819
       messages: 
       output: 
       stacktrace: 
@@ -539,7 +539,7 @@ MonoBehaviour:
       name: Calendar_ProgressOneDay_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_ProgressOneDay_Success
       resultStatus: 1
-      duration: 0.0000297
+      duration: 0.0000931
       messages: 
       output: 
       stacktrace: 
@@ -556,7 +556,7 @@ MonoBehaviour:
       name: Calendar_SaturdayAndSunday_AreWeekends_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Calendar_SaturdayAndSunday_AreWeekends_Success
       resultStatus: 1
-      duration: 0.0000225
+      duration: 0.0000601
       messages: 
       output: 
       stacktrace: 
@@ -573,7 +573,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_DayLowerThan1_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_DayLowerThan1_Exception
       resultStatus: 1
-      duration: 0.0000464
+      duration: 0.0011604
       messages: 
       output: 
       stacktrace: 
@@ -590,7 +590,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_MonthLowerThan1_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_MonthLowerThan1_Exception
       resultStatus: 1
-      duration: 0.0000277
+      duration: 0.000069
       messages: 
       output: 
       stacktrace: 
@@ -607,7 +607,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_Success
       resultStatus: 1
-      duration: 0.000023
+      duration: 0.000071
       messages: 
       output: 
       stacktrace: 
@@ -624,7 +624,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WeekDay_MondayWeekLater
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_MondayWeekLater
       resultStatus: 1
-      duration: 0.0000222
+      duration: 0.0000499
       messages: 
       output: 
       stacktrace: 
@@ -641,7 +641,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WeekDay_Sunday
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_Sunday
       resultStatus: 1
-      duration: 0.0000206
+      duration: 0.0000445
       messages: 
       output: 
       stacktrace: 
@@ -658,7 +658,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WeekDay_Wednesday
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WeekDay_Wednesday
       resultStatus: 1
-      duration: 0.0000217
+      duration: 0.0000412
       messages: 
       output: 
       stacktrace: 
@@ -675,7 +675,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongDay_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDay_Exception
       resultStatus: 1
-      duration: 0.0000254
+      duration: 0.0000665
       messages: 
       output: 
       stacktrace: 
@@ -692,7 +692,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongDayInApril_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInApril_Exception
       resultStatus: 1
-      duration: 0.0000249
+      duration: 0.0000586
       messages: 
       output: 
       stacktrace: 
@@ -709,7 +709,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongDayInFebruary_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInFebruary_Exception
       resultStatus: 1
-      duration: 0.0000307
+      duration: 0.0000573
       messages: 
       output: 
       stacktrace: 
@@ -726,7 +726,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongDayInJune_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInJune_Exception
       resultStatus: 1
-      duration: 0.0000243
+      duration: 0.0000555
       messages: 
       output: 
       stacktrace: 
@@ -743,7 +743,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongDayInNovember_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInNovember_Exception
       resultStatus: 1
-      duration: 0.0000238
+      duration: 0.0000571
       messages: 
       output: 
       stacktrace: 
@@ -760,7 +760,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongDayInSeptember_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongDayInSeptember_Exception
       resultStatus: 1
-      duration: 0.0000256
+      duration: 0.0000545
       messages: 
       output: 
       stacktrace: 
@@ -777,7 +777,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_WrongMonth_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_WrongMonth_Exception
       resultStatus: 1
-      duration: 0.0000247
+      duration: 0.0000539
       messages: 
       output: 
       stacktrace: 
@@ -794,7 +794,7 @@ MonoBehaviour:
       name: Create_Calendar_CustomDate_YearLowerThan1_Exception
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_CustomDate_YearLowerThan1_Exception
       resultStatus: 1
-      duration: 0.0000252
+      duration: 0.0000552
       messages: 
       output: 
       stacktrace: 
@@ -811,7 +811,7 @@ MonoBehaviour:
       name: Create_Calendar_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Create_Calendar_Success
       resultStatus: 1
-      duration: 0.0000358
+      duration: 0.000077
       messages: 
       output: 
       stacktrace: 
@@ -828,7 +828,7 @@ MonoBehaviour:
       name: Date_ContainsSeasons_Success
       fullName: baskorp.Calendars.Tests.CalendarTests.Date_ContainsSeasons_Success
       resultStatus: 1
-      duration: 0.0000452
+      duration: 0.000173
       messages: 
       output: 
       stacktrace: 
@@ -840,12 +840,92 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Calendar.Tests.dll/baskorp/Calendars/Tests/[Calendar.Tests][baskorp.Calendars.Tests.CalendarTests][suite]
+    - id: 1029
+      uniqueId: '[DayEnd.Tests.dll][suite]'
+      name: DayEnd.Tests.dll
+      fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/DayEnd.Tests.dll
+      resultStatus: 1
+      duration: 0.0240518
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Lemonade Tycoon][suite]'
+    - id: 1030
+      uniqueId: DayEnd.Tests.dll/[baskorp][suite]
+      name: baskorp
+      fullName: baskorp
+      resultStatus: 1
+      duration: 0.0132744
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1029
+      parentUniqueId: '[DayEnd.Tests.dll][suite]'
+    - id: 1031
+      uniqueId: DayEnd.Tests.dll/baskorp/[DayEnd][suite]
+      name: DayEnd
+      fullName: baskorp.DayEnd
+      resultStatus: 1
+      duration: 0.0072682
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1030
+      parentUniqueId: DayEnd.Tests.dll/[baskorp][suite]
+    - id: 1032
+      uniqueId: DayEnd.Tests.dll/baskorp/DayEnd/[DayEnd.Tests][baskorp.DayEnd.Tests][suite]
+      name: Tests
+      fullName: baskorp.DayEnd.Tests
+      resultStatus: 1
+      duration: 0.0035842
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: DayEnd.Tests.dll/baskorp/[DayEnd][suite]
+    - id: 1028
+      uniqueId: DayEnd.Tests.dll/baskorp/DayEnd/Tests/[DayEnd.Tests][baskorp.DayEnd.Tests.DayEndSystemTests][suite]
+      name: DayEndSystemTests
+      fullName: baskorp.DayEnd.Tests.DayEndSystemTests
+      resultStatus: 1
+      duration: 0.000038
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1032
+      parentUniqueId: DayEnd.Tests.dll/baskorp/DayEnd/[DayEnd.Tests][baskorp.DayEnd.Tests][suite]
     - id: 1030
       uniqueId: '[IngredientsBuyer.Tests.dll][suite]'
       name: IngredientsBuyer.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/IngredientsBuyer.Tests.dll
       resultStatus: 1
-      duration: 0.0326008
+      duration: 0.0216144
       messages: 
       output: 
       stacktrace: 
@@ -861,7 +941,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0193854
+      duration: 0.0183932
       messages: 
       output: 
       stacktrace: 
@@ -877,7 +957,7 @@ MonoBehaviour:
       name: IngredientsBuyers
       fullName: baskorp.IngredientsBuyers
       resultStatus: 1
-      duration: 0.0118817
+      duration: 0.0147322
       messages: 
       output: 
       stacktrace: 
@@ -893,7 +973,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.IngredientsBuyers.Tests
       resultStatus: 1
-      duration: 0.0082273
+      duration: 0.0111183
       messages: 
       output: 
       stacktrace: 
@@ -909,7 +989,7 @@ MonoBehaviour:
       name: IngredientsBuyerTests
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests
       resultStatus: 1
-      duration: 0.0045085
+      duration: 0.0073974
       messages: 
       output: 
       stacktrace: 
@@ -925,7 +1005,7 @@ MonoBehaviour:
       name: IngredientsBuyer_Buy
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy
       resultStatus: 1
-      duration: 0.0000693
+      duration: 0.0014343
       messages: 
       output: 
       stacktrace: 
@@ -942,7 +1022,7 @@ MonoBehaviour:
       name: IngredientsBuyer_Buy_IngredientNotFound
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_IngredientNotFound
       resultStatus: 1
-      duration: 0.0000411
+      duration: 0.0001413
       messages: 
       output: 
       stacktrace: 
@@ -959,7 +1039,7 @@ MonoBehaviour:
       name: IngredientsBuyer_Buy_MultipleIngredients
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients
       resultStatus: 1
-      duration: 0.0000826
+      duration: 0.0004523
       messages: 
       output: 
       stacktrace: 
@@ -976,7 +1056,7 @@ MonoBehaviour:
       name: IngredientsBuyer_Buy_MultipleIngredients_IngredientNotFound
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients_IngredientNotFound
       resultStatus: 1
-      duration: 0.0000609
+      duration: 0.0002218
       messages: 
       output: 
       stacktrace: 
@@ -993,7 +1073,7 @@ MonoBehaviour:
       name: IngredientsBuyer_Buy_MultipleIngredients_NotEnoughMoney
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_MultipleIngredients_NotEnoughMoney
       resultStatus: 1
-      duration: 0.0000483
+      duration: 0.0001829
       messages: 
       output: 
       stacktrace: 
@@ -1010,7 +1090,7 @@ MonoBehaviour:
       name: IngredientsBuyer_Buy_NotEnoughMoney
       fullName: baskorp.IngredientsBuyers.Tests.IngredientsBuyerTests.IngredientsBuyer_Buy_NotEnoughMoney
       resultStatus: 1
-      duration: 0.0000506
+      duration: 0.0001202
       messages: 
       output: 
       stacktrace: 
@@ -1027,7 +1107,7 @@ MonoBehaviour:
       name: IngredientsCatalog.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/IngredientsCatalog.Tests.dll
       resultStatus: 1
-      duration: 0.023773
+      duration: 0.0228929
       messages: 
       output: 
       stacktrace: 
@@ -1043,7 +1123,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0197773
+      duration: 0.0214469
       messages: 
       output: 
       stacktrace: 
@@ -1059,7 +1139,7 @@ MonoBehaviour:
       name: IngredientsCatalog
       fullName: baskorp.IngredientsCatalog
       resultStatus: 1
-      duration: 0.0161033
+      duration: 0.0177753
       messages: 
       output: 
       stacktrace: 
@@ -1075,7 +1155,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.IngredientsCatalog.Tests
       resultStatus: 1
-      duration: 0.0123844
+      duration: 0.0140161
       messages: 
       output: 
       stacktrace: 
@@ -1091,7 +1171,7 @@ MonoBehaviour:
       name: IngredientsCatalogTests
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests
       resultStatus: 1
-      duration: 0.0046731
+      duration: 0.0060692
       messages: 
       output: 
       stacktrace: 
@@ -1107,7 +1187,7 @@ MonoBehaviour:
       name: CalculateTotalCost_IngredientNotFound
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.CalculateTotalCost_IngredientNotFound
       resultStatus: 1
-      duration: 0.0001127
+      duration: 0.0007869
       messages: 
       output: 
       stacktrace: 
@@ -1124,7 +1204,7 @@ MonoBehaviour:
       name: CalculateTotalCost_SingleIngredient_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.CalculateTotalCost_SingleIngredient_Success
       resultStatus: 1
-      duration: 0.00007
+      duration: 0.0001602
       messages: 
       output: 
       stacktrace: 
@@ -1141,7 +1221,7 @@ MonoBehaviour:
       name: CalculateTotalCost_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.CalculateTotalCost_Success
       resultStatus: 1
-      duration: 0.0000809
+      duration: 0.0001763
       messages: 
       output: 
       stacktrace: 
@@ -1158,7 +1238,7 @@ MonoBehaviour:
       name: PurchaseIngredient_IngredientNotFound
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_IngredientNotFound
       resultStatus: 1
-      duration: 0.0000749
+      duration: 0.0002174
       messages: 
       output: 
       stacktrace: 
@@ -1175,7 +1255,7 @@ MonoBehaviour:
       name: PurchaseIngredient_MultiplePurchases
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_MultiplePurchases
       resultStatus: 1
-      duration: 0.0000915
+      duration: 0.0001686
       messages: 
       output: 
       stacktrace: 
@@ -1192,7 +1272,7 @@ MonoBehaviour:
       name: PurchaseIngredient_NotEnoughMoney
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_NotEnoughMoney
       resultStatus: 1
-      duration: 0.0000961
+      duration: 0.0001001
       messages: 
       output: 
       stacktrace: 
@@ -1209,7 +1289,7 @@ MonoBehaviour:
       name: PurchaseIngredient_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsCatalogTests.PurchaseIngredient_Success
       resultStatus: 1
-      duration: 0.0000704
+      duration: 0.0001125
       messages: 
       output: 
       stacktrace: 
@@ -1226,7 +1306,7 @@ MonoBehaviour:
       name: IngredientsTests
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests
       resultStatus: 1
-      duration: 0.0038215
+      duration: 0.0043171
       messages: 
       output: 
       stacktrace: 
@@ -1242,7 +1322,7 @@ MonoBehaviour:
       name: Create_Ingredient_WithNegativePrice
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNegativePrice
       resultStatus: 1
-      duration: 0.0000886
+      duration: 0.0001604
       messages: 
       output: 
       stacktrace: 
@@ -1259,7 +1339,7 @@ MonoBehaviour:
       name: Create_Ingredient_WithNegativeQuantity
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNegativeQuantity
       resultStatus: 1
-      duration: 0.000053
+      duration: 0.0000961
       messages: 
       output: 
       stacktrace: 
@@ -1276,7 +1356,7 @@ MonoBehaviour:
       name: Create_Ingredient_WithNullMetadata
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNullMetadata
       resultStatus: 1
-      duration: 0.0000525
+      duration: 0.000257
       messages: 
       output: 
       stacktrace: 
@@ -1293,7 +1373,7 @@ MonoBehaviour:
       name: Create_Ingredient_WithNullMetadata_Sellable
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithNullMetadata_Sellable
       resultStatus: 1
-      duration: 0.0000639
+      duration: 0.0000963
       messages: 
       output: 
       stacktrace: 
@@ -1310,7 +1390,7 @@ MonoBehaviour:
       name: Create_Ingredient_WithZeroPrice
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithZeroPrice
       resultStatus: 1
-      duration: 0.000048
+      duration: 0.0000887
       messages: 
       output: 
       stacktrace: 
@@ -1327,7 +1407,7 @@ MonoBehaviour:
       name: Create_Ingredient_WithZeroQuantity
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_Ingredient_WithZeroQuantity
       resultStatus: 1
-      duration: 0.000048
+      duration: 0.0000904
       messages: 
       output: 
       stacktrace: 
@@ -1344,7 +1424,7 @@ MonoBehaviour:
       name: Create_IngredientMetadata_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.Create_IngredientMetadata_Success
       resultStatus: 1
-      duration: 0.0000377
+      duration: 0.0000587
       messages: 
       output: 
       stacktrace: 
@@ -1361,7 +1441,7 @@ MonoBehaviour:
       name: IngredientMetada_Equals_Fail
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.IngredientMetada_Equals_Fail
       resultStatus: 1
-      duration: 0.000062
+      duration: 0.001018
       messages: 
       output: 
       stacktrace: 
@@ -1378,7 +1458,7 @@ MonoBehaviour:
       name: IngredientMetada_Equals_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.IngredientMetada_Equals_Success
       resultStatus: 1
-      duration: 0.0000482
+      duration: 0.000076
       messages: 
       output: 
       stacktrace: 
@@ -1395,7 +1475,7 @@ MonoBehaviour:
       name: QuantifiableIngredient_Equals_Success
       fullName: baskorp.IngredientsCatalog.Tests.IngredientsTests.QuantifiableIngredient_Equals_Success
       resultStatus: 1
-      duration: 0.0000582
+      duration: 0.00013
       messages: 
       output: 
       stacktrace: 
@@ -1412,7 +1492,7 @@ MonoBehaviour:
       name: IngredientsInventory.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/IngredientsInventory.Tests.dll
       resultStatus: 1
-      duration: 0.0184019
+      duration: 0.0196537
       messages: 
       output: 
       stacktrace: 
@@ -1428,7 +1508,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0157531
+      duration: 0.01718
       messages: 
       output: 
       stacktrace: 
@@ -1444,7 +1524,7 @@ MonoBehaviour:
       name: IngredientsInventory
       fullName: baskorp.IngredientsInventory
       resultStatus: 1
-      duration: 0.0121015
+      duration: 0.0138944
       messages: 
       output: 
       stacktrace: 
@@ -1460,7 +1540,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.IngredientsInventory.Tests
       resultStatus: 1
-      duration: 0.0087523
+      duration: 0.0102215
       messages: 
       output: 
       stacktrace: 
@@ -1476,7 +1556,7 @@ MonoBehaviour:
       name: IngredientsInventoryTests
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests
       resultStatus: 1
-      duration: 0.0051588
+      duration: 0.0065217
       messages: 
       output: 
       stacktrace: 
@@ -1492,7 +1572,7 @@ MonoBehaviour:
       name: AddIngredient_IngredientAlreadyExists
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.AddIngredient_IngredientAlreadyExists
       resultStatus: 1
-      duration: 0.0000941
+      duration: 0.0002708
       messages: 
       output: 
       stacktrace: 
@@ -1509,7 +1589,7 @@ MonoBehaviour:
       name: AddIngredient_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.AddIngredient_Success
       resultStatus: 1
-      duration: 0.0000704
+      duration: 0.0001269
       messages: 
       output: 
       stacktrace: 
@@ -1526,7 +1606,7 @@ MonoBehaviour:
       name: GetIngredientQuantity_IngredientNotFound_ReturnZeroQuantity
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.GetIngredientQuantity_IngredientNotFound_ReturnZeroQuantity
       resultStatus: 1
-      duration: 0.0000462
+      duration: 0.0001193
       messages: 
       output: 
       stacktrace: 
@@ -1543,7 +1623,7 @@ MonoBehaviour:
       name: GetIngredientQuantity_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.GetIngredientQuantity_Success
       resultStatus: 1
-      duration: 0.0000587
+      duration: 0.0000995
       messages: 
       output: 
       stacktrace: 
@@ -1560,7 +1640,7 @@ MonoBehaviour:
       name: UseIngredients_IngredientNotFound
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_IngredientNotFound
       resultStatus: 1
-      duration: 0.0000549
+      duration: 0.0001949
       messages: 
       output: 
       stacktrace: 
@@ -1577,7 +1657,7 @@ MonoBehaviour:
       name: UseIngredients_MultipleIngredients_IngredientNotFound
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_IngredientNotFound
       resultStatus: 1
-      duration: 0.000079
+      duration: 0.0004401
       messages: 
       output: 
       stacktrace: 
@@ -1594,7 +1674,7 @@ MonoBehaviour:
       name: UseIngredients_MultipleIngredients_NotEnoughQuantity
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_NotEnoughQuantity
       resultStatus: 1
-      duration: 0.0000769
+      duration: 0.0002241
       messages: 
       output: 
       stacktrace: 
@@ -1611,7 +1691,7 @@ MonoBehaviour:
       name: UseIngredients_MultipleIngredients_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_MultipleIngredients_Success
       resultStatus: 1
-      duration: 0.0000621
+      duration: 0.0001851
       messages: 
       output: 
       stacktrace: 
@@ -1628,7 +1708,7 @@ MonoBehaviour:
       name: UseIngredients_NotEnoughQuantity
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_NotEnoughQuantity
       resultStatus: 1
-      duration: 0.0000648
+      duration: 0.0001203
       messages: 
       output: 
       stacktrace: 
@@ -1645,7 +1725,7 @@ MonoBehaviour:
       name: UseIngredients_PartialQuantity_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_PartialQuantity_Success
       resultStatus: 1
-      duration: 0.0000687
+      duration: 0.0001267
       messages: 
       output: 
       stacktrace: 
@@ -1662,7 +1742,7 @@ MonoBehaviour:
       name: UseIngredients_Success
       fullName: baskorp.IngredientsInventory.Tests.IngredientsInventoryTests.UseIngredients_Success
       resultStatus: 1
-      duration: 0.0000532
+      duration: 0.0000929
       messages: 
       output: 
       stacktrace: 
@@ -1679,7 +1759,7 @@ MonoBehaviour:
       name: Recipe.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Recipe.Tests.dll
       resultStatus: 1
-      duration: 0.0301752
+      duration: 0.0875802
       messages: 
       output: 
       stacktrace: 
@@ -1695,7 +1775,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0284957
+      duration: 0.0860141
       messages: 
       output: 
       stacktrace: 
@@ -1711,7 +1791,7 @@ MonoBehaviour:
       name: Recipes
       fullName: baskorp.Recipes
       resultStatus: 1
-      duration: 0.0244508
+      duration: 0.0822036
       messages: 
       output: 
       stacktrace: 
@@ -1727,7 +1807,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.Recipes.Tests
       resultStatus: 1
-      duration: 0.0206668
+      duration: 0.0783461
       messages: 
       output: 
       stacktrace: 
@@ -1743,7 +1823,7 @@ MonoBehaviour:
       name: RecipeEvaluatorStrategyTests
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests
       resultStatus: 1
-      duration: 0.0104875
+      duration: 0.0665826
       messages: 
       output: 
       stacktrace: 
@@ -1759,7 +1839,7 @@ MonoBehaviour:
       name: DayTypeRecipeEvaluatorStrategy_Returns100pctOnWeekends
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.DayTypeRecipeEvaluatorStrategy_Returns100pctOnWeekends
       resultStatus: 1
-      duration: 0.0000668
+      duration: 0.000539
       messages: 
       output: 
       stacktrace: 
@@ -1776,7 +1856,7 @@ MonoBehaviour:
       name: DayTypeRecipeEvaluatorStrategy_Returns50pctOnWeekdays
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.DayTypeRecipeEvaluatorStrategy_Returns50pctOnWeekdays
       resultStatus: 1
-      duration: 0.0000489
+      duration: 0.0001386
       messages: 
       output: 
       stacktrace: 
@@ -1793,7 +1873,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsMultipleStrategies_IgnoresNegativeWeights
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsMultipleStrategies_IgnoresNegativeWeights
       resultStatus: 1
-      duration: 0.000809
+      duration: 0.0493718
       messages: 
       output: 
       stacktrace: 
@@ -1810,7 +1890,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsMultipleStrategies_IgnoresNegativeWeightsAndZeroWeights
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsMultipleStrategies_IgnoresNegativeWeightsAndZeroWeights
       resultStatus: 1
-      duration: 0.0004399
+      duration: 0.0007431
       messages: 
       output: 
       stacktrace: 
@@ -1827,7 +1907,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsMultipleStrategies_IgnoresZeroWeightStrategies
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsMultipleStrategies_IgnoresZeroWeightStrategies
       resultStatus: 1
-      duration: 0.0004301
+      duration: 0.0006832
       messages: 
       output: 
       stacktrace: 
@@ -1844,7 +1924,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsOneStrategy_ReturnsItsResult
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsOneStrategy_ReturnsItsResult
       resultStatus: 1
-      duration: 0.0002309
+      duration: 0.0004005
       messages: 
       output: 
       stacktrace: 
@@ -1861,7 +1941,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsOneStrategyWithNegativeWeight_ReturnsZero
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsOneStrategyWithNegativeWeight_ReturnsZero
       resultStatus: 1
-      duration: 0.0002337
+      duration: 0.000381
       messages: 
       output: 
       stacktrace: 
@@ -1878,7 +1958,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsOneStrategyWithZeroWeight_ReturnsZero
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsOneStrategyWithZeroWeight_ReturnsZero
       resultStatus: 1
-      duration: 0.0002347
+      duration: 0.0003773
       messages: 
       output: 
       stacktrace: 
@@ -1895,7 +1975,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsStrategiesWithCombinedWeightsLowerThan100pct
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsStrategiesWithCombinedWeightsLowerThan100pct
       resultStatus: 1
-      duration: 0.0004379
+      duration: 0.0006407
       messages: 
       output: 
       stacktrace: 
@@ -1912,7 +1992,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsStrategiesWithCombinedWeightsOver100pct
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsStrategiesWithCombinedWeightsOver100pct
       resultStatus: 1
-      duration: 0.0004057
+      duration: 0.0006584
       messages: 
       output: 
       stacktrace: 
@@ -1929,7 +2009,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsTwoStrategies50pctWeightsEach
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsTwoStrategies50pctWeightsEach
       resultStatus: 1
-      duration: 0.0004058
+      duration: 0.0006439
       messages: 
       output: 
       stacktrace: 
@@ -1946,7 +2026,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsTwoStrategiesWithDifferentWeights
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsTwoStrategiesWithDifferentWeights
       resultStatus: 1
-      duration: 0.0003994
+      duration: 0.0006427
       messages: 
       output: 
       stacktrace: 
@@ -1963,7 +2043,7 @@ MonoBehaviour:
       name: RecipeEvaluatorAcceptsZeroStrategies_ReturnsZero
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.RecipeEvaluatorAcceptsZeroStrategies_ReturnsZero
       resultStatus: 1
-      duration: 0.0000465
+      duration: 0.0001133
       messages: 
       output: 
       stacktrace: 
@@ -1980,7 +2060,7 @@ MonoBehaviour:
       name: WeatherRecipeEvaluatorStrategy_Returns100pctOnClearAndHot
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.WeatherRecipeEvaluatorStrategy_Returns100pctOnClearAndHot
       resultStatus: 1
-      duration: 0.0002602
+      duration: 0.0025936
       messages: 
       output: 
       stacktrace: 
@@ -1997,7 +2077,7 @@ MonoBehaviour:
       name: WeatherRecipeEvaluatorStrategy_Returns20pctRainyAndCold
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.WeatherRecipeEvaluatorStrategy_Returns20pctRainyAndCold
       resultStatus: 1
-      duration: 0.0002159
+      duration: 0.000401
       messages: 
       output: 
       stacktrace: 
@@ -2014,7 +2094,7 @@ MonoBehaviour:
       name: WeatherRecipeEvaluatorStrategy_Returns40pctOnRainyAndMild
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.WeatherRecipeEvaluatorStrategy_Returns40pctOnRainyAndMild
       resultStatus: 1
-      duration: 0.0002086
+      duration: 0.0003356
       messages: 
       output: 
       stacktrace: 
@@ -2031,7 +2111,7 @@ MonoBehaviour:
       name: WeatherRecipeEvaluatorStrategy_Returns50pctOnClearAndCold
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.WeatherRecipeEvaluatorStrategy_Returns50pctOnClearAndCold
       resultStatus: 1
-      duration: 0.0002048
+      duration: 0.0003191
       messages: 
       output: 
       stacktrace: 
@@ -2048,7 +2128,7 @@ MonoBehaviour:
       name: WeatherRecipeEvaluatorStrategy_Returns70pctOnRainyAndHot
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.WeatherRecipeEvaluatorStrategy_Returns70pctOnRainyAndHot
       resultStatus: 1
-      duration: 0.0002051
+      duration: 0.0003095
       messages: 
       output: 
       stacktrace: 
@@ -2065,7 +2145,7 @@ MonoBehaviour:
       name: WeatherRecipeEvaluatorStrategy_Returns80pctOnClearAndNormal
       fullName: baskorp.Recipes.Tests.RecipeEvaluatorStrategyTests.WeatherRecipeEvaluatorStrategy_Returns80pctOnClearAndNormal
       resultStatus: 1
-      duration: 0.0002059
+      duration: 0.000329
       messages: 
       output: 
       stacktrace: 
@@ -2082,7 +2162,7 @@ MonoBehaviour:
       name: RecipeTests
       fullName: baskorp.Recipes.Tests.RecipeTests
       resultStatus: 1
-      duration: 0.0058217
+      duration: 0.0078402
       messages: 
       output: 
       stacktrace: 
@@ -2093,12 +2173,46 @@ MonoBehaviour:
       categories: []
       parentId: 1040
       parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/[Recipe.Tests][baskorp.Recipes.Tests][suite]
+    - id: 1121
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.Recipe_CalculatePrice_MissingIngredientInCatalog_Failure]
+      name: Recipe_CalculatePrice_MissingIngredientInCatalog_Failure
+      fullName: baskorp.Recipes.Tests.RecipeTests.Recipe_CalculatePrice_MissingIngredientInCatalog_Failure
+      resultStatus: 1
+      duration: 0.0002655
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1103
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
+    - id: 1120
+      uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.Recipe_CalculatePrice_Success]
+      name: Recipe_CalculatePrice_Success
+      fullName: baskorp.Recipes.Tests.RecipeTests.Recipe_CalculatePrice_Success
+      resultStatus: 1
+      duration: 0.0002218
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1103
+      parentUniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests][suite]
     - id: 1036
       uniqueId: Recipe.Tests.dll/baskorp/Recipes/Tests/RecipeTests/[Recipe.Tests][baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients]
       name: RecipeInitializedWithANameAndAListOfIngredients
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients
       resultStatus: 1
-      duration: 0.0000659
+      duration: 0.000107
       messages: 
       output: 
       stacktrace: 
@@ -2115,7 +2229,7 @@ MonoBehaviour:
       name: RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreDifferent_Success
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreDifferent_Success
       resultStatus: 1
-      duration: 0.0000636
+      duration: 0.0001225
       messages: 
       output: 
       stacktrace: 
@@ -2132,7 +2246,7 @@ MonoBehaviour:
       name: RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreTheSame_ThrowArgumentException
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_IngredientsAreTheSame_ThrowArgumentException
       resultStatus: 1
-      duration: 0.0000989
+      duration: 0.0002472
       messages: 
       output: 
       stacktrace: 
@@ -2149,7 +2263,7 @@ MonoBehaviour:
       name: RecipeInitializedWithANameAndAListOfIngredients_SomeIngredientsAreSame_ThrowArgumentException
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAListOfIngredients_SomeIngredientsAreSame_ThrowArgumentException
       resultStatus: 1
-      duration: 0.0000869
+      duration: 0.0001789
       messages: 
       output: 
       stacktrace: 
@@ -2166,7 +2280,7 @@ MonoBehaviour:
       name: RecipeInitializedWithANameAndAnEmptyListOfIngredients_ThrowsArgumentException
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndAnEmptyListOfIngredients_ThrowsArgumentException
       resultStatus: 1
-      duration: 0.0000399
+      duration: 0.0000762
       messages: 
       output: 
       stacktrace: 
@@ -2183,7 +2297,7 @@ MonoBehaviour:
       name: RecipeInitializedWithANameAndNullListOfIngredients_ThrowsArgumentException
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANameAndNullListOfIngredients_ThrowsArgumentException
       resultStatus: 1
-      duration: 0.0000382
+      duration: 0.0000657
       messages: 
       output: 
       stacktrace: 
@@ -2200,7 +2314,7 @@ MonoBehaviour:
       name: RecipeInitializedWithAnEmptyName_ThrowsArgumentException
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithAnEmptyName_ThrowsArgumentException
       resultStatus: 1
-      duration: 0.0000504
+      duration: 0.0001091
       messages: 
       output: 
       stacktrace: 
@@ -2217,7 +2331,7 @@ MonoBehaviour:
       name: RecipeInitializedWithANullName_ThrowsArgumentException
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeInitializedWithANullName_ThrowsArgumentException
       resultStatus: 1
-      duration: 0.0000519
+      duration: 0.0001041
       messages: 
       output: 
       stacktrace: 
@@ -2234,7 +2348,7 @@ MonoBehaviour:
       name: RecipeMake_EmptyIngredientsList_ReturnsMissingIngredientsList
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_EmptyIngredientsList_ReturnsMissingIngredientsList
       resultStatus: 1
-      duration: 0.0001499
+      duration: 0.0009749
       messages: 
       output: 
       stacktrace: 
@@ -2251,7 +2365,7 @@ MonoBehaviour:
       name: RecipeMake_MissingIngredient_ReturnsMissingIngredientsList
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_MissingIngredient_ReturnsMissingIngredientsList
       resultStatus: 1
-      duration: 0.0001037
+      duration: 0.0002912
       messages: 
       output: 
       stacktrace: 
@@ -2268,7 +2382,7 @@ MonoBehaviour:
       name: RecipeMake_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
       resultStatus: 1
-      duration: 0.0001106
+      duration: 0.0002661
       messages: 
       output: 
       stacktrace: 
@@ -2285,7 +2399,7 @@ MonoBehaviour:
       name: RecipeMake_NullIngredientsList_ReturnsMissingIngredientList
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_NullIngredientsList_ReturnsMissingIngredientList
       resultStatus: 1
-      duration: 0.0000978
+      duration: 0.0002128
       messages: 
       output: 
       stacktrace: 
@@ -2302,7 +2416,7 @@ MonoBehaviour:
       name: RecipeMake_QuantityHigherThanOne_MissingIngredient_ReturnsMissingIngredientsList
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_MissingIngredient_ReturnsMissingIngredientsList
       resultStatus: 1
-      duration: 0.0001023
+      duration: 0.0002341
       messages: 
       output: 
       stacktrace: 
@@ -2319,7 +2433,7 @@ MonoBehaviour:
       name: RecipeMake_QuantityHigherThanOne_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_MissingQuantity_ReturnsMissingIngredientWithDeltaQuantity
       resultStatus: 1
-      duration: 0.0001092
+      duration: 0.0002377
       messages: 
       output: 
       stacktrace: 
@@ -2336,7 +2450,7 @@ MonoBehaviour:
       name: RecipeMake_QuantityHigherThanOne_Success
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_QuantityHigherThanOne_Success
       resultStatus: 1
-      duration: 0.0001227
+      duration: 0.0003835
       messages: 
       output: 
       stacktrace: 
@@ -2353,7 +2467,7 @@ MonoBehaviour:
       name: RecipeMake_WithIngredients_Success
       fullName: baskorp.Recipes.Tests.RecipeTests.RecipeMake_WithIngredients_Success
       resultStatus: 1
-      duration: 0.0001095
+      duration: 0.0002334
       messages: 
       output: 
       stacktrace: 
@@ -2370,7 +2484,7 @@ MonoBehaviour:
       name: Wallet.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Wallet.Tests.dll
       resultStatus: 1
-      duration: 0.0168943
+      duration: 0.0176036
       messages: 
       output: 
       stacktrace: 
@@ -2386,7 +2500,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.0134697
+      duration: 0.016139
       messages: 
       output: 
       stacktrace: 
@@ -2402,7 +2516,7 @@ MonoBehaviour:
       name: Wallets
       fullName: baskorp.Wallets
       resultStatus: 1
-      duration: 0.012114
+      duration: 0.0124684
       messages: 
       output: 
       stacktrace: 
@@ -2418,7 +2532,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.Wallets.Tests
       resultStatus: 1
-      duration: 0.0084295
+      duration: 0.0088139
       messages: 
       output: 
       stacktrace: 
@@ -2434,7 +2548,7 @@ MonoBehaviour:
       name: WalletTests
       fullName: baskorp.Wallets.Tests.WalletTests
       resultStatus: 1
-      duration: 0.0047878
+      duration: 0.0048369
       messages: 
       output: 
       stacktrace: 
@@ -2450,7 +2564,7 @@ MonoBehaviour:
       name: Create_Wallet_Success
       fullName: baskorp.Wallets.Tests.WalletTests.Create_Wallet_Success
       resultStatus: 1
-      duration: 0.0000343
+      duration: 0.000109
       messages: 
       output: 
       stacktrace: 
@@ -2467,7 +2581,7 @@ MonoBehaviour:
       name: Create_Wallet_WithInitialBalance_Success
       fullName: baskorp.Wallets.Tests.WalletTests.Create_Wallet_WithInitialBalance_Success
       resultStatus: 1
-      duration: 0.0000244
+      duration: 0.0000484
       messages: 
       output: 
       stacktrace: 
@@ -2484,7 +2598,7 @@ MonoBehaviour:
       name: Create_Wallet_WithNegativeInitialBalance_Exception
       fullName: baskorp.Wallets.Tests.WalletTests.Create_Wallet_WithNegativeInitialBalance_Exception
       resultStatus: 1
-      duration: 0.0000369
+      duration: 0.0001631
       messages: 
       output: 
       stacktrace: 
@@ -2501,7 +2615,7 @@ MonoBehaviour:
       name: DepositToWallet_NegativeAmount_Exception
       fullName: baskorp.Wallets.Tests.WalletTests.DepositToWallet_NegativeAmount_Exception
       resultStatus: 1
-      duration: 0.0000279
+      duration: 0.0000991
       messages: 
       output: 
       stacktrace: 
@@ -2518,7 +2632,7 @@ MonoBehaviour:
       name: DpositToWallet_Success
       fullName: baskorp.Wallets.Tests.WalletTests.DpositToWallet_Success
       resultStatus: 1
-      duration: 0.0000224
+      duration: 0.0000481
       messages: 
       output: 
       stacktrace: 
@@ -2535,7 +2649,7 @@ MonoBehaviour:
       name: WithdrawFromWallet_InsufficientFunds_Exception
       fullName: baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_InsufficientFunds_Exception
       resultStatus: 1
-      duration: 0.0000275
+      duration: 0.0000744
       messages: 
       output: 
       stacktrace: 
@@ -2552,7 +2666,7 @@ MonoBehaviour:
       name: WithdrawFromWallet_NegativeAmount_Exception
       fullName: baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_NegativeAmount_Exception
       resultStatus: 1
-      duration: 0.0000271
+      duration: 0.0000641
       messages: 
       output: 
       stacktrace: 
@@ -2569,7 +2683,7 @@ MonoBehaviour:
       name: WithdrawFromWallet_Success
       fullName: baskorp.Wallets.Tests.WalletTests.WithdrawFromWallet_Success
       resultStatus: 1
-      duration: 0.0000227
+      duration: 0.0000474
       messages: 
       output: 
       stacktrace: 
@@ -2586,7 +2700,7 @@ MonoBehaviour:
       name: Weather.Tests.dll
       fullName: /Users/igorbasko/UnityGames/Lemonade Tycoon/Library/ScriptAssemblies/Weather.Tests.dll
       resultStatus: 1
-      duration: 0.1161143
+      duration: 0.1157712
       messages: 
       output: 
       stacktrace: 
@@ -2602,7 +2716,7 @@ MonoBehaviour:
       name: baskorp
       fullName: baskorp
       resultStatus: 1
-      duration: 0.1128654
+      duration: 0.1130655
       messages: 
       output: 
       stacktrace: 
@@ -2618,7 +2732,7 @@ MonoBehaviour:
       name: Weather
       fullName: baskorp.Weather
       resultStatus: 1
-      duration: 0.1090874
+      duration: 0.1093444
       messages: 
       output: 
       stacktrace: 
@@ -2634,7 +2748,7 @@ MonoBehaviour:
       name: Tests
       fullName: baskorp.Weather.Tests
       resultStatus: 1
-      duration: 0.105296
+      duration: 0.105571
       messages: 
       output: 
       stacktrace: 
@@ -2650,7 +2764,7 @@ MonoBehaviour:
       name: WeatherForecasterTests
       fullName: baskorp.Weather.Tests.WeatherForecasterTests
       resultStatus: 1
-      duration: 0.1011782
+      duration: 0.0998759
       messages: 
       output: 
       stacktrace: 
@@ -2666,7 +2780,7 @@ MonoBehaviour:
       name: WeatherForecastAutumnClearDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnClearDayProbability
       resultStatus: 1
-      duration: 0.005229
+      duration: 0.0081948
       messages: 
       output: 
       stacktrace: 
@@ -2683,7 +2797,7 @@ MonoBehaviour:
       name: WeatherForecastAutumnColdDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnColdDayProbability
       resultStatus: 1
-      duration: 0.0049864
+      duration: 0.0042532
       messages: 
       output: 
       stacktrace: 
@@ -2700,7 +2814,7 @@ MonoBehaviour:
       name: WeatherForecastAutumnHotDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnHotDayProbability
       resultStatus: 1
-      duration: 0.0077608
+      duration: 0.0040501
       messages: 
       output: 
       stacktrace: 
@@ -2717,7 +2831,7 @@ MonoBehaviour:
       name: WeatherForecastAutumnMildDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnMildDayProbability
       resultStatus: 1
-      duration: 0.0049252
+      duration: 0.007026
       messages: 
       output: 
       stacktrace: 
@@ -2734,7 +2848,7 @@ MonoBehaviour:
       name: WeatherForecastAutumnRainyDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastAutumnRainyDayProbability
       resultStatus: 1
-      duration: 0.0125072
+      duration: 0.0087322
       messages: 
       output: 
       stacktrace: 
@@ -2751,7 +2865,7 @@ MonoBehaviour:
       name: WeatherForecastForDifferentDateReturnsDifferentForecast
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentDateReturnsDifferentForecast
       resultStatus: 1
-      duration: 0.0000555
+      duration: 0.0001276
       messages: 
       output: 
       stacktrace: 
@@ -2768,7 +2882,7 @@ MonoBehaviour:
       name: WeatherForecastForDifferentMonthReturnsDifferentForecast
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentMonthReturnsDifferentForecast
       resultStatus: 1
-      duration: 0.0000353
+      duration: 0.0000692
       messages: 
       output: 
       stacktrace: 
@@ -2785,7 +2899,7 @@ MonoBehaviour:
       name: WeatherForecastForDifferentYearReturnsDifferentForecast
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForDifferentYearReturnsDifferentForecast
       resultStatus: 1
-      duration: 0.0000368
+      duration: 0.000051
       messages: 
       output: 
       stacktrace: 
@@ -2802,7 +2916,7 @@ MonoBehaviour:
       name: WeatherForecastForSameDateReturnsSameForecast
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastForSameDateReturnsSameForecast
       resultStatus: 1
-      duration: 0.0000311
+      duration: 0.0000618
       messages: 
       output: 
       stacktrace: 
@@ -2819,7 +2933,7 @@ MonoBehaviour:
       name: WeatherForecastSpringClearDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringClearDayProbability
       resultStatus: 1
-      duration: 0.0042722
+      duration: 0.0040081
       messages: 
       output: 
       stacktrace: 
@@ -2836,7 +2950,7 @@ MonoBehaviour:
       name: WeatherForecastSpringColdDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringColdDayProbability
       resultStatus: 1
-      duration: 0.0042074
+      duration: 0.0040234
       messages: 
       output: 
       stacktrace: 
@@ -2853,7 +2967,7 @@ MonoBehaviour:
       name: WeatherForecastSpringHotDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringHotDayProbability
       resultStatus: 1
-      duration: 0.0040691
+      duration: 0.0039534
       messages: 
       output: 
       stacktrace: 
@@ -2870,7 +2984,7 @@ MonoBehaviour:
       name: WeatherForecastSpringMildDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringMildDayProbability
       resultStatus: 1
-      duration: 0.004054
+      duration: 0.0039592
       messages: 
       output: 
       stacktrace: 
@@ -2887,7 +3001,7 @@ MonoBehaviour:
       name: WeatherForecastSpringRainyDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSpringRainyDayProbability
       resultStatus: 1
-      duration: 0.0040604
+      duration: 0.0039327
       messages: 
       output: 
       stacktrace: 
@@ -2904,7 +3018,7 @@ MonoBehaviour:
       name: WeatherForecastSummerClearDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerClearDayProbability
       resultStatus: 1
-      duration: 0.0039018
+      duration: 0.0038838
       messages: 
       output: 
       stacktrace: 
@@ -2921,7 +3035,7 @@ MonoBehaviour:
       name: WeatherForecastSummerColdDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerColdDayProbability
       resultStatus: 1
-      duration: 0.0039157
+      duration: 0.00383
       messages: 
       output: 
       stacktrace: 
@@ -2938,7 +3052,7 @@ MonoBehaviour:
       name: WeatherForecastSummerHotDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerHotDayProbability
       resultStatus: 1
-      duration: 0.0039117
+      duration: 0.0038175
       messages: 
       output: 
       stacktrace: 
@@ -2955,7 +3069,7 @@ MonoBehaviour:
       name: WeatherForecastSummerMildDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerMildDayProbability
       resultStatus: 1
-      duration: 0.0039289
+      duration: 0.0037633
       messages: 
       output: 
       stacktrace: 
@@ -2972,7 +3086,7 @@ MonoBehaviour:
       name: WeatherForecastSummerRainyDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastSummerRainyDayProbability
       resultStatus: 1
-      duration: 0.0038953
+      duration: 0.0037452
       messages: 
       output: 
       stacktrace: 
@@ -2989,7 +3103,7 @@ MonoBehaviour:
       name: WeatherForecastWinterClearDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterClearDayProbability
       resultStatus: 1
-      duration: 0.0039548
+      duration: 0.0038662
       messages: 
       output: 
       stacktrace: 
@@ -3006,7 +3120,7 @@ MonoBehaviour:
       name: WeatherForecastWinterColdDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterColdDayProbability
       resultStatus: 1
-      duration: 0.0041362
+      duration: 0.0039123
       messages: 
       output: 
       stacktrace: 
@@ -3023,7 +3137,7 @@ MonoBehaviour:
       name: WeatherForecastWinterHotDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterHotDayProbability
       resultStatus: 1
-      duration: 0.0040991
+      duration: 0.0068681
       messages: 
       output: 
       stacktrace: 
@@ -3040,7 +3154,7 @@ MonoBehaviour:
       name: WeatherForecastWinterMildDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterMildDayProbability
       resultStatus: 1
-      duration: 0.0039888
+      duration: 0.0066871
       messages: 
       output: 
       stacktrace: 
@@ -3057,7 +3171,7 @@ MonoBehaviour:
       name: WeatherForecastWinterRainyDayProbability
       fullName: baskorp.Weather.Tests.WeatherForecasterTests.WeatherForecastWinterRainyDayProbability
       resultStatus: 1
-      duration: 0.0040549
+      duration: 0.0039145
       messages: 
       output: 
       stacktrace: 
@@ -3069,14 +3183,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1090
       parentUniqueId: Weather.Tests.dll/baskorp/Weather/Tests/[Weather.Tests][baskorp.Weather.Tests.WeatherForecasterTests][suite]
-    m_ResultText: RecipeEvaluatorAcceptsMultipleStrategies_IgnoresNegativeWeights
-      (0.001s)
+    m_ResultText: Recipe_CalculatePrice_Success (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ca75e128
-      m_LastClickedID: 685864394
-      m_ExpandedIDs: ff820d88119b9b8ef9697f9d1e93d29e9a35dba18a8495a43abc0bb9cd4011c850c13acab0251fd7965e9cd8190c4ade5ab68ae09a3dc4e2f09615e9ab3902ef0a3fd8fe8fec9d0171f43d039cdde6045ae5400aaa1f892165d40a24e1e52c2bf6a83830094d5d386b88293b30437f4654a7414ec4cc1159bf7c425b46115b6a79441d76ffffff7f
+      m_SelectedIDs: 7b7a8a72
+      m_LastClickedID: 1921677947
+      m_ExpandedIDs: ff820d88119b9b8ef9697f9d1e93d29e9a35dba18a8495a43abc0bb9cd4011c850c13acab0251fd7965e9cd8190c4ade5ab68ae09a3dc4e2f09615e9ab3902ef0a3fd8fe8fec9d0171f43d039cdde6045ae5400a95955d0caa1f892165d40a24e1e52c2bf6a83830094d5d386b88293b30437f4654a7414ec4cc1159bf7c425b46115b6a79441d76ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3195,22 +3308,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Calendar/Runtime
+    - Assets/DayEnd/Tests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Calendar/Runtime
+  - Assets/DayEnd/Tests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/igorbasko/UnityGames/Lemonade Tycoon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 54}
-    m_SelectedIDs: 625e0000
-    m_LastClickedID: 24162
-    m_ExpandedIDs: 000000001c5e0000205e0000245e0000265e0000285e00002a5e00003a5e00003c5e000000ca9a3b
+    m_SelectedIDs: 2a5e0000
+    m_LastClickedID: 24106
+    m_ExpandedIDs: 00000000045e0000065e0000085e00000a5e00000c5e00000e5e0000105e0000125e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3238,7 +3351,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c5e00001e5e0000205e0000225e0000245e0000265e0000285e00002a5e0000
+    m_ExpandedIDs: 00000000045e0000065e0000085e00000a5e00000c5e00000e5e0000105e0000125e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3263,8 +3376,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: d4510000
+    m_LastClickedInstanceID: 20948
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -3368,9 +3481,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3a530000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 16fbffff
+      m_ExpandedIDs: 68e4ffffc4e9ffff92eeffff5ef3ffffe0f8ffff26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3790,7 +3903,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1080, y: 1920}
+  m_TargetSize: {x: 710.5, y: 389}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -3805,10 +3918,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -270
-    m_HBaseRangeMax: 270
-    m_VBaseRangeMin: -480
-    m_VBaseRangeMax: 480
+    m_HBaseRangeMin: -177.625
+    m_HBaseRangeMax: 177.625
+    m_VBaseRangeMin: -97.25
+    m_VBaseRangeMax: 97.25
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -3828,7 +3941,7 @@ MonoBehaviour:
       y: 21
       width: 710.5
       height: 389
-    m_Scale: {x: 0.40520832, y: 0.40520832}
+    m_Scale: {x: 2, y: 2}
     m_Translation: {x: 355.25, y: 194.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -3836,12 +3949,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -876.70953
-      y: -480.00003
-      width: 1753.4191
-      height: 960.00006
+      x: -177.625
+      y: -97.25
+      width: 355.25
+      height: 194.5
     m_MinimalGUI: 1
-  m_defaultScale: 0.40520832
+  m_defaultScale: 2
   m_LastWindowPixelSize: {x: 1421, y: 820}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

@@ -4,7 +4,12 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "DayEnd.Runtime"
+        "DayEnd.Runtime",
+        "Weather.Runtime",
+        "IngredientsCatalog.Runtime",
+        "IngredientsInventory.Runtime",
+        "Calendar.Runtime",
+        "Recipe.Runtime"
     ],
     "includePlatforms": [
         "Editor"
@@ -13,7 +18,8 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "nunit.framework.dll"
+        "nunit.framework.dll",
+        "Moq.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [

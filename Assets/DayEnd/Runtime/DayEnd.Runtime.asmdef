@@ -1,3 +1,20 @@
 {
-	"name": "DayEnd.Runtime"
+    "name": "DayEnd.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:66b132eac656b496facb4e457bb7f9fb",
+        "IngredientsCatalog.Runtime",
+        "Recipe.Runtime",
+        "Calendar.Runtime",
+        "IngredientsInventory.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
