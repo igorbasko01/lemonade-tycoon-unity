@@ -48,5 +48,10 @@ namespace baskorp.IngredientsCatalog.Runtime
         {
             return Metadata.GetHashCode() ^ Quantity.GetHashCode();
         }
+
+        public override string ToString()
+        {
+            return $"{Metadata.Name} - {Quantity}";
+        }
     }
 }

@@ -6,7 +6,8 @@
         "IngredientsCatalog.Runtime",
         "Recipe.Runtime",
         "Calendar.Runtime",
-        "IngredientsInventory.Runtime"
+        "IngredientsInventory.Runtime",
+        "Wallet.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

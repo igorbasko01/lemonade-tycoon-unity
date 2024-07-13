@@ -983,6 +983,7 @@
     <ProjectReference Include="Recipe.Runtime.csproj" />
     <ProjectReference Include="Calendar.Runtime.csproj" />
     <ProjectReference Include="IngredientsInventory.Runtime.csproj" />
+    <ProjectReference Include="Wallet.Runtime.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

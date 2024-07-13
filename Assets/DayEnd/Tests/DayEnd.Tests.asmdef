@@ -9,7 +9,8 @@
         "IngredientsCatalog.Runtime",
         "IngredientsInventory.Runtime",
         "Calendar.Runtime",
-        "Recipe.Runtime"
+        "Recipe.Runtime",
+        "Wallet.Runtime"
     ],
     "includePlatforms": [
         "Editor"

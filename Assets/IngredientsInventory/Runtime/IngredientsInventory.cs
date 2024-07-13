@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using baskorp.IngredientsCatalog.Runtime;
+using UnityEngine;
 
 namespace baskorp.IngredientsInventory.Runtime
 {
@@ -64,8 +65,8 @@ namespace baskorp.IngredientsInventory.Runtime
 
         public float GetIngredientQuantity(IngredientMetadata ingredient)
         {
-            var existingIngredient = _ingredients.Find(i => i.Metadata == ingredient);
-            return existingIngredient?.Quantity ?? 0;
+            var existingIngredient = _ingredients.Find(i => i.Metadata.Equals(ingredient));
+            return existingIngredient != null ? existingIngredient.Quantity : 0;
         }
 
         private UsageResultType HasIngredients(List<QuantifiableIngredient> ingredients)
