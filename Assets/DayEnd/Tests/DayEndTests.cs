@@ -136,28 +136,122 @@ namespace baskorp.DayEnd.Tests
             Assert.AreEqual(0, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
         }
 
-        [Test, Ignore("This test is not implemented yet")]
+        [Test]
         public void DayEndSystem_EndDay_UpdatesStateCorrectlyWhenInventoryHigherThanDemand()
         {
-
+            var wallet = new Wallet(20);
+            var mockDayEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockDayEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0.1f);
+            var mockWeatherEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockWeatherEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0.1f);
+            var recipeEvaluator = new RecipeEvaluator(new List<(float, IRecipeEvaluatorStrategy)> {
+                (0.5f, mockDayEvaluatorStrategy.Object),
+                (0.5f, mockWeatherEvaluatorStrategy.Object)
+            });
+            var ingredientsCatalog = new IngredientsCatalogManager(new List<SellableIngredient> {
+                SellableIngredient.Create(IngredientMetadata.Create("Lemon"), 1.5f),
+                SellableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var recipe = Recipe.Create("Lemonade", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 1),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var ingredientsInventory = new IngredientsInventoryManager();
+            ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 200));
+            var date = new Date(1, 1, 2024);
+            var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
+            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            Assert.AreEqual(20 + (1.75f * 100), wallet.Balance);
+            Assert.AreEqual(100, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
         }
 
-        [Test, Ignore("This test is not implemented yet")]
+        [Test]
         public void DayEndSystem_EndDay_DoesNothingWhenDemandIsZero()
         {
-
+            var wallet = new Wallet(20);
+            var mockDayEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockDayEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0f);
+            var mockWeatherEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockWeatherEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0f);
+            var recipeEvaluator = new RecipeEvaluator(new List<(float, IRecipeEvaluatorStrategy)> {
+                (0.5f, mockDayEvaluatorStrategy.Object),
+                (0.5f, mockWeatherEvaluatorStrategy.Object)
+            });
+            var ingredientsCatalog = new IngredientsCatalogManager(new List<SellableIngredient> {
+                SellableIngredient.Create(IngredientMetadata.Create("Lemon"), 1.5f),
+                SellableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var recipe = Recipe.Create("Lemonade", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 1),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var ingredientsInventory = new IngredientsInventoryManager();
+            ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 200));
+            var date = new Date(1, 1, 2024);
+            var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
+            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            Assert.AreEqual(20, wallet.Balance);
+            Assert.AreEqual(200, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
         }
 
-        [Test, Ignore("This test is not implemented yet")]
-        public void DayEndSystem_EndDay_DoesNothingWhenIngredientNotInInventory()
+        [Test]
+        public void DayEndSystem_EndDay_DoesNothingWhenRecipeNotInInventory()
         {
-
+            var wallet = new Wallet(20);
+            var mockDayEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockDayEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0f);
+            var mockWeatherEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockWeatherEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0f);
+            var recipeEvaluator = new RecipeEvaluator(new List<(float, IRecipeEvaluatorStrategy)> {
+                (0.5f, mockDayEvaluatorStrategy.Object),
+                (0.5f, mockWeatherEvaluatorStrategy.Object)
+            });
+            var ingredientsCatalog = new IngredientsCatalogManager(new List<SellableIngredient> {
+                SellableIngredient.Create(IngredientMetadata.Create("Lemon"), 1.5f),
+                SellableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var recipe = Recipe.Create("Lemonade", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 1),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var ingredientsInventory = new IngredientsInventoryManager();
+            var date = new Date(1, 1, 2024);
+            var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
+            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            Assert.AreEqual(20, wallet.Balance);
+            Assert.AreEqual(0, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
         }
 
-        [Test, Ignore("This test is not implemented yet")]
+        [Test]
         public void DayEndSystem_EndDay_DoesNothingWhenIngredientNotInCatalog()
         {
-
+            var wallet = new Wallet(20);
+            var mockDayEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockDayEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(0.3f);
+            var mockWeatherEvaluatorStrategy = new Mock<IRecipeEvaluatorStrategy>();
+            mockWeatherEvaluatorStrategy.Setup(s => s.Evaluate(It.IsAny<Recipe>(), It.IsAny<Date>())).Returns(1f);
+            var recipeEvaluator = new RecipeEvaluator(new List<(float, IRecipeEvaluatorStrategy)> {
+                (0.5f, mockDayEvaluatorStrategy.Object),
+                (0.5f, mockWeatherEvaluatorStrategy.Object)
+            });
+            var ingredientsCatalog = new IngredientsCatalogManager(new List<SellableIngredient> {
+                SellableIngredient.Create(IngredientMetadata.Create("Lemon"), 1.5f)
+            });
+            var recipe = Recipe.Create("Lemonade", new List<QuantifiableIngredient> {
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Lemon"), 1),
+                QuantifiableIngredient.Create(IngredientMetadata.Create("Sugar"), 0.5f)
+            });
+            var ingredientsInventory = new IngredientsInventoryManager();
+            ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 200));
+            var date = new Date(1, 1, 2024);
+            var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
+            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            Assert.AreEqual(20, wallet.Balance);
+            Assert.AreEqual(200, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
         }
     }
 }

@@ -44,6 +44,12 @@ namespace baskorp.DayEnd.Runtime
             Debug.Log($"Quantity to sell for {recipe.Name} is {quantityToSell}");
             var totalIncome = quantityToSell * recipePrice;
             Debug.Log($"Total income for {recipe.Name} is {totalIncome}");
+
+            if (quantityToSell == 0)
+            {
+                return;
+            }
+
             wallet.Deposit(totalIncome);
             ingredientsInventory.UseIngredients(QuantifiableIngredient.Create(IngredientMetadata.Create(recipe.Name), quantityToSell));
         }
