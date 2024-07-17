@@ -130,10 +130,12 @@ namespace baskorp.DayEnd.Tests
             ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 3));
             var date = new Date(1, 1, 2024);
             var recipePrice = 2.5f;
+            var expectedResult = new DayEndResult(date, recipe, recipePrice, 3, 2.5f * 3);
             var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
-            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            var result = dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
             Assert.AreEqual(20 + (2.5f * 3), wallet.Balance);
             Assert.AreEqual(0, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
+            Assert.AreEqual(expectedResult, result);
         }
 
         [Test]
@@ -160,10 +162,12 @@ namespace baskorp.DayEnd.Tests
             ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 200));
             var date = new Date(1, 1, 2024);
             var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var expectedResult = new DayEndResult(date, recipe, recipePrice, 100, 1.75f * 100);
             var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
-            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            var result = dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
             Assert.AreEqual(20 + (1.75f * 100), wallet.Balance);
             Assert.AreEqual(100, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
+            Assert.AreEqual(expectedResult, result);
         }
 
         [Test]
@@ -190,10 +194,12 @@ namespace baskorp.DayEnd.Tests
             ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 200));
             var date = new Date(1, 1, 2024);
             var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var expectedResult = new DayEndResult(date, recipe, recipePrice, 0, 0);
             var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
-            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            var result = dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
             Assert.AreEqual(20, wallet.Balance);
             Assert.AreEqual(200, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
+            Assert.AreEqual(expectedResult, result);
         }
 
         [Test]
@@ -219,10 +225,12 @@ namespace baskorp.DayEnd.Tests
             var ingredientsInventory = new IngredientsInventoryManager();
             var date = new Date(1, 1, 2024);
             var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var expectedResult = new DayEndResult(date, recipe, recipePrice, 0, 0);
             var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
-            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            var result = dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
             Assert.AreEqual(20, wallet.Balance);
             Assert.AreEqual(0, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
+            Assert.AreEqual(expectedResult, result);
         }
 
         [Test]
@@ -248,10 +256,12 @@ namespace baskorp.DayEnd.Tests
             ingredientsInventory.AddIngredient(QuantifiableIngredient.Create(IngredientMetadata.Create("Lemonade"), 200));
             var date = new Date(1, 1, 2024);
             var recipePrice = 1.5f + 0.25f;  // lemon_price (1*1.5) + sugar_price (0.5*0.5)
+            var expectedResult = new DayEndResult(date, recipe, recipePrice, 0, 0);
             var dayEndSystem = new DayEndSystem(recipeEvaluator, ingredientsCatalog, ingredientsInventory, maxOrders: 1000);
-            dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
+            var result = dayEndSystem.EndDay(recipe, date, recipePrice, wallet);
             Assert.AreEqual(20, wallet.Balance);
             Assert.AreEqual(200, ingredientsInventory.GetIngredientQuantity(IngredientMetadata.Create("Lemonade")));
+            Assert.AreEqual(expectedResult, result);
         }
     }
 }

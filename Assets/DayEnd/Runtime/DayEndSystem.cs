@@ -34,7 +34,7 @@ namespace baskorp.DayEnd.Runtime
             return (int)((recipeEvaluatorResult - deltaPricePercent) * maxOrders);
         }
 
-        public void EndDay(Recipe recipe, Date date, float recipePrice, Wallet wallet)
+        public DayEndResult EndDay(Recipe recipe, Date date, float recipePrice, Wallet wallet)
         {
             var demand = CalculateDemand(recipe, date, recipePrice);
             Debug.Log($"Demand for {recipe.Name} is {demand}");
@@ -44,14 +44,15 @@ namespace baskorp.DayEnd.Runtime
             Debug.Log($"Quantity to sell for {recipe.Name} is {quantityToSell}");
             var totalIncome = quantityToSell * recipePrice;
             Debug.Log($"Total income for {recipe.Name} is {totalIncome}");
+            var dayEndResult = new DayEndResult(date, recipe, recipePrice, quantityToSell, totalIncome);
 
-            if (quantityToSell == 0)
+            if (quantityToSell > 0)
             {
-                return;
+                wallet.Deposit(totalIncome);
+                ingredientsInventory.UseIngredients(QuantifiableIngredient.Create(IngredientMetadata.Create(recipe.Name), quantityToSell));
             }
 
-            wallet.Deposit(totalIncome);
-            ingredientsInventory.UseIngredients(QuantifiableIngredient.Create(IngredientMetadata.Create(recipe.Name), quantityToSell));
+            return dayEndResult;
         }
     }
 }

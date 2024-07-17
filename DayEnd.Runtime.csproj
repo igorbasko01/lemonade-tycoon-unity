@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/DayEnd/Runtime/DayEndSystem.cs" />
+    <Compile Include="Assets/DayEnd/Runtime/DayEndResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/DayEnd/Runtime/DayEnd.Runtime.asmdef" />
