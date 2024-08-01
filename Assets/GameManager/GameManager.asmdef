@@ -1,0 +1,23 @@
+{
+    "name": "GameManager",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2fe095b85e0b44fe79e3824bc38c9ea2",
+        "GUID:ff877fb97bb574c6faf4aa9e2532c04f",
+        "GUID:5701737ac19e14c6f8434ca8358e2cb4",
+        "GUID:e32e60dcc78a24289bb274528d2093a6",
+        "GUID:39a20015d516a40caa5e160756bbe47a",
+        "GUID:711375e29f9f34d43ac19c100022c5b5",
+        "GUID:fc39553758dd448e19e816aac34da0cc",
+        "GUID:66b132eac656b496facb4e457bb7f9fb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
