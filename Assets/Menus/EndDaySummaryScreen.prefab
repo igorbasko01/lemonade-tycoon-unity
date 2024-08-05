@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 521879448974538830}
   - component: {fileID: 521879448974538828}
   - component: {fileID: 521879448974538829}
+  - component: {fileID: 4328141052767266265}
   m_Layer: 5
   m_Name: EndDaySummaryScreen
   m_TagString: Untagged
@@ -79,6 +80,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4328141052767266265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521879448974538831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390ce673e40e2438384cbcecc6fe7a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPanelMappings:
+  - button: {fileID: 521879450675540087}
+    panel: {fileID: 5992167610347555549, guid: c10c4d515f5d0408882a06715978a05c, type: 3}
 --- !u!1 &521879449203522915
 GameObject:
   m_ObjectHideFlags: 0

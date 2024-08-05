@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 975166629938587018}
   - component: {fileID: 975166629938587016}
   - component: {fileID: 975166629938587019}
+  - component: {fileID: 4927005782090452202}
   m_Layer: 5
   m_Name: RecipeAdjuster
   m_TagString: Untagged
@@ -216,6 +217,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4927005782090452202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975166629938587021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390ce673e40e2438384cbcecc6fe7a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPanelMappings:
+  - button: {fileID: 975166630998471615}
+    panel: {fileID: 5992167610347555549, guid: c10c4d515f5d0408882a06715978a05c, type: 3}
 --- !u!1 &975166630198856218
 GameObject:
   m_ObjectHideFlags: 0

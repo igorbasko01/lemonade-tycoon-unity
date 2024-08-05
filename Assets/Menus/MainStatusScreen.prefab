@@ -647,6 +647,7 @@ GameObject:
   - component: {fileID: 5992167610347555554}
   - component: {fileID: 5992167610347555552}
   - component: {fileID: 5992167610347555555}
+  - component: {fileID: 5929908808984716195}
   m_Layer: 5
   m_Name: MainStatusScreen
   m_TagString: Untagged
@@ -718,6 +719,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5929908808984716195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992167610347555549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390ce673e40e2438384cbcecc6fe7a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPanelMappings:
+  - button: {fileID: 5992167610070268139}
+    panel: {fileID: 5074131027477707181, guid: 7d73c0a0efae74a4fb190c5bdc260683, type: 3}
+  - button: {fileID: 5992167610142004766}
+    panel: {fileID: 6821907152840174156, guid: df956fccf33684400a91665860afc196, type: 3}
+  - button: {fileID: 5992167611770132225}
+    panel: {fileID: 975166629938587021, guid: 576877669db4447f085ec9a8939ac3fa, type: 3}
+  - button: {fileID: 5992167609947428730}
+    panel: {fileID: 521879448974538831, guid: 87753678f0b4f48feb939fe5061b9364, type: 3}
 --- !u!1 &5992167610749816923
 GameObject:
   m_ObjectHideFlags: 0
